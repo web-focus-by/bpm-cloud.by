@@ -1,0 +1,37 @@
+@mixin title($fs, $lh, $fw) {
+    font-size: $fs;
+    line-height: $lh;
+    font-weight: $fw;
+    color: #1A1B1F;
+}
+
+@mixin font($c) {
+    color: $c;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 400;
+}
+
+@mixin custom_font($color, $fs, $lh, $fw) {
+    color: $color;
+    font-size: $fs;
+    line-height: $lh;
+    font-weight: $fw;
+}
+
+@mixin flex ($jc, $ai, $fd) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+}
+
+@mixin grid ($gtc, $gtr, $gcg, $grg, $jc) {
+    display: grid;
+    grid-template-columns: $gtc;
+    grid-template-rows: $gtr;
+    grid-column-gap: $gcg;
+    grid-row-gap: $grg;
+    justify-content: $jc;
+
+}

@@ -1,0 +1,7 @@
+@media (max-width: 768px) {
+  .header__nav .logo {
+    width: 110px;
+    height: 36px;
+    background-size: cover;
+  }
+}/*# sourceMappingURL=media_768.css.map */

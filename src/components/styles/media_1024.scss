@@ -1,0 +1,47 @@
+@media (max-width: 1024px) {
+
+    .dropdown_services_sticky{
+        .dropdown_services{
+            left: 12.5%;
+            &__title{
+                padding: 32px 51px 0px 22px;
+            }
+            &__info{
+                padding: 32px 28px 29px 10px;
+                ul{
+                    grid-column-gap: 39px;
+                }
+            }
+        }
+    }
+    
+    .burger {
+        display: none;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header {
+        &__nav {
+            .logo {
+                width: calc(110px + (100 - 110) * ((100vw - 768px) / (1024 - 768)));
+                height: calc(36px + (32 - 36) * ((100vw - 768px) / (1024 - 768)));
+                background-size: cover;
+            }
+        }
+    }
+}
+
+@media (max-width: 940px) {
+    .header {
+        &__nav {
+
+            .header_nav_list {
+                display: none;
+            }
+        }
+    }
+
+    .burger {
+        display: inline-block;
+    }
+}

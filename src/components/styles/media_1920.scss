@@ -1,0 +1,28 @@
+@media (max-width: 1920px) {
+    .burger {
+        display: none;
+    }
+}
+
+@media (min-width: 1366px) and (max-width: 1920px) {
+    .header {
+        &__nav {
+            .logo {
+                width: calc(100px + (142 - 100) * ((100vw - 1366px) / (1920 - 1366)));
+                height: calc(32px + (46 - 32) * ((100vw - 1366px) / (1920 - 1366)));
+                background-size: cover;
+            }
+
+            .header_nav_list {
+                ul {
+                    li {
+                        a {
+                            margin-right: calc(42px + (60 - 42) * ((100vw - 1366px) / (1920 - 1366)));
+                            font-size: calc(13px + (18 - 13) * ((100vw - 1366px) / (1920 - 1366)));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

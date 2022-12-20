@@ -1,0 +1,118 @@
+@import url("./stylesheet.css");
+
+body {
+    font-family: 'Manrope', sans-serif;
+    line-height: 150%;
+    margin: 0px;
+    font-family: 'Manrope';
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #E4E4E4;
+    z-index: 2;
+
+    &__nav {
+        padding: 28px 0px 0px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header_logo {
+            width: 20%;
+        }
+
+        .header_nav_list {
+            width: 60%;
+            ul {
+                margin: 0px;
+                padding: 0px;
+
+                li {
+                    display: inline-block;
+                    padding-bottom: 20px;
+                    padding-top: -20px;
+                    font-weight: 400;
+                    color: #222222;
+                    font-size: 18px;
+                    line-height: 100%;
+                    &:hover {
+                        text-decoration: underline 2px #935CFF;
+                        transition: 100ms;
+                    }
+
+                    &:last-child {
+                        a {
+                            margin-right: 0px;
+                        }
+                    }
+
+                    a {
+                        text-decoration: none;
+                        margin-right: 60px;
+                        color: #222222;
+                        font-weight: 500;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        .header_phone {
+            width: 20%;
+            a {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 120%;
+                color: #222222;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.burger {
+    width: 36px;
+    height: 2px;
+    background: #1A1B1F;
+    border-radius: 20%;
+    position: relative;
+    top: -3px;
+
+    &:hover {
+        cursor:pointer;
+    }
+
+    &:after {
+        display: inline-block;
+        content: "";
+        width: 36px;
+        height: 2px;
+        background: #1A1B1F;
+        border-radius: 20%;
+        position: relative;
+        top: -51px;
+    }
+
+    &:before {
+        display: inline-block;
+        content: "";
+        width: 36px;
+        height: 2px;
+        background: #1A1B1F;
+        border-radius: 20%;
+        position: relative;
+        top: -5px;
+    }
+}
+
+.container {
+    margin: 0px auto;
+    padding: 0px 120px;
+}
+.containerForm {
+    margin: 0px auto;
+    padding: 0px 120px;
+}

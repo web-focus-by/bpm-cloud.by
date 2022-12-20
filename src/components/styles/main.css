@@ -1,0 +1,109 @@
+@import url("./stylesheet.css");
+body {
+  font-family: "Manrope", sans-serif;
+  line-height: 150%;
+  margin: 0px;
+  font-family: "Manrope";
+}
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #E4E4E4;
+  z-index: 2;
+}
+.header__nav {
+  padding: 28px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav .header_logo {
+  width: 20%;
+}
+.header__nav .header_nav_list {
+  width: 60%;
+}
+.header__nav .header_nav_list ul {
+  margin: 0px;
+  padding: 0px;
+}
+.header__nav .header_nav_list ul li {
+  display: inline-block;
+  padding-bottom: 20px;
+  padding-top: -20px;
+  font-weight: 400;
+  color: #222222;
+  font-size: 18px;
+  line-height: 100%;
+}
+.header__nav .header_nav_list ul li:hover {
+  -webkit-text-decoration: underline 2px #935CFF;
+          text-decoration: underline 2px #935CFF;
+  transition: 100ms;
+}
+.header__nav .header_nav_list ul li:last-child a {
+  margin-right: 0px;
+}
+.header__nav .header_nav_list ul li a {
+  text-decoration: none;
+  margin-right: 60px;
+  color: #222222;
+  font-weight: 500;
+}
+.header__nav .header_nav_list ul li a:hover {
+  cursor: pointer;
+}
+.header__nav .header_phone {
+  width: 20%;
+}
+.header__nav .header_phone a {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  color: #222222;
+  text-decoration: none;
+}
+
+.burger {
+  width: 36px;
+  height: 2px;
+  background: #1A1B1F;
+  border-radius: 20%;
+  position: relative;
+  top: -3px;
+}
+.burger:hover {
+  cursor: pointer;
+}
+.burger:after {
+  display: inline-block;
+  content: "";
+  width: 36px;
+  height: 2px;
+  background: #1A1B1F;
+  border-radius: 20%;
+  position: relative;
+  top: -51px;
+}
+.burger:before {
+  display: inline-block;
+  content: "";
+  width: 36px;
+  height: 2px;
+  background: #1A1B1F;
+  border-radius: 20%;
+  position: relative;
+  top: -5px;
+}
+
+.container {
+  margin: 0px auto;
+  padding: 0px 120px;
+}
+
+.containerForm {
+  margin: 0px auto;
+  padding: 0px 120px;
+}/*# sourceMappingURL=main.css.map */
