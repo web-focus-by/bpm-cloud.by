@@ -5,6 +5,40 @@
 }
 
 @media (min-width: 1366px) and (max-width: 1920px) {
+    /*.hero {
+        margin-top: calc(134px + (188 - 134) * ((100vw - 1366px) / (1920 - 1366)));
+
+        &__subtitle {
+            font-size: calc(14px + (20 - 14) * ((100vw - 1366px) / (1920 - 1366)));
+        }
+
+        &__butn {
+            .button_white {
+                font-size: calc(11px + (16 - 11) * ((100vw - 1366px) / (1920 - 1366)));
+                padding: calc(16px + (22 - 16) * ((100vw - 1366px) / (1920 - 1366))) calc(29px + (40 - 29) * ((100vw - 1366px) / (1920 - 1366)));     
+                -webkit-transition: all .3s linear;
+                :hover{
+                    -webkit-transition: all .3s linear;
+                    cursor: pointer;
+                }
+            }
+            :hover { 
+                -webkit-transition: all .3s linear;
+                cursor: pointer;
+            }
+        }
+
+        &__butntag {
+            .button_item_tag {
+                font-size: calc(11px + (16 - 11) * ((100vw - 1366px) / (1920 - 1366)));
+                padding: calc(16px + (22 - 16) * ((100vw - 1366px) / (1920 - 1366))) calc(29px + (40 - 29) * ((100vw - 1366px) / (1920 - 1366)));
+                &__active {
+                    font-size: calc(11px + (16 - 11) * ((100vw - 1366px) / (1920 - 1366)));
+                    padding: calc(16px + (22 - 16) * ((100vw - 1366px) / (1920 - 1366))) calc(29px + (40 - 29) * ((100vw - 1366px) / (1920 - 1366)));
+                }
+            }
+        }
+    }*/
     .header {
         &__nav {
             .logo {
@@ -25,4 +59,30 @@
             }
         }
     }
+
+    .container {
+        padding-left: calc(157px + (120 - 157) * ((100vw - 1366px) / (1920 - 1366)));
+        padding-right: calc(157px + (120 - 157) * ((100vw - 1366px) / (1920 - 1366)));
+    }
+
+    .containerForm {
+        padding-left: calc(157px + (120 - 157) * ((100vw - 1366px) / (1920 - 1366)));
+        padding-right: calc(157px + (120 - 157) * ((100vw - 1366px) / (1920 - 1366)));
+    }
+
+    .black-container {
+        margin: 0px auto;
+        background: #111;
+        height: 480px;
+        margin-top: 81px;
+    }
+
+    .font_18 {
+        font-size: calc(13px + (18 - 13) * ((100vw - 1366px) / (1920 - 1366)));
+    }
+
+    .font_24 {
+        font-size: calc(13px + (24 - 13) * ((100vw - 1366px) / (1920 - 1366)));
+    }
+
 }

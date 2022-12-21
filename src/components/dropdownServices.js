@@ -52,8 +52,15 @@ const DropdownServices = ({ isToggle, turnOffMenu, selectedItem, allItems }) => 
 
   if (isToggle) {
     return (
-      <div >
-        New component!!!!!
+      <div className="dropdown_services_sticky">
+        <div className="dropdown_services">
+          <div className="dropdown_services__title"><a>{ result[0].label }</a></div>
+          <div className="dropdown_services__info">
+            <ul>
+              { resultData }
+            </ul>
+          </div>
+        </div>
       </div>
     );
   }

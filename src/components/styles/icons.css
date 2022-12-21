@@ -3,4 +3,32 @@
   background: url(../../images/logo.svg);
   width: 142px;
   height: 46px;
+}
+
+.projects {
+  display: inline-block;
+  background: url(../../images/projects.svg);
+  width: 243px;
+  height: 109px;
+}
+
+.experience {
+  display: inline-block;
+  background: url(../../images/experience.svg);
+  width: 211px;
+  height: 107px;
+}
+
+.specialists {
+  display: inline-block;
+  background: url(../../images/specialists.svg);
+  width: 162px;
+  height: 109px;
+}
+
+.clients {
+  display: inline-block;
+  background: url(../../images/clients.svg);
+  width: 155px;
+  height: 109px;
 }/*# sourceMappingURL=icons.css.map */

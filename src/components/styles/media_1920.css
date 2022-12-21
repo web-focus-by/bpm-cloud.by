@@ -4,6 +4,40 @@
   }
 }
 @media (min-width: 1366px) and (max-width: 1920px) {
+  /*.hero {
+      margin-top: calc(134px + (188 - 134) * ((100vw - 1366px) / (1920 - 1366)));
+
+      &__subtitle {
+          font-size: calc(14px + (20 - 14) * ((100vw - 1366px) / (1920 - 1366)));
+      }
+
+      &__butn {
+          .button_white {
+              font-size: calc(11px + (16 - 11) * ((100vw - 1366px) / (1920 - 1366)));
+              padding: calc(16px + (22 - 16) * ((100vw - 1366px) / (1920 - 1366))) calc(29px + (40 - 29) * ((100vw - 1366px) / (1920 - 1366)));     
+              -webkit-transition: all .3s linear;
+              :hover{
+                  -webkit-transition: all .3s linear;
+                  cursor: pointer;
+              }
+          }
+          :hover { 
+              -webkit-transition: all .3s linear;
+              cursor: pointer;
+          }
+      }
+
+      &__butntag {
+          .button_item_tag {
+              font-size: calc(11px + (16 - 11) * ((100vw - 1366px) / (1920 - 1366)));
+              padding: calc(16px + (22 - 16) * ((100vw - 1366px) / (1920 - 1366))) calc(29px + (40 - 29) * ((100vw - 1366px) / (1920 - 1366)));
+              &__active {
+                  font-size: calc(11px + (16 - 11) * ((100vw - 1366px) / (1920 - 1366)));
+                  padding: calc(16px + (22 - 16) * ((100vw - 1366px) / (1920 - 1366))) calc(29px + (40 - 29) * ((100vw - 1366px) / (1920 - 1366)));
+              }
+          }
+      }
+  }*/
   .header__nav .logo {
     width: calc(100px + 42 * (100vw - 1366px) / 554);
     height: calc(32px + 14 * (100vw - 1366px) / 554);
@@ -12,5 +46,25 @@
   .header__nav .header_nav_list ul li a {
     margin-right: calc(42px + 18 * (100vw - 1366px) / 554);
     font-size: calc(13px + 5 * (100vw - 1366px) / 554);
+  }
+  .container {
+    padding-left: calc(157px + -37 * (100vw - 1366px) / 554);
+    padding-right: calc(157px + -37 * (100vw - 1366px) / 554);
+  }
+  .containerForm {
+    padding-left: calc(157px + -37 * (100vw - 1366px) / 554);
+    padding-right: calc(157px + -37 * (100vw - 1366px) / 554);
+  }
+  .black-container {
+    margin: 0px auto;
+    background: #111;
+    height: 480px;
+    margin-top: 81px;
+  }
+  .font_18 {
+    font-size: calc(13px + 5 * (100vw - 1366px) / 554);
+  }
+  .font_24 {
+    font-size: calc(13px + 11 * (100vw - 1366px) / 554);
   }
 }/*# sourceMappingURL=media_1920.css.map */

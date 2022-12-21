@@ -3,6 +3,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Hero from "../components/hero"
+import AboutCompany from "../components/aboutCompany"
+import Services from "../components/services"
 
 const IndexPage = ({ location }) => {
   const [isShowThankModal, setIsShowThankModal] = React.useState(false);
@@ -56,6 +58,8 @@ const IndexPage = ({ location }) => {
       <Layout>
         <Seo title="Index" />
         <Hero location={ location }></Hero>
+        <AboutCompany />
+        <Services />
       </Layout>
     </>
   )

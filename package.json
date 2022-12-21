@@ -33,7 +33,11 @@
     "graphql": "^16.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-fps-stats": "^0.3.1",
     "react-helmet": "^6.1.0",
-    "sass": "^1.56.2"
+    "react-stats": "^0.0.5",
+    "sass": "^1.56.2",
+    "stats-js": "^1.0.1",
+    "stats.js": "^0.17.0"
   }
 }
