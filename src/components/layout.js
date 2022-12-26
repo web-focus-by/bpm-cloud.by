@@ -3,7 +3,6 @@ import { useState, useEffect, useRef } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
-import DropdownServices from "./DropdownServices"
 import MenuBurger from "../components/menuBurger"
 import Footer from "../components/footer"
 
@@ -114,12 +113,6 @@ const Layout = ({ children }) => {
           justTurnOnMenu={ onlyTurnOnMenu }
           justTurnOffMenu={ closeMenu }
           openCloseMenu={ openCloseMenu }
-        />
-        <DropdownServices
-          isToggle = { isToggle }
-          turnOffMenu={ closeMenu }
-          selectedItem={ selectedItem }
-          allItems={ allItemsForMenu }
         />
         <MenuBurger
           isOpenBurgerMenu = { isOpenBurgerMenu }
