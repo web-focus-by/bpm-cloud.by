@@ -65,7 +65,6 @@ const AboutCompany = ({siteTitle}) => {
       </div>
     )
   })
-  console.log(items);
   return (
     <div className="container" id="aboutCompany">
       <div className="about_company margin_bottom_300">

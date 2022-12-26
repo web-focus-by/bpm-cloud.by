@@ -1,16 +1,25 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { useState, useEffect, useRef } from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Hero from "../components/hero"
 import AboutCompany from "../components/aboutCompany"
 import Services from "../components/services"
+import Purpleform from "../components/purpleform"
+import Scope from "../components/scope"
+import Technologies from "../components/technologies"
+import Portfolios from "../components/portfolios"
+import Contacts from "../components/contacts"
+import Team from "../components/team"
+import Blog from "../components/blog"
+import Discuss from "../components/discuss"
+import Modal from "../components/modal"
+import ThanksModal from "../components/thanksModal"
 
 const IndexPage = ({ location }) => {
-  const [isShowThankModal, setIsShowThankModal] = React.useState(false);
-  const [isShowModal, setIsShowModal] = React.useState(true);
-  const [isShowThankForm, setIsShowThankForm] = React.useState(false);
-  const [isShowForm, setIsShowForm] = React.useState(true);
+  const [isShowThankModal, setIsShowThankModal] = useState(false);
+  const [isOpen, setModalActive] = useState(false);
   const postsAndTags = useStaticQuery(graphql`
     query GetPostQuery {
       allWpPost(filter: {categories: {nodes: {elemMatch: {slug: {eq: "portfolios"}}}}}) {
@@ -39,27 +48,39 @@ const IndexPage = ({ location }) => {
   `);
   const allPosts = postsAndTags ? postsAndTags.allWpPost.edges : [];
 
-  const backPageModal = () => {
-    setIsShowThankForm(false);
-  }
-
   const backPage = () => {
     setIsShowThankModal(false);
-    setIsShowForm(true);
+    setModalActive(false);
   }
-
-  const showThankForm = () => {
-    setIsShowThankForm(true);
-    setIsShowForm(false);
+  const showThankModal = () => {
+    setModalActive(false);
+    setIsShowThankModal(true);
+  }
+  const toggleModalActive = () => {
+    setModalActive(true);
+  }
+  const closeDialog = () =>{
+    setModalActive(false);
+    setIsShowThankModal(false);
   }
 
   return (
     <>
       <Layout>
         <Seo title="Index" />
-        <Hero location={ location }></Hero>
+        { isOpen ? <Modal onClickClose={ closeDialog } showThankForm = { showThankModal }></Modal> : null}
+        { isShowThankModal ? <ThanksModal backPageModal = { backPage }></ThanksModal> : null}
+        <Hero location={ location } contactUs = { toggleModalActive }></Hero>
         <AboutCompany />
         <Services />
+        <Purpleform switchContactDialog = { toggleModalActive }></Purpleform>
+        <Scope />
+        <Portfolios />
+        <Technologies />
+        <Contacts />
+        <Team />
+        <Blog />
+        <Discuss showDialog={ toggleModalActive }/>
       </Layout>
     </>
   )

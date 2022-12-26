@@ -48,7 +48,6 @@ const Rectangle = () => {
       p.y = p.oy = MARGIN + SPACING * Math.floor( i / COLS );
       list[i] = p;
     }
-    console.log(list)
     container.addEventListener( 'mousemove', function(e) {
       let bounds = container.getBoundingClientRect();
       mx = e.clientX - bounds.left;

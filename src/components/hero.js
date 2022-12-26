@@ -12,14 +12,11 @@ import "../components/styles/media_1024.css"
 import "../components/styles/media_768.css"
 import "../components/styles/media_375.css"
 
-const Hero = ({ location }) => {
+const Hero = ({ location, contactUs }) => {
   const titel = "Воплощаем";
   const titel_second = "ваши IT-идеи";
   const subtitle = "BPM Cloud — аутсорсинг и аутстаффинг талантливых IT-специалистов высокого уровня " +
   "для усиления вашего отдела или масштабирования проекта. Быстро предоставим необходимого специалиста или целую команду.";
-  const contactUs = () => {
-    return;
-  }
   return (
     <div className="container" id="hero">
       <Breadcrumbs breadcrumbs={ location } title="Main page"/>

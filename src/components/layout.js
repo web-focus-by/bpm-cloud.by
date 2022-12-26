@@ -5,6 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import DropdownServices from "./DropdownServices"
 import MenuBurger from "../components/menuBurger"
+import Footer from "../components/footer"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -128,6 +129,7 @@ const Layout = ({ children }) => {
         />
       </div>
       { children }
+      <Footer></Footer>
     </>
   )
 }

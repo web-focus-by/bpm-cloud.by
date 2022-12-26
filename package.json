@@ -16,7 +16,10 @@
   },
   "dependencies": {
     "@apollo/client": "^3.7.2",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "@mdx-js/react": "^2.2.1",
+    "@mui/material": "^5.11.1",
     "gatsby": "^5.2.0",
     "gatsby-plugin-google-analytics": "^5.3.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
@@ -36,8 +39,10 @@
     "react-fps-stats": "^0.3.1",
     "react-helmet": "^6.1.0",
     "react-stats": "^0.0.5",
+    "react-tooltip": "^5.3.1",
     "sass": "^1.56.2",
     "stats-js": "^1.0.1",
-    "stats.js": "^0.17.0"
+    "stats.js": "^0.17.0",
+    "swiper": "^8.4.5"
   }
 }
