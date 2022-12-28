@@ -491,4 +491,11 @@
   background: url(../../images/clutch.svg);
   width: 271px;
   height: 56px;
+}
+
+.bigearth {
+  display: inline-block;
+  background: url(../../images/bigearth1920.svg);
+  width: 410px;
+  height: 326px;
 }/*# sourceMappingURL=icons.css.map */

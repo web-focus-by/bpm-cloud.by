@@ -116,7 +116,7 @@ body {
 .black-container {
     background: #111;
     height: 480px;
-    margin-top: 585px;
+    margin-top: 81px;
 }
 
 .containerForm {
@@ -353,6 +353,10 @@ body {
 }
 
 .purple_form {
+    span {
+        margin-left: 75%;
+        margin-top: -100%;
+    }
     background: #AE83E4;
     &__title {
         .purple_form_title {
