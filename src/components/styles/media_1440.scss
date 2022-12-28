@@ -87,7 +87,7 @@
         margin-top: 68px;
         &__title {
             .title {
-                height: 99px;
+                height: 99px !important;
                 font-size: calc(90px + (120 - 90) * ((100vw - 1440px) / (1920 - 1440)));
             }
             .subtitle { 

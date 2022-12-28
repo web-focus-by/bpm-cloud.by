@@ -39,6 +39,12 @@
   .hero__title_second_part .title_second {
     font-size: 64px;
   }
+  .hero__butn {
+    display: flex;
+  }
+  .hero__butn .button_purple {
+    margin-left: 50% !important;
+  }
   .about_company__description {
     margin-bottom: 60px;
     margin-top: 21.43px;

@@ -46,6 +46,12 @@
                 font-size: 64px;
             }
         }
+        &__butn {
+            display: flex;
+            .button_purple {
+                margin-left: 50% !important;
+            }
+        }
     }
 
     .about_company {
