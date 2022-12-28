@@ -6,12 +6,14 @@ import "../components/styles/main.css"
 import "../components/styles/icons.css"
 import "../components/styles/mixins.css"
 import "../components/styles/media_1920.css"
-import "../components/styles/media_1366.css"
+import "../components/styles/media_1440.css"
 import "../components/styles/media_1024.css"
 import "../components/styles/media_768.css"
 import "../components/styles/media_375.css"
 
 const Header = ({ turnOnMenu, mainItems, clickOut, justTurnOnMenu, justTurnOffMenu, openCloseMenu }) => {
+  const hasWindow = typeof window !== 'undefined';
+  const widthScreen = hasWindow ? window.innerWidth : null;
   const refHeader = useRef();
   const refHeaderBurger = useRef();
   const menuItemsRef = useRef([]);

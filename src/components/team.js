@@ -7,12 +7,14 @@ import "../components/styles/icons.css"
 import "../components/styles/modules.css"
 import "../components/styles/mixins.css"
 import "../components/styles/media_1920.css"
-import "../components/styles/media_1366.css"
+import "../components/styles/media_1440.css"
 import "../components/styles/media_1024.css"
 import "../components/styles/media_768.css"
 import "../components/styles/media_375.css"
 
 const Team = () => {
+  const hasWindow = typeof window !== 'undefined';
+  const widthScreen = hasWindow ? window.innerWidth : null;
   const title = "Команда";
   const showAll = "Посмотреть все";
   const desc ="Мы – коллектив единомышленников. Для каждого из нас важно выполнить задачу в"+
@@ -123,7 +125,7 @@ const Team = () => {
     <div className="container" id="team">
       <div className="team margin_bottom_300">
         <div className="team__title">
-          <div className="team_title">{ title }</div>
+          <div className="title_96">{ title }</div>
           <div className="team_show_all">{ showAll }<span className="vector-line"></span>
             <div className="vector" style={{marginBottom: '8px', marginLeft: '-8px'}}></div>
           </div>

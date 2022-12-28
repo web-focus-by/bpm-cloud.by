@@ -6,12 +6,13 @@ import "../../components/styles/icons.css"
 import "../../components/styles/modules.css"
 import "../../components/styles/mixins.css"
 import "../../components/styles/media_1920.css"
-import "../../components/styles/media_1366.css"
+import "../../components/styles/media_1440.css"
 import "../../components/styles/media_1024.css"
 import "../../components/styles/media_768.css"
 import "../../components/styles/media_375.css"
 
 const Rectangle = () => {
+  
   let widthSize, padding;
   const ROWS = 100;
   const COLS = 300;
@@ -29,17 +30,32 @@ const Rectangle = () => {
   };
 
   function init() {
+    let hasWindow = typeof window !== 'undefined';
+    let widthScreen = hasWindow ? window.innerWidth : null;
     padding = window ? window.getComputedStyle(document.getElementById("hero"), null).getPropertyValue('padding-left').slice(0,-2) : null;
     widthSize = document && document.getElementById("hero") ?
     document.getElementById("hero").clientWidth - 2 * padding : null;
-    container = document.getElementById('container');   
+    container = document.getElementById('black-container');   
     canvas = document.createElement('canvas');
     ctx = canvas.getContext( '2d' );
     man = false;
     tog = true;
     list = [];
     w = canvas.width = widthSize ? widthSize : COLS * SPACING + MARGIN * 2;
-    h = canvas.height = ROWS * SPACING + MARGIN * 2;
+    if (widthScreen && widthScreen >= 1920) {
+      h = canvas.height = 480;
+    } else if (widthScreen && widthScreen >= 1440 && widthScreen < 1920) {
+      h = canvas.height = 360;
+    } else if (widthScreen && widthScreen >= 1024 && widthScreen < 1440) {
+      h = canvas.height = 256;
+    } else if (widthScreen && widthScreen >= 768 && widthScreen < 1024) {
+      h = canvas.height = 420;
+    } else if (widthScreen && widthScreen >= 373 && widthScreen < 768) {
+      h = canvas.height = 240;
+    } else if (widthScreen && widthScreen < 373) {
+      h = canvas.height = 220;
+    }
+    
     //container.style.marginLeft = Math.round( w * -0.5 ) + 'px';
     //container.style.marginTop = Math.round( h * -0.5 ) + 'px';
     for ( i = 0; i < NUM_PARTICLES; i++ ) {
@@ -95,7 +111,7 @@ const Rectangle = () => {
   }, [])
 
   return (
-    <div className="black-container margin_bottom_300" id="container"></div>
+    <div className="black-container" id="black-container"></div>
   )
 }
 

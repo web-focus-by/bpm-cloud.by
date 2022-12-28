@@ -3,6 +3,15 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { Swiper, SwiperSlide } from "swiper/react"
 import Moment from 'moment';
+import "../components/styles/main.css"
+import "../components/styles/icons.css"
+import "../components/styles/modules.css"
+import "../components/styles/mixins.css"
+import "../components/styles/media_1920.css"
+import "../components/styles/media_1440.css"
+import "../components/styles/media_1024.css"
+import "../components/styles/media_768.css"
+import "../components/styles/media_375.css"
 import "swiper/css"
 
 const Blog = () => {
@@ -75,7 +84,7 @@ const Blog = () => {
     <div className="container" id="blog">
       <div className="blog margin_bottom_300">
         <div className="blog__title">
-          <div className="blog_title">{ title }</div>
+          <div className="title_96">{ title }</div>
           <div className="blog_show_all">{ showAll }<span className="vector-line"></span>
             <div className="vector" style={{marginBottom: '8px', marginLeft: '-8px'}}></div>
           </div>
@@ -91,8 +100,8 @@ const Blog = () => {
                 width: 1920,
                 allowTouchMove: true,
               },
-              1366: {
-                width: 1366,
+              1440: {
+                width: 1440,
                 allowTouchMove: true,
               },
               1025: {

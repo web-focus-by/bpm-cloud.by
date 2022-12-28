@@ -3,18 +3,18 @@
     display: none;
   }
 }
-@media (min-width: 1366px) and (max-width: 1920px) {
+@media (min-width: 1441px) and (max-width: 1920px) {
   /*.hero {
-      margin-top: calc(134px + (188 - 134) * ((100vw - 1366px) / (1920 - 1366)));
+      margin-top: calc(134px + (188 - 134) * ((100vw - 1440px) / (1920 - 1440)));
 
       &__subtitle {
-          font-size: calc(14px + (20 - 14) * ((100vw - 1366px) / (1920 - 1366)));
+          font-size: calc(14px + (20 - 14) * ((100vw - 1440px) / (1920 - 1440)));
       }
 
       &__butn {
           .button_white {
-              font-size: calc(11px + (16 - 11) * ((100vw - 1366px) / (1920 - 1366)));
-              padding: calc(16px + (22 - 16) * ((100vw - 1366px) / (1920 - 1366))) calc(29px + (40 - 29) * ((100vw - 1366px) / (1920 - 1366)));     
+              font-size: calc(11px + (16 - 11) * ((100vw - 1440px) / (1920 - 1440)));
+              padding: calc(16px + (22 - 16) * ((100vw - 1440px) / (1920 - 1440))) calc(29px + (40 - 29) * ((100vw - 1440px) / (1920 - 1440)));     
               -webkit-transition: all .3s linear;
               :hover{
                   -webkit-transition: all .3s linear;
@@ -29,31 +29,31 @@
 
       &__butntag {
           .button_item_tag {
-              font-size: calc(11px + (16 - 11) * ((100vw - 1366px) / (1920 - 1366)));
-              padding: calc(16px + (22 - 16) * ((100vw - 1366px) / (1920 - 1366))) calc(29px + (40 - 29) * ((100vw - 1366px) / (1920 - 1366)));
+              font-size: calc(11px + (16 - 11) * ((100vw - 1440px) / (1920 - 1440)));
+              padding: calc(16px + (22 - 16) * ((100vw - 1440px) / (1920 - 1440))) calc(29px + (40 - 29) * ((100vw - 1440px) / (1920 - 1440)));
               &__active {
-                  font-size: calc(11px + (16 - 11) * ((100vw - 1366px) / (1920 - 1366)));
-                  padding: calc(16px + (22 - 16) * ((100vw - 1366px) / (1920 - 1366))) calc(29px + (40 - 29) * ((100vw - 1366px) / (1920 - 1366)));
+                  font-size: calc(11px + (16 - 11) * ((100vw - 1440px) / (1920 - 1440)));
+                  padding: calc(16px + (22 - 16) * ((100vw - 1440px) / (1920 - 1440))) calc(29px + (40 - 29) * ((100vw - 1440px) / (1920 - 1440)));
               }
           }
       }
   }*/
   .header__nav .logo {
-    width: calc(100px + 42 * (100vw - 1366px) / 554);
-    height: calc(32px + 14 * (100vw - 1366px) / 554);
+    width: calc(100px + 42 * (100vw - 1440px) / 480);
+    height: calc(32px + 14 * (100vw - 1440px) / 480);
     background-size: cover;
   }
   .header__nav .header_nav_list ul li a {
-    margin-right: calc(42px + 18 * (100vw - 1366px) / 554);
-    font-size: calc(13px + 5 * (100vw - 1366px) / 554);
+    margin-right: calc(42px + 18 * (100vw - 1440px) / 480);
+    font-size: calc(13px + 5 * (100vw - 1440px) / 480);
   }
   .container {
-    padding-left: calc(157px + -37 * (100vw - 1366px) / 554);
-    padding-right: calc(157px + -37 * (100vw - 1366px) / 554);
+    padding-left: calc(157px + -67 * (100vw - 1440px) / 480);
+    padding-right: calc(157px + -67 * (100vw - 1440px) / 480);
   }
   .containerForm {
-    padding-left: calc(157px + -37 * (100vw - 1366px) / 554);
-    padding-right: calc(157px + -37 * (100vw - 1366px) / 554);
+    padding-left: calc(157px + -67 * (100vw - 1440px) / 480);
+    padding-right: calc(157px + -67 * (100vw - 1440px) / 480);
   }
   .black-container {
     margin: 0px auto;
@@ -62,9 +62,72 @@
     margin-top: 81px;
   }
   .font_18 {
-    font-size: calc(13px + 5 * (100vw - 1366px) / 554);
+    font-size: calc(13px + 5 * (100vw - 1440px) / 480);
   }
   .font_24 {
-    font-size: calc(13px + 11 * (100vw - 1366px) / 554);
+    font-size: calc(13px + 11 * (100vw - 1440px) / 480);
+  }
+  .hero {
+    margin-top: 68px;
+  }
+  .hero__title .title {
+    font-size: calc(90px + 30 * (100vw - 1440px) / 480);
+  }
+  .hero__title .subtitle {
+    text-indent: 50px;
+    font-size: calc(12px + 4 * (100vw - 1440px) / 480);
+  }
+  .hero__title_second_part {
+    display: grid;
+    grid-template-columns: 2fr;
+  }
+  .hero__title_second_part .title_second {
+    font-size: calc(90px + 30 * (100vw - 1440px) / 480);
+  }
+}
+@media (min-width: 1440px) and (max-width: 1920px) {
+  .team__table {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 2px;
+  }
+  .team__table .team_table_item {
+    margin-bottom: 40px;
+  }
+  .team__table .team_table_item span {
+    align-content: center;
+  }
+  .team__table .team_table_item a {
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 100%;
+    color: #222222;
+  }
+  .team__table .team_table_item a .custom {
+    border-radius: 50%;
+    border: 1px solid;
+    width: 132px;
+    height: 132px;
+    -webkit-clip-path: circle(100%);
+            clip-path: circle(100%);
+    text-align: center;
+    -webkit-transition: all 0.3s linear;
+  }
+  .team__table .team_table_item a .custom .custom-text {
+    margin-top: 35%;
+  }
+  .team__table .team_table_item a .custom :hover {
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .team__table .team_table_item a :hover {
+    background: #222222;
+    color: #FFFFFF;
+    -webkit-transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .team__table .team_table_item :hover {
+    cursor: pointer;
   }
 }/*# sourceMappingURL=media_1920.css.map */
