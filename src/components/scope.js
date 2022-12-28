@@ -6,12 +6,14 @@ import "../components/styles/icons.css"
 import "../components/styles/modules.css"
 import "../components/styles/mixins.css"
 import "../components/styles/media_1920.css"
-import "../components/styles/media_1366.css"
+import "../components/styles/media_1440.css"
 import "../components/styles/media_1024.css"
 import "../components/styles/media_768.css"
 import "../components/styles/media_375.css"
 
 const Scope = () => {
+  const hasWindow = typeof window !== 'undefined';
+  const widthScreen = hasWindow ? window.innerWidth : null;
   const title = "Сферы";
   const showAll = "Посмотреть все";
   const desc = "Опыт наших сотрудников может успешно использоваться в разных индустриях: FinTech, Gamedev, e-commerce, MedTech"+
@@ -62,19 +64,28 @@ const Scope = () => {
     return [...res, item];
   }, []);
   const itemsRes = items.map((val, ind)=>{
-    return (
-      <div className="scope_table_item" id={ ind } key={ val.key }>
-        <span className={ val.class }></span>
-        <p className="font_24" style={{marginTop: '13px'}}>{ val.description }</p>
-      </div>
-    )
+    if (widthScreen && widthScreen > 768) {
+      return (
+        <div className="scope_table_item" id={ ind } key={ val.key }>
+          <span className={ val.class }></span>
+          <p className="font_24" style={{marginTop: '13px'}}>{ val.description }</p>
+        </div>
+      )
+    } else if (widthScreen && widthScreen <=768 && ind < 4) {
+      return (
+        <div className="scope_table_item" id={ ind } key={ val.key }>
+          <span className={ val.class }></span>
+          <p className="font_24" style={{marginTop: '13px'}}>{ val.description }</p>
+        </div>
+      )
+    }
   })
 
   return (
     <div className="container" id="scope">
       <div className="scope margin_bottom_300">
         <div className="scope__title">
-          <div className="title">{ title }</div>
+          <div className="title_96">{ title }</div>
           <div className="show_all">{ showAll }<span className="vector-line"></span>
           <div className="vector" style={{marginBottom: '8px', marginLeft: '-8px'}}></div>
         </div>

@@ -33,6 +33,256 @@
   height: 109px;
 }
 
+@media (min-width: 980px) and (max-width: 1259px) {
+  .projects {
+    display: inline-block;
+    background: url(../../images/projectsmicro.svg);
+    width: 130px;
+    height: 58px;
+  }
+  .experience {
+    display: inline-block;
+    background: url(../../images/experiencemicro.svg);
+    width: 113px;
+    height: 57px;
+  }
+  .specialists {
+    display: inline-block;
+    background: url(../../images/specialistsmicro.svg);
+    width: 87px;
+    height: 58px;
+  }
+  .clients {
+    display: inline-block;
+    background: url(../../images/clientsmicro.svg);
+    width: 83px;
+    height: 58px;
+  }
+}
+@media (min-width: 1260px) and (max-width: 1640px) {
+  .projects {
+    display: inline-block;
+    background: url(../../images/projectsmini.svg);
+    width: 182px;
+    height: 82px;
+  }
+  .experience {
+    display: inline-block;
+    background: url(../../images/experiencemini.svg);
+    width: 159px;
+    height: 80px;
+  }
+  .specialists {
+    display: inline-block;
+    background: url(../../images/specialistsmini.svg);
+    width: 122px;
+    height: 82px;
+  }
+  .clients {
+    display: inline-block;
+    background: url(../../images/clientsmini.svg);
+    width: 116px;
+    height: 82px;
+  }
+}
+@media (max-width: 1440px) {
+  .portfolio1 {
+    display: inline-block;
+    background: url(../../images/portfolio1.svg);
+    width: 100% !important;
+    height: 360px !important;
+  }
+  .portfolio2 {
+    display: inline-block;
+    background: url(../../images/portfolio2.svg);
+    width: 100% !important;
+    height: 360px !important;
+  }
+  .earth {
+    display: inline-block !important;
+    background: url(../../images/earthmini.svg) !important;
+    width: 133px !important;
+    height: 132px !important;
+  }
+  .photo1 {
+    display: inline-block;
+    background: url(../../images/photo1.png);
+    width: 132px !important;
+    height: 132px !important;
+  }
+  .photo2 {
+    display: inline-block;
+    background: url(../../images/photo2.png);
+    width: 132px !important;
+    height: 132px !important;
+  }
+  .photo3 {
+    display: inline-block;
+    background: url(../../images/photo3.png);
+    width: 132px !important;
+    height: 132px !important;
+  }
+  .photo4 {
+    display: inline-block;
+    background: url(../../images/photo4.png);
+    width: 132px !important;
+    height: 132px !important;
+  }
+  .photo5 {
+    display: inline-block;
+    background: url(../../images/photo5.png);
+    width: 132px !important;
+    height: 132px !important;
+  }
+  .photo6 {
+    display: inline-block;
+    background: url(../../images/photo6.png);
+    width: 132px !important;
+    height: 132px !important;
+  }
+  .photo7 {
+    display: inline-block;
+    background: url(../../images/photo7.png);
+    width: 132px !important;
+    height: 132px !important;
+  }
+  .react {
+    display: inline-block;
+    background: url(../../images/reactmini.svg) !important;
+    width: 63px !important;
+    height: 56px !important;
+  }
+  .php {
+    display: inline-block;
+    background: url(../../images/phpmini.svg) !important;
+    width: 76px !important;
+    height: 57px !important;
+  }
+  .c {
+    display: inline-block;
+    background: url(../../images/cmini.svg) !important;
+    width: 75px !important;
+    height: 57px !important;
+  }
+  .java {
+    display: inline-block;
+    background: url(../../images/javamini.svg) !important;
+    width: 76px !important;
+    height: 57px !important;
+  }
+  .javascript {
+    display: inline-block;
+    background: url(../../images/javascript.svg) !important;
+    width: 75px !important;
+    height: 56px !important;
+  }
+  .vue {
+    display: inline-block;
+    background: url(../../images/vuemini.svg) !important;
+    width: 75px !important;
+    height: 56px !important;
+  }
+  .kotlin {
+    display: inline-block;
+    background: url(../../images/kotlinmini.svg) !important;
+    width: 75px !important;
+    height: 56px !important;
+  }
+  .swift {
+    display: inline-block;
+    background: url(../../images/swiftmini.svg) !important;
+    width: 75px !important;
+    height: 56px !important;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .photo1 {
+    display: inline-block;
+    background: url(../../images/photo1.png);
+    width: 132px !important;
+    height: 132px !important;
+  }
+  .photo2 {
+    display: inline-block;
+    background: url(../../images/photo2.png);
+    width: 132px !important;
+    height: 132px !important;
+  }
+  .photo3 {
+    display: inline-block;
+    background: url(../../images/photo3.png);
+    width: 132px !important;
+    height: 132px !important;
+  }
+  .photo4 {
+    display: inline-block;
+    background: url(../../images/photo4.png);
+    width: 132px !important;
+    height: 132px !important;
+  }
+  .photo5 {
+    display: inline-block;
+    background: url(../../images/photo5.png);
+    width: 132px !important;
+    height: 132px !important;
+  }
+  .photo6 {
+    display: inline-block;
+    background: url(../../images/photo6.png);
+    width: 132px !important;
+    height: 132px !important;
+  }
+  .photo7 {
+    display: inline-block;
+    background: url(../../images/photo7.png);
+    width: 132px !important;
+    height: 132px !important;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .photo1 {
+    display: inline-block;
+    background: url(../../images/photo1.png);
+    width: 94px !important;
+    height: 94px !important;
+  }
+  .photo2 {
+    display: inline-block;
+    background: url(../../images/photo2.png);
+    width: 94px !important;
+    height: 94px !important;
+  }
+  .photo3 {
+    display: inline-block;
+    background: url(../../images/photo3.png);
+    width: 94px !important;
+    height: 94px !important;
+  }
+  .photo4 {
+    display: inline-block;
+    background: url(../../images/photo4.png);
+    width: 94px !important;
+    height: 94px !important;
+  }
+  .photo5 {
+    display: inline-block;
+    background: url(../../images/photo5.png);
+    width: 94px !important;
+    height: 94px !important;
+  }
+  .photo6 {
+    display: inline-block;
+    background: url(../../images/photo6.png);
+    width: 94px !important;
+    height: 94px !important;
+  }
+  .photo7 {
+    display: inline-block;
+    background: url(../../images/photo7.png);
+    width: 94px !important;
+    height: 94px !important;
+  }
+}
 .vector {
   display: inline-block;
   background: url(../../images/vector.svg);

@@ -4,18 +4,18 @@
     }
 }
 
-@media (min-width: 1366px) and (max-width: 1920px) {
+@media (min-width: 1441px) and (max-width: 1920px) {
     /*.hero {
-        margin-top: calc(134px + (188 - 134) * ((100vw - 1366px) / (1920 - 1366)));
+        margin-top: calc(134px + (188 - 134) * ((100vw - 1440px) / (1920 - 1440)));
 
         &__subtitle {
-            font-size: calc(14px + (20 - 14) * ((100vw - 1366px) / (1920 - 1366)));
+            font-size: calc(14px + (20 - 14) * ((100vw - 1440px) / (1920 - 1440)));
         }
 
         &__butn {
             .button_white {
-                font-size: calc(11px + (16 - 11) * ((100vw - 1366px) / (1920 - 1366)));
-                padding: calc(16px + (22 - 16) * ((100vw - 1366px) / (1920 - 1366))) calc(29px + (40 - 29) * ((100vw - 1366px) / (1920 - 1366)));     
+                font-size: calc(11px + (16 - 11) * ((100vw - 1440px) / (1920 - 1440)));
+                padding: calc(16px + (22 - 16) * ((100vw - 1440px) / (1920 - 1440))) calc(29px + (40 - 29) * ((100vw - 1440px) / (1920 - 1440)));     
                 -webkit-transition: all .3s linear;
                 :hover{
                     -webkit-transition: all .3s linear;
@@ -30,11 +30,11 @@
 
         &__butntag {
             .button_item_tag {
-                font-size: calc(11px + (16 - 11) * ((100vw - 1366px) / (1920 - 1366)));
-                padding: calc(16px + (22 - 16) * ((100vw - 1366px) / (1920 - 1366))) calc(29px + (40 - 29) * ((100vw - 1366px) / (1920 - 1366)));
+                font-size: calc(11px + (16 - 11) * ((100vw - 1440px) / (1920 - 1440)));
+                padding: calc(16px + (22 - 16) * ((100vw - 1440px) / (1920 - 1440))) calc(29px + (40 - 29) * ((100vw - 1440px) / (1920 - 1440)));
                 &__active {
-                    font-size: calc(11px + (16 - 11) * ((100vw - 1366px) / (1920 - 1366)));
-                    padding: calc(16px + (22 - 16) * ((100vw - 1366px) / (1920 - 1366))) calc(29px + (40 - 29) * ((100vw - 1366px) / (1920 - 1366)));
+                    font-size: calc(11px + (16 - 11) * ((100vw - 1440px) / (1920 - 1440)));
+                    padding: calc(16px + (22 - 16) * ((100vw - 1440px) / (1920 - 1440))) calc(29px + (40 - 29) * ((100vw - 1440px) / (1920 - 1440)));
                 }
             }
         }
@@ -42,8 +42,8 @@
     .header {
         &__nav {
             .logo {
-                width: calc(100px + (142 - 100) * ((100vw - 1366px) / (1920 - 1366)));
-                height: calc(32px + (46 - 32) * ((100vw - 1366px) / (1920 - 1366)));
+                width: calc(100px + (142 - 100) * ((100vw - 1440px) / (1920 - 1440)));
+                height: calc(32px + (46 - 32) * ((100vw - 1440px) / (1920 - 1440)));
                 background-size: cover;
             }
 
@@ -51,8 +51,8 @@
                 ul {
                     li {
                         a {
-                            margin-right: calc(42px + (60 - 42) * ((100vw - 1366px) / (1920 - 1366)));
-                            font-size: calc(13px + (18 - 13) * ((100vw - 1366px) / (1920 - 1366)));
+                            margin-right: calc(42px + (60 - 42) * ((100vw - 1440px) / (1920 - 1440)));
+                            font-size: calc(13px + (18 - 13) * ((100vw - 1440px) / (1920 - 1440)));
                         }
                     }
                 }
@@ -61,13 +61,13 @@
     }
 
     .container {
-        padding-left: calc(157px + (120 - 157) * ((100vw - 1366px) / (1920 - 1366)));
-        padding-right: calc(157px + (120 - 157) * ((100vw - 1366px) / (1920 - 1366)));
+        padding-left: calc(157px + (90 - 157) * ((100vw - 1440px) / (1920 - 1440)));
+        padding-right: calc(157px + (90 - 157) * ((100vw - 1440px) / (1920 - 1440)));
     }
 
     .containerForm {
-        padding-left: calc(157px + (120 - 157) * ((100vw - 1366px) / (1920 - 1366)));
-        padding-right: calc(157px + (120 - 157) * ((100vw - 1366px) / (1920 - 1366)));
+        padding-left: calc(157px + (90 - 157) * ((100vw - 1440px) / (1920 - 1440)));
+        padding-right: calc(157px + (90 - 157) * ((100vw - 1440px) / (1920 - 1440)));
     }
 
     .black-container {
@@ -78,11 +78,80 @@
     }
 
     .font_18 {
-        font-size: calc(13px + (18 - 13) * ((100vw - 1366px) / (1920 - 1366)));
+        font-size: calc(13px + (18 - 13) * ((100vw - 1440px) / (1920 - 1440)));
     }
 
     .font_24 {
-        font-size: calc(13px + (24 - 13) * ((100vw - 1366px) / (1920 - 1366)));
+        font-size: calc(13px + (24 - 13) * ((100vw - 1440px) / (1920 - 1440)));
+    }
+
+    .hero {
+        margin-top: 68px;
+        &__title {
+            .title {
+                font-size: calc(90px + (120 - 90) * ((100vw - 1440px) / (1920 - 1440)));
+            }
+            .subtitle {
+                text-indent: 50px;
+                font-size: calc(12px + (16 - 12) * ((100vw - 1440px) / (1920 - 1440)));
+            }
+        }
+        &__title_second_part {
+            display: grid;
+            grid-template-columns: 2fr;
+            .title_second {
+                font-size: calc(90px + (120 - 90) * ((100vw - 1440px) / (1920 - 1440)));
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+    .team {
+        &__table {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-column-gap: 2px;
+            .team_table_item {
+                margin-bottom: 40px;
+                span {
+                    align-content: center;
+                }
+                a {
+                    font-weight: 500;
+                    font-size: 46px;
+                    line-height: 100%;
+                    color: #222222;
+                    .custom {
+                        border-radius: 50%;
+                        border: 1px solid;
+                        width: 132px;
+                        height: 132px;
+                        clip-path: circle(100%);
+                        text-align: center;
+                        -webkit-transition: all .3s linear;
+                        .custom-text {
+                            margin-top: 35%;
+                        }
+                        :hover {
+                            border-radius: 50%;
+                            cursor: pointer;
+                        }
+                    }
+                    :hover {
+                        background: #222222;     
+                        color:#FFFFFF;
+                        -webkit-transition: all .3s linear;
+                        cursor: pointer;
+                    }
+                }
+                :hover {
+                    cursor: pointer;
+                }
+            }
+        }
     }
 
 }

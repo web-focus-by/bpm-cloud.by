@@ -6,12 +6,14 @@ import "../components/styles/icons.css"
 import "../components/styles/modules.css"
 import "../components/styles/mixins.css"
 import "../components/styles/media_1920.css"
-import "../components/styles/media_1366.css"
+import "../components/styles/media_1440.css"
 import "../components/styles/media_1024.css"
 import "../components/styles/media_768.css"
 import "../components/styles/media_375.css"
 
 const Services = () => {
+  const hasWindow = typeof window !== 'undefined';
+  const widthScreen = hasWindow ? window.innerWidth : null;
   const dataText = [
     { link: "/services/outsourcing/outsourcing-backend-developers/", name: "Back-End Разработка" },
     { link: "/services/outsourcing/outsourcing-frontend-developers/", name: "Front-End Разработка" },
