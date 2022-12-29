@@ -1,6 +1,8 @@
 import * as React from "react"
 import PropTypes from "prop-types"
+import { useEffect, useState } from "react"
 import { Link } from "gatsby"
+import useWindowSize from "../utils/useWindowSize"
 import "../components/styles/main.css"
 import "../components/styles/icons.css"
 import "../components/styles/modules.css"
@@ -12,10 +14,10 @@ import "../components/styles/media_768.css"
 import "../components/styles/media_375.css"
 
 const Portfolios = () => {
-  const hasWindow = typeof window !== 'undefined';
-  const widthScreen = hasWindow ? window.innerWidth : null;
+  const [width, height] = useWindowSize();
   const title = "Проекты";
   const showAll = "Посмотреть все";
+  const shortDiscription = "Digital-агентство «BPM Cloud» – это комплексный подход к интернет-маркетингу. Под знаменем компании собрались специалисты."
   const data = [
     {
       id: 1,
@@ -46,31 +48,33 @@ const Portfolios = () => {
       class: 'portfolio2',
     }
   ];
+
   const result = data.map((value, index) => {
     if (index < 2) {
-      if (widthScreen && widthScreen > 768) {
-        return (
-          <Link className="portfolios_description" to={value.link} id={ value.id } key={ value.id }>
-            <div className="portfolios_text">
-              <div className="portfolios_description_title">{ value.name }</div>
-              <div className="portfolios_description_context">{ value.description }</div>
-            </div>
-            <div className="portfolios_description_img"><div className={value.class}></div></div>
-          </Link>
-        )
-      } else {
-        return (
-          <Link className="portfolios_description" to={value.link} id={ value.id } key={ value.id }>
-            <div className="portfolios_description_img"><div className={value.class}></div></div>
-            <div className="portfolios_text">
-              <div className="portfolios_description_title">{ value.name }</div>
-              <div className="portfolios_description_context">{ value.description }</div>
-            </div>
-          </Link>
-        )
-      }      
+      return (
+        <Link className="portfolios_description" to={value.link} id={ value.id } key={ value.id }>
+          <div className="portfolios_description_title">{ value.name }
+            <p>{ value.description }</p>
+          </div>
+          <div className="portfolios_description_img"><div className={value.class}></div></div>
+        </Link>
+      )
+    }
+  });
+
+  const resultMini = data.map((value, index) => {
+    if (index < 2) {
+      return (
+        <Link className="portfolios_description" to={value.link} id={ value.id } key={ value.id }>
+          <div className="portfolios_description_img"><div className={value.class}></div></div>
+          <div className="portfolios_description_title">{ value.name }
+            <p>{ value.description }</p>
+          </div>
+        </Link>
+      )
     }
   })
+
   return (
     <div className="container" id="portfolios">
       <div className="portfolios margin_bottom_300">
@@ -80,8 +84,11 @@ const Portfolios = () => {
             <div className="vector" style={{marginBottom: '8px', marginLeft: '-8px'}}></div>
           </div>
         </div>
+        <div className="portfolios__short_disciption">
+          <div className="short_disciption">{ shortDiscription }</div>
+        </div>
         <div className="portfolios__description">
-          { result }
+          { width > 768 ? result : resultMini }
         </div>
       </div>
     </div>

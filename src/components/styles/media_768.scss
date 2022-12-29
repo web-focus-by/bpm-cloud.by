@@ -30,6 +30,53 @@
             }
         }
     }
+
+    .purple_form {
+        span {
+            margin-left: calc(119px + (180 - 119) * ((100vw - 373px) / (768 - 373)));
+            margin-top: -100%;
+        }
+        background: #AE83E4;
+        &__title {
+            .purple_form_title {
+                font-size: 56px;
+                padding-left: 64px;
+                padding-top: 80px;
+                padding-bottom: 49px;
+            }
+        }
+        &__description {
+            margin-left: 118px;
+            padding-bottom: 28px;
+            width: 80%; 
+            .purple_form_description{
+                font-size: 16px;
+                margin-right: 61px;
+            }
+        }
+        &__button {
+            margin-left: calc(10px + (354 - 10) * ((100vw - 373px) / (768 - 373)));
+            padding-bottom: calc(58px + (186 - 58) * ((100vw - 373px) / (768 - 373))); 
+            margin-left: 50%;
+            padding-bottom: 0px;
+            padding-bottom: 186px;
+            .white-button {
+                display: flex;
+                width: 132px;
+                font-size: 18px;
+                padding: 32px 64px 32px;
+                gap: 10px;
+            }
+        }
+    }
+
+    .container {
+        padding-left: calc(16px + (40 - 16) * ((100vw - 373px) / (768 - 373)));
+        padding-right: calc(16px + (40 - 16) * ((100vw - 373px) / (768 - 373)));
+    }
+    .containerForm {
+        padding-left: calc(16px + (40 - 16) * ((100vw - 373px) / (768 - 373)));
+    }
 }
 
 @media (max-width: 768px) {
@@ -44,20 +91,10 @@
         font-size: 18px;
     }
 
-    .container {
-        margin: 0px auto;
-        padding: 0px 40px;
-    }
-
     .black-container {
         background: #111;
         height: 240px;
         margin-top: 64px;
-    }
-    
-    .containerForm {
-        margin: 0px auto;
-        padding: 0px 40px;
     }
 
     .title_96 {
@@ -155,39 +192,6 @@
         }
     }
 
-    .purple_form {
-        background: #AE83E4;
-        &__title {
-            .purple_form_title {
-                font-size: 56px;
-                padding-left: 64px;
-                padding-top: 80px;
-                padding-bottom: 49px;
-            }
-        }
-        &__description {
-            margin-left: 118px;
-            padding-bottom: 28px;
-            width: 80%; 
-            .purple_form_description{
-                font-size: 16px;
-            }
-        }
-        &__button {
-            margin-left: 50%;
-            padding-bottom: 0px;
-            padding-bottom: 186px;
-            .white-button {
-                display: flex;
-                
-                width: 132px;
-                font-size: 18px;
-                padding: 32px 64px 32px;
-                gap: 10px;
-            }
-        }
-    }
-
     .portfolios {
         &__title {
             display:flex;
@@ -199,6 +203,9 @@
                     margin-left: 21px;
                 }
             }
+        }
+        &__short_disciption {
+           display: none;
         }
         &__description {
             display: flex;
@@ -213,18 +220,12 @@
                 column-gap: 0%;
                 width: 100%;        
                 margin-bottom: 40px;
-                .portfolios_text {
+                .portfolios_description_title {
+                    margin-top: 29px;
                     width: 100%;
-                    display: flex;
-                    flex-wrap: wrap;
-                    align-items: flex-end;
-                    color: #222222;
-                    .portfolios_description_title {
-                        width: 100%;
-                        font-size: 32px;
-                        margin-top: 16px;
-                    }
-                    .portfolios_description_context {
+                    font-size: 32px;
+                    margin-top: 16px;
+                    p {
                         display: flex;
                         width: 100%;
                         margin-top: 16px;

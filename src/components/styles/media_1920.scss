@@ -5,6 +5,16 @@
 }
 
 @media (min-width: 1441px) and (max-width: 1920px) {
+
+    .contacts {
+        &__map {
+            width: 42%;
+            span{
+                margin-top: calc(-66px + (-88 + 66 ) * ((100vw - 1440px) / (1920 - 1440)));
+                margin-left: calc(332.25px + (443 - 332.25) * ((100vw - 1440px) / (1920 - 1440)));
+            }
+        }
+    }
     /*.hero {
         margin-top: calc(134px + (188 - 134) * ((100vw - 1440px) / (1920 - 1440)));
 
@@ -61,13 +71,13 @@
     }
 
     .container {
-        padding-left: calc(157px + (90 - 157) * ((100vw - 1440px) / (1920 - 1440)));
-        padding-right: calc(157px + (90 - 157) * ((100vw - 1440px) / (1920 - 1440)));
+        padding-left: calc(90px + (120 - 90) * ((100vw - 1440px) / (1920 - 1440)));
+        padding-right: calc(90px + (120 - 90) * ((100vw - 1440px) / (1920 - 1440)));
     }
 
     .containerForm {
-        padding-left: calc(157px + (90 - 157) * ((100vw - 1440px) / (1920 - 1440)));
-        padding-right: calc(157px + (90 - 157) * ((100vw - 1440px) / (1920 - 1440)));
+        padding-left: calc(90px + (120 - 90) * ((100vw - 1440px) / (1920 - 1440)));
+        padding-right: calc(90px + (120 - 90) * ((100vw - 1440px) / (1920 - 1440)));
     }
 
     .black-container {
@@ -108,6 +118,16 @@
 }
 
 @media (min-width: 1440px) and (max-width: 1920px) {
+    .purple_form {
+        span {
+            margin-left: calc(913.5px + (1218 - 913.5) * ((100vw - 1440px) / (1920 - 1440)));
+            margin-top: -100%;
+        }
+        &__button {
+            margin-left: calc(636px + (850 - 636) * ((100vw - 1440px) / (1920 - 1440)));
+            padding-bottom: calc(90.25px + (121 - 90.25) * ((100vw - 1440px) / (1920 - 1440)));
+        }
+    }
     .team {
         &__table {
             width: 100%;

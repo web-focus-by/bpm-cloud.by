@@ -354,7 +354,7 @@ body {
 
 .purple_form {
     span {
-        margin-left: 75%;
+        margin-left: 1218px;
         margin-top: -100%;
     }
     background: #AE83E4;
@@ -527,6 +527,18 @@ body {
             }
         }
     }
+    &__short_disciption {
+        width: 48%;
+        display:flex;
+        justify-content: space-between;
+        margin-top: 24px;
+        .short_disciption {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: #222222;
+        }
+    }
     &__description {
         display: flex;
         justify-content: space-between;
@@ -535,28 +547,23 @@ body {
         width: 100%;
         .portfolios_description {  
             display: flex;
+            align-items: flex-end;
+            color: #222222;
             justify-content: space-between;
             column-gap: 4%;
             width: 100%;        
             margin-bottom: 25px;
             text-decoration: none;
-            .portfolios_text {
+            .portfolios_description_title {
                 width: 48%;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: flex-end;
-                color: #222222;
-                .portfolios_description_title {
-                    font-weight: 500;
-                    font-size: 24px;
-                    line-height: 110%;
-                }
-                .portfolios_description_context {
-                    display: none;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 110%;
+                p {
                     margin-top: 18px;
                     font-weight: 400;
                     font-size: 14px;
-                    line-height: 150%;                    
+                    line-height: 150%;
                 }
             }
             .portfolios_description_img {
@@ -576,8 +583,8 @@ body {
     &__map {
         width: 42%;
         span{
-            margin-top: -15%;
-            margin-left: 60%;
+            margin-top: -88px;
+            margin-left: 443px;
         }
     }
     &__context {

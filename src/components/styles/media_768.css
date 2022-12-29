@@ -24,6 +24,49 @@
   .hero__butn .button_purple {
     margin-left: 50% !important;
   }
+  .purple_form {
+    background: #AE83E4;
+  }
+  .purple_form span {
+    margin-left: calc(119px + 61 * (100vw - 373px) / 395);
+    margin-top: -100%;
+  }
+  .purple_form__title .purple_form_title {
+    font-size: 56px;
+    padding-left: 64px;
+    padding-top: 80px;
+    padding-bottom: 49px;
+  }
+  .purple_form__description {
+    margin-left: 118px;
+    padding-bottom: 28px;
+    width: 80%;
+  }
+  .purple_form__description .purple_form_description {
+    font-size: 16px;
+    margin-right: 61px;
+  }
+  .purple_form__button {
+    margin-left: calc(10px + 344 * (100vw - 373px) / 395);
+    padding-bottom: calc(58px + 128 * (100vw - 373px) / 395);
+    margin-left: 50%;
+    padding-bottom: 0px;
+    padding-bottom: 186px;
+  }
+  .purple_form__button .white-button {
+    display: flex;
+    width: 132px;
+    font-size: 18px;
+    padding: 32px 64px 32px;
+    gap: 10px;
+  }
+  .container {
+    padding-left: calc(16px + 24 * (100vw - 373px) / 395);
+    padding-right: calc(16px + 24 * (100vw - 373px) / 395);
+  }
+  .containerForm {
+    padding-left: calc(16px + 24 * (100vw - 373px) / 395);
+  }
 }
 @media (max-width: 768px) {
   .margin_bottom_300 {
@@ -35,18 +78,10 @@
   .font_24 {
     font-size: 18px;
   }
-  .container {
-    margin: 0px auto;
-    padding: 0px 40px;
-  }
   .black-container {
     background: #111;
     height: 240px;
     margin-top: 64px;
-  }
-  .containerForm {
-    margin: 0px auto;
-    padding: 0px 40px;
   }
   .title_96 {
     font-size: 72px;
@@ -134,35 +169,6 @@
     -webkit-transition: all 0.3s linear;
     cursor: pointer;
   }
-  .purple_form {
-    background: #AE83E4;
-  }
-  .purple_form__title .purple_form_title {
-    font-size: 56px;
-    padding-left: 64px;
-    padding-top: 80px;
-    padding-bottom: 49px;
-  }
-  .purple_form__description {
-    margin-left: 118px;
-    padding-bottom: 28px;
-    width: 80%;
-  }
-  .purple_form__description .purple_form_description {
-    font-size: 16px;
-  }
-  .purple_form__button {
-    margin-left: 50%;
-    padding-bottom: 0px;
-    padding-bottom: 186px;
-  }
-  .purple_form__button .white-button {
-    display: flex;
-    width: 132px;
-    font-size: 18px;
-    padding: 32px 64px 32px;
-    gap: 10px;
-  }
   .portfolios__title {
     display: flex;
     justify-content: space-between;
@@ -173,6 +179,9 @@
   }
   .portfolios__title .portfolios_show_all span {
     margin-left: 21px;
+  }
+  .portfolios__short_disciption {
+    display: none;
   }
   .portfolios__description {
     display: flex;
@@ -190,19 +199,13 @@
     width: 100%;
     margin-bottom: 40px;
   }
-  .portfolios__description .portfolios_description .portfolios_text {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    color: #222222;
-  }
-  .portfolios__description .portfolios_description .portfolios_text .portfolios_description_title {
+  .portfolios__description .portfolios_description .portfolios_description_title {
+    margin-top: 29px;
     width: 100%;
     font-size: 32px;
     margin-top: 16px;
   }
-  .portfolios__description .portfolios_description .portfolios_text .portfolios_description_context {
+  .portfolios__description .portfolios_description .portfolios_description_title p {
     display: flex;
     width: 100%;
     margin-top: 16px;

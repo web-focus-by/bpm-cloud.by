@@ -1,5 +1,6 @@
 import * as React from "react";
 import PropTypes from "prop-types"
+import useWindowSize from "../utils/useWindowSize"
 import { Link } from "gatsby"
 import "../components/styles/main.css"
 import "../components/styles/icons.css"
@@ -12,8 +13,7 @@ import "../components/styles/media_768.css"
 import "../components/styles/media_375.css"
 
 const Services = () => {
-  const hasWindow = typeof window !== 'undefined';
-  const widthScreen = hasWindow ? window.innerWidth : null;
+  const [width, height] = useWindowSize();
   const dataText = [
     { link: "/services/outsourcing/outsourcing-backend-developers/", name: "Back-End Разработка" },
     { link: "/services/outsourcing/outsourcing-frontend-developers/", name: "Front-End Разработка" },

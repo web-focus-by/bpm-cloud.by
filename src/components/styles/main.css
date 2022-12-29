@@ -342,7 +342,7 @@ body {
   background: #AE83E4;
 }
 .purple_form span {
-  margin-left: 75%;
+  margin-left: 1218px;
   margin-top: -100%;
 }
 .purple_form__title .purple_form_title {
@@ -506,6 +506,18 @@ body {
   text-decoration: underline;
   -webkit-transition: all 0.3s linear;
 }
+.portfolios__short_disciption {
+  width: 48%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.portfolios__short_disciption .short_disciption {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #222222;
+}
 .portfolios__description {
   display: flex;
   justify-content: space-between;
@@ -515,6 +527,8 @@ body {
 }
 .portfolios__description .portfolios_description {
   display: flex;
+  align-items: flex-end;
+  color: #222222;
   justify-content: space-between;
   -moz-column-gap: 4%;
        column-gap: 4%;
@@ -522,20 +536,13 @@ body {
   margin-bottom: 25px;
   text-decoration: none;
 }
-.portfolios__description .portfolios_description .portfolios_text {
+.portfolios__description .portfolios_description .portfolios_description_title {
   width: 48%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  color: #222222;
-}
-.portfolios__description .portfolios_description .portfolios_text .portfolios_description_title {
   font-weight: 500;
   font-size: 24px;
   line-height: 110%;
 }
-.portfolios__description .portfolios_description .portfolios_text .portfolios_description_context {
-  display: none;
+.portfolios__description .portfolios_description .portfolios_description_title p {
   margin-top: 18px;
   font-weight: 400;
   font-size: 14px;
@@ -557,8 +564,8 @@ body {
   width: 42%;
 }
 .contacts__map span {
-  margin-top: -15%;
-  margin-left: 60%;
+  margin-top: -88px;
+  margin-left: 443px;
 }
 .contacts__context {
   width: 50%;

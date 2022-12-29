@@ -33,6 +33,30 @@
   height: 109px;
 }
 
+@media (min-width: 140px) and (max-width: 639px) {
+  .bigearth {
+    display: inline-block;
+    background: url(../../images/bigearth373.svg) !important;
+    width: 224px !important;
+    height: 187px !important;
+  }
+}
+@media (min-width: 640px) and (max-width: 767px) {
+  .bigearth {
+    display: inline-block;
+    background: url(../../images/bigearth768.svg) !important;
+    width: 410px !important;
+    height: 184px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .bigearth {
+    display: inline-block;
+    background: url(../../images/bigearth768.svg) !important;
+    width: 410px !important;
+    height: 184px !important;
+  }
+}
 @media (min-width: 980px) and (max-width: 1259px) {
   .projects {
     display: inline-block;
@@ -85,6 +109,38 @@
     height: 82px;
   }
 }
+@media (max-width: 373) {
+  .earth {
+    display: inline-block;
+    background: url(../../images/earth373.svg) !important;
+    width: 120px !important;
+    height: 120px !important;
+  }
+}
+@media (min-width: 374) and (max-width: 768px) {
+  .earth {
+    display: inline-block;
+    background: url(../../images/earth768.svg) !important;
+    width: 176px !important;
+    height: 176px !important;
+  }
+}
+@media (min-width: 769) and (max-width: 1024px) {
+  .earth {
+    display: inline-block;
+    background: url(../../images/earth1024.svg) !important;
+    width: 95px !important;
+    height: 95px !important;
+  }
+}
+@media (min-width: 1025) and (max-width: 1440px) {
+  .earth {
+    display: inline-block;
+    background: url(../../images/earthmini.svg) !important;
+    width: 132px !important;
+    height: 132px !important;
+  }
+}
 @media (max-width: 1440px) {
   .portfolio1 {
     display: inline-block;
@@ -99,9 +155,9 @@
     height: 360px !important;
   }
   .earth {
-    display: inline-block !important;
+    display: inline-block;
     background: url(../../images/earthmini.svg) !important;
-    width: 133px !important;
+    width: 132px !important;
     height: 132px !important;
   }
   .photo1 {
@@ -196,6 +252,12 @@
   }
 }
 @media (min-width: 1440px) and (max-width: 1919px) {
+  .bigearth {
+    display: inline-block;
+    background: url(../../images/bigearth1440.svg) !important;
+    width: 308px !important;
+    height: 246px !important;
+  }
   .photo1 {
     display: inline-block;
     background: url(../../images/photo1.png);
@@ -237,6 +299,14 @@
     background: url(../../images/photo7.png);
     width: 132px !important;
     height: 132px !important;
+  }
+}
+@media (min-width: 830px) and (max-width: 1439px) {
+  .bigearth {
+    display: inline-block;
+    background: url(../../images/bigearth1024.svg) !important;
+    width: 220px !important;
+    height: 175px !important;
   }
 }
 @media (min-width: 1024px) and (max-width: 1439px) {

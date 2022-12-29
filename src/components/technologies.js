@@ -1,6 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import useWindowSize from "../utils/useWindowSize"
 import "../components/styles/main.css"
 import "../components/styles/icons.css"
 import "../components/styles/modules.css"
@@ -12,6 +13,7 @@ import "../components/styles/media_768.css"
 import "../components/styles/media_375.css"
 
 const Technologies = () => {
+  const [width, height] = useWindowSize();
   const hasWindow = typeof window !== 'undefined';
   const widthScreen = hasWindow ? window.innerWidth : null;
   const title = "технологии";
@@ -64,22 +66,22 @@ const Technologies = () => {
     return [...res, item];
   }, []);
   const itemsRes = items.map((val, ind)=>{
-    if (widthScreen && widthScreen > 768) {
+    return (
+      <div className="scope_table_item" id={ ind } key={ val.key }>
+        <span className={ val.class } style={{marginTop: '46px'}}></span>
+        <p className="font_24" style={{marginTop: '13px'}}>{ val.description }</p>
+      </div>
+    )
+  })
+
+  const itemsResMini = items.map((val, ind)=>{
+    if (ind < 4) {
       return (
         <div className="scope_table_item" id={ ind } key={ val.key }>
           <span className={ val.class } style={{marginTop: '46px'}}></span>
           <p className="font_24" style={{marginTop: '13px'}}>{ val.description }</p>
         </div>
       )
-    } else {
-      if (ind < 4) {
-        return (
-          <div className="scope_table_item" id={ ind } key={ val.key }>
-            <span className={ val.class } style={{marginTop: '46px'}}></span>
-            <p className="font_24" style={{marginTop: '13px'}}>{ val.description }</p>
-          </div>
-        )
-      }
     }
   })
 
@@ -98,7 +100,7 @@ const Technologies = () => {
           </div>
         </div>
         <div className="scope__table">
-          { itemsRes }
+          { width > 768 ? itemsRes : itemsResMini }
         </div>
       </div>
     </div>
