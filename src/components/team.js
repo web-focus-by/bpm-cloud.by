@@ -2,6 +2,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { Tooltip } from '@mui/material'
+import useWindowSize from "../utils/useWindowSize"
 import "../components/styles/main.css"
 import "../components/styles/icons.css"
 import "../components/styles/modules.css"
@@ -13,6 +14,7 @@ import "../components/styles/media_768.css"
 import "../components/styles/media_375.css"
 
 const Team = () => {
+  const [width, height] = useWindowSize();
   const hasWindow = typeof window !== 'undefined';
   const widthScreen = hasWindow ? window.innerWidth : null;
   const title = "Команда";

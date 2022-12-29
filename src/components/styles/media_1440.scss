@@ -6,15 +6,6 @@
         margin-top: 61px;
     }
 
-    .containerForm {
-        margin: 0px auto;
-        padding: 0px 90px;
-    }
-    .container {
-        margin: 0px auto;
-        padding: 0px 90px;
-    }
-
     .header {
         &__nav {
             .logo {
@@ -83,6 +74,17 @@
         font-size: calc(18px + (24 - 18) * ((100vw - 1440px) / (1920 - 1440)));
     }
 
+    .portfolios {
+        &__title {
+            .portfolios_show_all {
+                font-size: 13.5px;
+                span {
+                    margin-left: 11.09px;
+                }
+            }
+        }
+    }
+
     .hero {
         margin-top: 68px;
         &__title {
@@ -129,6 +131,10 @@
     }
 
     .purple_form {
+        span {
+            margin-left: calc(649.6px + (913.5 - 649.6) * ((100vw - 1024px) / (1440 - 1024)));
+            margin-top: -100%;
+        }
         &__title {
             .purple_form_title {
                 font-size: 48px;
@@ -147,8 +153,8 @@
             }
         }
         &__button {
-            margin-left: 50%;
-            padding-bottom: 90.25px;
+            margin-left: calc(452.27px + (636 - 452.27) * ((100vw - 1024px) / (1440 - 1024)));
+            padding-bottom: calc(64.13px + (90.25 - 64.13) * ((100vw - 1024px) / (1440 - 1024)));
             .white-button {
                 display: flex;
                 width: 174px;
@@ -202,8 +208,8 @@
             width: 42%;
             height: 425px;
             span{
-                margin-top: -15%;
-                margin-left: 60%;
+                margin-top: calc(-47px + (-66 + 47 ) * ((100vw - 1024px) / (1440 - 1024)));
+                margin-left: calc(236.27px + (332.25 - 236.27) * ((100vw - 1024px) / (1440 - 1024)));                
             }
         }
         &__context {
@@ -469,5 +475,17 @@
         &__copyright {
             font-size: 14px;
         }
+    }
+}
+
+@media (min-width: 1024) and (max-width: 1440px) {
+    .container {
+        padding-left: calc(64px + (90 - 64) * ((100vw - 1024px) / (1440 - 1024)));
+        padding-right: calc(64px + (90 - 64) * ((100vw - 1024px) / (1440 - 1024)));
+    }
+
+    .containerForm {
+        padding-left: calc(64px + (90 - 64) * ((100vw - 1024px) / (1440 - 1024)));
+        padding-right: calc(64px + (90 - 64) * ((100vw - 1024px) / (1440 - 1024)));
     }
 }

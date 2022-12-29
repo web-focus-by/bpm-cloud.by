@@ -4,6 +4,13 @@
   }
 }
 @media (min-width: 1441px) and (max-width: 1920px) {
+  .contacts__map {
+    width: 42%;
+  }
+  .contacts__map span {
+    margin-top: calc(-66px + -22 * (100vw - 1440px) / 480);
+    margin-left: calc(332.25px + 110.75 * (100vw - 1440px) / 480);
+  }
   /*.hero {
       margin-top: calc(134px + (188 - 134) * ((100vw - 1440px) / (1920 - 1440)));
 
@@ -48,12 +55,12 @@
     font-size: calc(13px + 5 * (100vw - 1440px) / 480);
   }
   .container {
-    padding-left: calc(157px + -67 * (100vw - 1440px) / 480);
-    padding-right: calc(157px + -67 * (100vw - 1440px) / 480);
+    padding-left: calc(90px + 30 * (100vw - 1440px) / 480);
+    padding-right: calc(90px + 30 * (100vw - 1440px) / 480);
   }
   .containerForm {
-    padding-left: calc(157px + -67 * (100vw - 1440px) / 480);
-    padding-right: calc(157px + -67 * (100vw - 1440px) / 480);
+    padding-left: calc(90px + 30 * (100vw - 1440px) / 480);
+    padding-right: calc(90px + 30 * (100vw - 1440px) / 480);
   }
   .black-container {
     margin: 0px auto;
@@ -86,6 +93,14 @@
   }
 }
 @media (min-width: 1440px) and (max-width: 1920px) {
+  .purple_form span {
+    margin-left: calc(913.5px + 304.5 * (100vw - 1440px) / 480);
+    margin-top: -100%;
+  }
+  .purple_form__button {
+    margin-left: calc(636px + 214 * (100vw - 1440px) / 480);
+    padding-bottom: calc(90.25px + 30.75 * (100vw - 1440px) / 480);
+  }
   .team__table {
     width: 100%;
     display: grid;

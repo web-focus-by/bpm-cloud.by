@@ -1,6 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import useWindowSize from "../utils/useWindowSize"
 import "../components/styles/main.css"
 import "../components/styles/icons.css"
 import "../components/styles/modules.css"
@@ -14,6 +15,7 @@ import "../components/styles/media_375.css"
 const Scope = () => {
   const hasWindow = typeof window !== 'undefined';
   const widthScreen = hasWindow ? window.innerWidth : null;
+  const [width, height] = useWindowSize();
   const title = "Сферы";
   const showAll = "Посмотреть все";
   const desc = "Опыт наших сотрудников может успешно использоваться в разных индустриях: FinTech, Gamedev, e-commerce, MedTech"+

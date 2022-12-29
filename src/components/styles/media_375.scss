@@ -3,15 +3,45 @@
         margin: 0px auto;
         padding: 0px 16px;
     }
-    
     .black-container {
         background: #111;
         height: 240px;
         margin-top: 64px;
-    }
-    
+    }    
     .containerForm {
         margin: 0px auto;
         padding: 0px 16px;
+    }
+    .portfolios {
+        &__title {
+            display:flex;
+            justify-content: space-between;
+            width: 100%;
+            .portfolios_show_all {
+                display:  none;
+            }
+        }
+        &__short_disciption {
+            display: none;
+         }
+        &__description {
+            margin-top: 32px;
+            .portfolios_description {     
+                margin-bottom: 32px;
+                .portfolios_description_title {
+                    margin-top: calc(16px + (29 - 16) * ((100vw - 373px) / (768 - 373)));
+                    font-size: calc(20px + (32 - 20) * ((100vw - 373px) / (768 - 373)));
+                    p {
+                        margin-top: calc(16px + (18 - 16) * ((100vw - 373px) / (768 - 373)));
+                        font-size: 18px;
+                    }
+                }
+                .portfolios_description_img {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
+        }
     }
 }
