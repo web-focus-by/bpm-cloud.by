@@ -117,7 +117,7 @@ const Modal = ({onClickClose, showThankForm}) => {
                       required />
                     <label>Дополнительная информация*</label>
                   </div>
-                  { submitBlock373 }
+                  { width > 373 ? submitBlock : submitBlock373 }
                 </form>
               </div>
             </div>
