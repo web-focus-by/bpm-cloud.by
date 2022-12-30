@@ -223,7 +223,7 @@
   }
   .services__title .description {
     margin-top: 32px;
-    width: 45%;
+    width: 100%;
     font-size: 16px;
   }
   .services__context {
