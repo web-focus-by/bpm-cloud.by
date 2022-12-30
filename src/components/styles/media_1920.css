@@ -122,8 +122,8 @@
   .team__table .team_table_item a .custom {
     border-radius: 50%;
     border: 1px solid;
-    width: 132px;
-    height: 132px;
+    width: 176px;
+    height: 176px;
     -webkit-clip-path: circle(100%);
             clip-path: circle(100%);
     text-align: center;
