@@ -65,15 +65,10 @@ const Scope = () => {
   const items = data.reduce((res, item)=>{
     return [...res, item];
   }, []);
-  const itemsRes = items.map((val, ind)=>{
-    if (widthScreen && widthScreen > 768) {
-      return (
-        <div className="scope_table_item" id={ ind } key={ val.key }>
-          <span className={ val.class }></span>
-          <p className="font_24" style={{marginTop: '13px'}}>{ val.description }</p>
-        </div>
-      )
-    } else if (widthScreen && widthScreen <=768 && ind < 4) {
+
+
+  const itemsResMicro = items.map((val, ind)=>{
+    if ( ind < 2) {
       return (
         <div className="scope_table_item" id={ ind } key={ val.key }>
           <span className={ val.class }></span>
@@ -81,6 +76,26 @@ const Scope = () => {
         </div>
       )
     }
+  })
+
+  const itemsResMini = items.map((val, ind)=>{
+    if ( ind < 4) {
+      return (
+        <div className="scope_table_item" id={ ind } key={ val.key }>
+          <span className={ val.class }></span>
+          <p className="font_24" style={{marginTop: '13px'}}>{ val.description }</p>
+        </div>
+      )
+    }
+  })
+
+  const itemsRes = items.map((val, ind)=>{
+    return (
+      <div className="scope_table_item" id={ ind } key={ val.key }>
+        <span className={ val.class }></span>
+        <p className="font_24" style={{marginTop: '13px'}}>{ val.description }</p>
+      </div>
+    )
   })
 
   return (
@@ -98,7 +113,7 @@ const Scope = () => {
           </div>
         </div>
         <div className="scope__table">
-          { itemsRes }
+          { width < 640 ? itemsResMicro : width <= 768 ? itemsResMini : itemsRes }
         </div>
       </div>
     </div>

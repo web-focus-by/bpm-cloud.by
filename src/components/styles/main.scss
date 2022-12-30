@@ -232,7 +232,6 @@ body {
         width: 100%;
         .description {
             margin-top: 32px;
-            position: absolute;
             width: 30%;
             font-weight: 400;
             font-size: 18px;
@@ -388,6 +387,7 @@ body {
         .white-button {
             display: flex;
             width: 232px;
+            height: 82px;
             text-transform: uppercase;
             flex-direction: row;
             justify-content: center;

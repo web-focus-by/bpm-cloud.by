@@ -40,17 +40,11 @@ const Services = () => {
     <div className="container" id="services">
       <div className="services margin_bottom_300">
         <div className="services__title">
-          <div className="title_96">
-            { title }
-          </div>
-          <div className="description">
-            { description }
-          </div>
+          <div className="title_96">{ title }</div>
+          <div className="description">{ description }</div>
         </div>
         <div className="services__context">
-          <ul>
-            { itemsText }
-          </ul>
+          <ul>{ itemsText }</ul>
         </div>
       </div>
     </div>

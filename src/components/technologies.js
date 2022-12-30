@@ -85,6 +85,17 @@ const Technologies = () => {
     }
   })
 
+  const itemsResMicro = items.map((val, ind)=>{
+    if (ind < 2) {
+      return (
+        <div className="scope_table_item" id={ ind } key={ val.key }>
+          <span className={ val.class } style={{marginTop: '46px'}}></span>
+          <p className="font_24" style={{marginTop: '13px'}}>{ val.description }</p>
+        </div>
+      )
+    }
+  })
+
   return (
     <div className="container" id="scope">
       <div className="scope margin_bottom_300">
@@ -100,7 +111,7 @@ const Technologies = () => {
           </div>
         </div>
         <div className="scope__table">
-          { width > 768 ? itemsRes : itemsResMini }
+          { width < 640 ? itemsResMicro : width <= 768 ? itemsResMini : itemsRes }
         </div>
       </div>
     </div>

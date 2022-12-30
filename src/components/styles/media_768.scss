@@ -1,4 +1,10 @@
-@media (min-width: 374px) and (max-width: 767px) {
+@media (min-width: 374px) and (max-width: 768px) {
+    .title_96 {
+        font-size: calc(46px + (72 - 46) * ((100vw - 373px) / (768 - 373)));
+    }
+    .margin_bottom_300 {
+        margin-bottom: calc(88px + (165 - 88) * ((100vw - 373px) / (768 - 373)));
+    }
     .hero {
         &__subtitle{
             .subtitle {
@@ -16,7 +22,7 @@
             width: 100%;
             display: grid;
             grid-template-columns: 2fr;
-            margin-left: 25%;
+            margin-left: calc(0px + (130 - 0) * ((100vw - 373px) / (768 - 373)));
             margin-bottom: 40px;
             .title_second {
                 height: 60px !important;
@@ -57,12 +63,10 @@
         &__button {
             margin-left: calc(10px + (354 - 10) * ((100vw - 373px) / (768 - 373)));
             padding-bottom: calc(58px + (186 - 58) * ((100vw - 373px) / (768 - 373))); 
-            margin-left: 50%;
-            padding-bottom: 0px;
-            padding-bottom: 186px;
             .white-button {
                 display: flex;
-                width: 132px;
+                width: 232px;
+                height: 83px;
                 font-size: 18px;
                 padding: 32px 64px 32px;
                 gap: 10px;
@@ -80,9 +84,6 @@
 }
 
 @media (max-width: 768px) {
-    .margin_bottom_300 {
-        margin-bottom: 165px;
-    }
     .burger {
         display: inline-block;
     }
@@ -95,10 +96,6 @@
         background: #111;
         height: 240px;
         margin-top: 64px;
-    }
-
-    .title_96 {
-        font-size: 72px;
     }
 
     .header {
@@ -248,7 +245,6 @@
             width: 80%;
             .description {
                 margin-top: 32px;
-                position: absolute;
                 width: 45%;
                 font-size: 16px;
             }
@@ -411,7 +407,7 @@
 
     .discuss {
         .discuss_text {
-            font-size: 80px;
+            font-size: calc(56px + (80 - 56) * ((100vw - 373px) / (768 - 373))); 
             .discuss_underline {
                 margin-top: 24px;
                 height: 8px;
@@ -707,6 +703,85 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 374px) and (max-width: 670px) {
+    .team {
+        &__title {
+            display:flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+            .team_show_all {
+                font-size: 16px;
+                margin-left: 40%;
+                span {
+                    margin-left: 5.5px;
+                }
+                &:hover {
+                    cursor: pointer;
+                    color: #AE83E4;
+                    text-decoration: underline;
+                    -webkit-transition: all .3s linear;
+                }
+            }
+        }
+        &__description {
+            width: 100%;
+            margin-bottom: 60px;
+            margin-top: 24px;
+            .team_description{
+                margin-right: 0;
+                margin-left: 0;
+                font-size: 14px;
+            }
+        }
+        &__table {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 2px;
+            .team_table_item {
+                width: 132px;
+                height: 132px;
+                margin-bottom: 15px;
+                span {
+                    align-content: center;
+                }
+                a {
+                    font-weight: 500;
+                    font-size: 34.5px;
+                    line-height: 100%;
+                    color: #222222;
+                    .custom {
+                        border-radius: 50%;
+                        border: 1px solid;
+                        width: 132px;
+                        height: 132px;
+                        clip-path: circle(100%);
+                        text-align: center;
+                        -webkit-transition: all .3s linear;
+                        .custom-text {
+                            margin-top: 35%;
+                        }
+                        :hover {
+                            border-radius: 50%;
+                            cursor: pointer;
+                        }
+                    }
+                    :hover {
+                        background: #222222;     
+                        color:#FFFFFF;
+                        -webkit-transition: all .3s linear;
+                        cursor: pointer;
+                    }
+                }
+                :hover {
+                    cursor: pointer;
                 }
             }
         }

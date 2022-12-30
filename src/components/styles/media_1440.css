@@ -119,6 +119,7 @@
   .purple_form__button .white-button {
     display: flex;
     width: 174px;
+    height: 62px;
     padding: 24px 48px 24px;
     gap: 10px;
     -webkit-transition: all 0.3s linear;
