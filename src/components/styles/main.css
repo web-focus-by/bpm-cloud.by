@@ -221,7 +221,6 @@ body {
 }
 .services__title .description {
   margin-top: 32px;
-  position: absolute;
   width: 30%;
   font-weight: 400;
   font-size: 18px;
@@ -374,6 +373,7 @@ body {
 .purple_form__button .white-button {
   display: flex;
   width: 232px;
+  height: 82px;
   text-transform: uppercase;
   flex-direction: row;
   justify-content: center;

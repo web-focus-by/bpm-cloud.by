@@ -15,8 +15,6 @@ import "../components/styles/media_375.css"
 
 const Team = () => {
   const [width, height] = useWindowSize();
-  const hasWindow = typeof window !== 'undefined';
-  const widthScreen = hasWindow ? window.innerWidth : null;
   const title = "Команда";
   const showAll = "Посмотреть все";
   const desc ="Мы – коллектив единомышленников. Для каждого из нас важно выполнить задачу в"+
@@ -114,6 +112,19 @@ const Team = () => {
       link: "#"
     },
   ];
+
+  const itemsResMini = data.map((val, ind)=>{
+    if (ind < 8) {
+      return (
+        <Tooltip title={ val.name } placement="bottom-end" >
+          <div className="team_table_item" id={ ind } key={ val.key }>
+            <span className={ val.photo }><Link to={ val.link }></Link></span>
+          </div>
+        </Tooltip>
+      )
+    }
+  })
+
   const itemsRes = data.map((val, ind)=>{
     return (
       <Tooltip title={ val.name } placement="bottom-end" >
@@ -138,7 +149,7 @@ const Team = () => {
           </div>
         </div>
         <div className="team__table">
-          { itemsRes }
+          { width > 670 ? itemsRes : itemsResMini }
           <div className="team_table_item" id="15" key="16">
             <Link to="#" style={{textDecoration: 'none'}}>
               <div className="custom">

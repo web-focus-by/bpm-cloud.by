@@ -24,7 +24,7 @@ const Purpleform = ({ switchContactDialog }) => {
           <div className="purple_form_description">{ description }</div>
         </div>
         <div className="purple_form__button">
-          <div className="white-button" onClick={ switchContactDialog }>{ buttonText }</div>
+          <button className="white-button" onClick={ switchContactDialog }>{ buttonText }</button>
         </div>
         <span className="bigearth"></span>
       </div>

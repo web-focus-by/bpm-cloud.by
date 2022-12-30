@@ -116,6 +116,42 @@
     width: 120px !important;
     height: 120px !important;
   }
+  .projects {
+    display: inline-block;
+    background: url(../../images/projects373.svg);
+    width: 162px;
+    height: 73px;
+  }
+  .experience {
+    display: inline-block;
+    background: url(../../images/experience373.svg);
+    width: 100px;
+    height: 71px;
+  }
+  .specialists {
+    display: inline-block;
+    background: url(../../images/specialists373.svg);
+    width: 100px;
+    height: 71px;
+  }
+  .clients {
+    display: inline-block;
+    background: url(../../images/clients373.svg);
+    width: 100px;
+    height: 71px;
+  }
+  .financeBaking {
+    display: inline-block;
+    background: url(../../images/financeBaking373.svg);
+    width: 84px;
+    height: 58px;
+  }
+  .education {
+    display: inline-block;
+    background: url(../../images/education373.svg);
+    width: 74px;
+    height: 74px;
+  }
 }
 @media (min-width: 374) and (max-width: 768px) {
   .earth {
