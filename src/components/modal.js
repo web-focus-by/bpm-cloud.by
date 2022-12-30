@@ -2,6 +2,7 @@ import * as React from "react"
 import { useRef, useState } from "react"
 import PropTypes from "prop-types"
 import { gql, useMutation } from "@apollo/client"
+import useWindowSize from "../utils/useWindowSize"
 import "../components/styles/main.css"
 import "../components/styles/icons.css"
 import "../components/styles/mixins.css"
@@ -34,9 +35,25 @@ const Modal = ({onClickClose, showThankForm}) => {
     const [nameValue, setNameValue] = useState('');
     const [additionalInformation, setAdditionalInformation] = useState('');
     const [emailValue, setEmailValue] = useState('');
+    const [width, height] = useWindowSize();
 
     if (loading) return 'Submitting...';
     if (error) return `Submission error! ${error.message}`;
+
+    const submitBlock = (
+      <div className="form_block_send">
+        <p>Нажимая кнопку, вы соглашаетесь с обработкой персональных данных.</p>
+        <button className="button_black" type="submit">Отправить</button>
+      </div>
+    )
+
+    const submitBlock373 = (
+      <div className="form_block_send">
+        <button className="button_black" type="submit">Отправить</button>
+        <p>Нажимая кнопку, вы соглашаетесь с обработкой персональных данных.</p>
+      </div>
+    )
+
     return(
       <React.Fragment>
       <div className="modal">
@@ -100,19 +117,9 @@ const Modal = ({onClickClose, showThankForm}) => {
                       required />
                     <label>Дополнительная информация*</label>
                   </div>
-                  <div className="form_block_send">
-                    <p>
-                      Нажимая кнопку, вы соглашаетесь с обработкой персональных данных.
-                    </p>
-                    <div>
-                      <button className="button_black" type="submit">
-                        Отправить
-                      </button>
-                    </div>
-                  </div>
+                  { submitBlock373 }
                 </form>
               </div>
-              
             </div>
           </div>
         </div>
