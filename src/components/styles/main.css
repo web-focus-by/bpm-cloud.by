@@ -784,6 +784,7 @@ body {
 }
 .discuss :hover {
   cursor: pointer;
+  color: #AE83E4;
 }
 
 .modal {
