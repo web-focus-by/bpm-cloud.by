@@ -313,6 +313,11 @@
             }
         }
     }
+    .hero {
+        &__title_second_part {
+            margin-left: calc(8px + (90 - 8) * ((100vw - 373px) / (768 - 373)));
+        }
+    }
 }
 
 @media (max-width: 768px) {

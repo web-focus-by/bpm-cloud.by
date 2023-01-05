@@ -285,6 +285,7 @@ body {
 .hero__title_second_part {
   display: grid;
   grid-template-columns: 2fr;
+  margin-left: 409px;
 }
 .hero__title_second_part .title_second {
   height: 132px;
