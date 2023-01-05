@@ -265,7 +265,6 @@ body {
         }
     }
 }
-
 .hero {
     margin-top: 68px;
     &__title {
@@ -295,6 +294,7 @@ body {
     &__title_second_part {
         display: grid;
         grid-template-columns: 2fr;
+        margin-left: 409px;
         .title_second {
             height: 132px;
             margin-left: 25%;
@@ -350,7 +350,6 @@ body {
         }
     }
 }
-
 .purple_form {
     span {
         margin-left: 1218px;
@@ -405,7 +404,6 @@ body {
         }
     }
 }
-
 .scope {
     &__title {
         display:flex;
@@ -492,7 +490,6 @@ body {
         }
     }
 }
-
 .portfolios {
     &__title {
         display:flex;
@@ -574,7 +571,6 @@ body {
         }
     }
 }
-
 .contacts {
     display: flex;
     justify-content: space-between;
@@ -615,7 +611,6 @@ body {
         }
     }
 }
-
 .team {
     &__title {
         display:flex;
@@ -708,14 +703,12 @@ body {
         }
     }
 }
-
 .swiper {
     .swiper-slide {
         width: 547px;
         height: max-content;
     }
 }
-
 .blog {
     &__title {
         display:flex;
@@ -793,7 +786,6 @@ body {
         }
     }
 }
-
 .discuss {
     display: flex;
     justify-content: center;
@@ -815,7 +807,6 @@ body {
         color: #AE83E4;
     }
 }
-
 .modal {
     height: 100%;
     color: #FFFFFF; 
@@ -902,7 +893,6 @@ body {
         }
     }
 }
-
 .form {
     background: #222222;
     padding: 98px 125px 98px 98px;
@@ -1058,7 +1048,6 @@ body {
         }
     }
 }
-
 .thanks_form{
     padding: 0px;
     .thanks_form_block{
@@ -1072,7 +1061,6 @@ body {
         }
     }
 }
-
 .footer {
     display: flex;
     justify-content: space-between;

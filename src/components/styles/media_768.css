@@ -284,6 +284,9 @@
   .team__table .team_table_item :hover {
     cursor: pointer;
   }
+  .hero__title_second_part {
+    margin-left: calc(8px + 82 * (100vw - 373px) / 395);
+  }
 }
 @media (max-width: 768px) {
   .burger {

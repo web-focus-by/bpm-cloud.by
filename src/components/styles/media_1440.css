@@ -75,6 +75,7 @@
   .hero__title_second_part {
     display: grid;
     grid-template-columns: 2fr;
+    margin-left: calc(218px + 88.75 * (100vw - 1024px) / 416);
   }
   .hero__title_second_part .title_second {
     font-size: calc(90px + 30 * (100vw - 1440px) / 480);

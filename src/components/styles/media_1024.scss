@@ -373,6 +373,11 @@
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+    .hero {
+        &__title_second_part {
+            margin-left: calc(90px + (218 - 90) * ((100vw - 768px) / (1024 - 768)));
+        }
+    }
     .margin_bottom_300 {
         margin-bottom: 160px;
     }

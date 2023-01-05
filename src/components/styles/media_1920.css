@@ -11,6 +11,9 @@
     margin-top: calc(-66px + -22 * (100vw - 1440px) / 480);
     margin-left: calc(332.25px + 110.75 * (100vw - 1440px) / 480);
   }
+  .hero__title_second_part {
+    margin-left: calc(306.75px + 102.25 * (100vw - 1440px) / 480);
+  }
   /*.hero {
       margin-top: calc(134px + (188 - 134) * ((100vw - 1440px) / (1920 - 1440)));
 
