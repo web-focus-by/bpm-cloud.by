@@ -111,7 +111,7 @@ const Technologies = () => {
           </div>
         </div>
         <div className="scope__table">
-          { width < 640 ? itemsResMicro : width <= 768 ? itemsResMini : itemsRes }
+          { width < 531 ? itemsResMicro : width <= 768 ? itemsResMini : itemsRes }
         </div>
       </div>
     </div>

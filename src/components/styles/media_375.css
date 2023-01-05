@@ -109,6 +109,7 @@
   }
   .about_company__description .description {
     width: 100%;
+    text-indent: 20px;
     margin-left: 0;
     font-size: 16px;
   }
@@ -127,6 +128,7 @@
     margin-top: 24px;
     width: 90%;
     font-size: 16px;
+    text-indent: 20px;
   }
   .services__context {
     width: 100%;
@@ -167,6 +169,7 @@
     margin-left: 0;
     margin-right: 0;
     font-size: 16px;
+    text-indent: 20px;
   }
   .scope__table {
     width: 100%;
@@ -215,6 +218,34 @@
     display: flex;
     justify-content: flex-end;
   }
+  .contacts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8%;
+  }
+  .contacts__map {
+    width: 100%;
+    height: 378px;
+  }
+  .contacts__map span {
+    margin-top: -15%;
+    margin-left: 60%;
+  }
+  .contacts__context {
+    width: 100%;
+  }
+  .contacts__context .context_description {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .contacts__context .context_description .contacts_description_content {
+    margin-bottom: 16px;
+    margin-top: 0;
+    font-size: 16px;
+    text-indent: 20px;
+  }
   .team__title {
     display: flex;
     justify-content: space-between;
@@ -243,6 +274,7 @@
     margin-right: 0;
     margin-left: 0;
     font-size: 14px;
+    text-indent: 20px;
   }
   .team__table {
     width: 100%;

@@ -69,7 +69,7 @@
     font-size: calc(90px + 30 * (100vw - 1440px) / 480);
   }
   .hero__title .subtitle {
-    text-indent: 50px;
+    text-indent: 20px;
     font-size: calc(12px + 4 * (100vw - 1440px) / 480);
   }
   .hero__title_second_part {
@@ -110,7 +110,7 @@
   }
   .purple_form__description .purple_form_description {
     font-size: 14px;
-    text-indent: 50px;
+    text-indent: 20px;
   }
   .purple_form__button {
     margin-left: calc(452.27px + 183.73 * (100vw - 1024px) / 416);

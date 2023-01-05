@@ -149,7 +149,7 @@ const Team = () => {
           </div>
         </div>
         <div className="team__table">
-          { width > 670 ? itemsRes : itemsResMini }
+          { width > 640 ? itemsRes : itemsResMini }
           <div className="team_table_item" id="15" key="16">
             <Link to="#" style={{textDecoration: 'none'}}>
               <div className="custom">
