@@ -577,8 +577,9 @@
   }
   .footer__footer_menu {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .footer__footer_menu .table_menu {
     width: 50%;

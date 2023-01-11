@@ -51,7 +51,9 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
     padding: 24px 64px;
+    font-size: 16px;
     gap: 10px;
     width: 343px;
     height: 65px;
@@ -88,6 +90,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-size: 16px;
     padding: 24px 48px 24px;
     gap: 10px;
     width: calc(100px + 193 * (100vw - 140px) / 233);
@@ -204,8 +207,12 @@
   }
   .portfolios__description .portfolios_description {
     margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   .portfolios__description .portfolios_description .portfolios_description_title {
+    width: 100%;
     margin-top: calc(16px + 13 * (100vw - 373px) / 395);
     font-size: calc(20px + 12 * (100vw - 373px) / 395);
   }
@@ -376,8 +383,9 @@
   }
   .footer__footer_menu {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   .footer__footer_menu .table_menu {
     width: 50%;

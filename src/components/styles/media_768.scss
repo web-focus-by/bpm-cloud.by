@@ -95,7 +95,6 @@
         }
     }
 }
-
 @media (min-width: 373px) and (max-width: 767px) {
     .modal_gdpr {
         .gdpr_consent {
@@ -126,7 +125,6 @@
         }
     }
 }
-
 @media (min-width: 374px) and (max-width: 530px) {
     .services {
         display: flex;
@@ -171,7 +169,6 @@
         }
     }
 }
-
 @media (min-width: 531px) and (max-width: 768px) {
     .services {
         display: grid;
@@ -221,7 +218,6 @@
         }
     }
 }
-
 @media (min-width: 640px) and (max-width: 768px) {
     .scope {
         &__title {
@@ -425,7 +421,6 @@
         }
     }
 }
-
 @media (min-width: 374px) and (max-width: 639px) {
     .scope {
         &__title {
@@ -475,7 +470,7 @@
             width: 100%;
             .portfolios_show_all {
                 width: 100%;
-                display:flex;
+                display: flex;
                 justify-content: flex-end;
                 font-size: 10px;
                 span {
@@ -624,8 +619,9 @@
         }
         &__footer_menu {
             width: 100%;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
             .table_menu {
                 width: 50%;
                 .table_menu_title {
@@ -656,7 +652,6 @@
         }
     }
 }
-
 @media (max-width: 768px) {
     .modal_gdpr {
         .gdpr_consent {

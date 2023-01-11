@@ -12,6 +12,10 @@ import "../components/styles/media_375.css"
 
 const ThanksModal = ({backPageModal}) => {
   const style = {
+    display: 'flex',
+    justifyContent: 'center',
+    marginLeft: '25%',
+    width: '305px',
     fontStyle: 'normal',
     fontWeight: '400',
     fontSize: '18px',
@@ -22,14 +26,15 @@ const ThanksModal = ({backPageModal}) => {
   return (
     <React.Fragment>
       <div className="modal thanks_modal">
+        <div className="form_block_modal_button" onClick={ backPageModal }></div>
         <div className="modal__content thanks_modal_content">
           <div className="form">
             <div className="form__block">
               <div className="form_block_title">Спасибо за заявку!</div>
               <div className="form_block_wrapper">
-                <p style={style}>Наш менеджер рассмотрит вашу заявку в ближайшее время.</p>
+                <p style={ style }>Наш менеджер рассмотрит заявку в ближайшее время.</p>
                 <form id="search-form">
-                  <div className="form_block_send">
+                  <div className="form_block_send" style={{ marginTop: '46px'}}>
                     <div className="earth" style={{marginLeft:'35%'}} onClick={ backPageModal }></div>
                   </div>
                 </form>

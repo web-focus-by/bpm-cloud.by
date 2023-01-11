@@ -223,6 +223,14 @@
     width: 60%;
     margin-left: 5%;
   }
+  .header__nav .header_nav_list ul li:nth-child(1) a span {
+    margin-left: 6.4px;
+    margin-bottom: 2px;
+  }
+  .header__nav .header_nav_list ul li:nth-child(3) a span {
+    margin-left: 6.4px;
+    margin-bottom: 2px;
+  }
   .contacts {
     display: flex;
     justify-content: space-between;
