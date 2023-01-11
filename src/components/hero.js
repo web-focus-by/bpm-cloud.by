@@ -21,7 +21,7 @@ const Hero = ({ location, contactUs }) => {
   const bigHero = (
     <div className="hero margin_bottom_300">
       <div className="hero__title">
-        <div className="title_96">
+        <div className="title_96 title">
           { titel }
         </div>
         <div className="subtitle">
@@ -29,7 +29,7 @@ const Hero = ({ location, contactUs }) => {
         </div>
       </div>
       <div className="hero__title_second_part">
-        <div className="title_96">
+        <div className="title_96 title">
           { titel_second } 
         </div>
       </div>

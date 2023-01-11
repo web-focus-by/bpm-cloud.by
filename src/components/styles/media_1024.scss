@@ -246,6 +246,26 @@
             .header_nav_list {
                 width: 60%;
                 margin-left: 5%;
+                ul {
+                    li {
+                        &:nth-child(1) {
+                            a {
+                                span {
+                                    margin-left: 6.4px;
+                                    margin-bottom: 2px;
+                                }
+                            }
+                        }
+                        &:nth-child(3) {
+                            a {
+                                span {
+                                    margin-left: 6.4px;
+                                    margin-bottom: 2px;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

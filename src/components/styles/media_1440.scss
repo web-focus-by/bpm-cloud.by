@@ -18,6 +18,22 @@
                 margin-left: 5%;
                 ul {
                     li {
+                        &:nth-child(1) {
+                            a {
+                                span {
+                                    margin-left: 9px;
+                                    margin-bottom: 2px;
+                                }
+                            }
+                        }
+                        &:nth-child(3) {
+                            a {
+                                span {
+                                    margin-left: 9px;
+                                    margin-bottom: 2px;
+                                }
+                            }
+                        }
                         a {
                             font-size: 13px;
                             margin-right: 42px;
