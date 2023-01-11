@@ -377,7 +377,7 @@ body {
   padding-bottom: 121px;
 }
 .purple_form__button .white-button {
-  z-index: 2;
+  z-index: 3;
   display: flex;
   width: 232px;
   height: 82px;
@@ -778,7 +778,7 @@ body {
   justify-content: center;
 }
 .discuss .discuss_text {
-  z-index: 2;
+  z-index: 1;
   color: #222222;
   font-weight: 500;
   font-size: 120px;
