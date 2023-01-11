@@ -383,7 +383,7 @@ body {
         margin-left: 50%;
         padding-bottom: 121px;
         .white-button {
-            z-index: 2;
+            z-index: 3;
             display: flex;
             width: 232px;
             height: 82px;
@@ -789,7 +789,7 @@ body {
     display: flex;
     justify-content: center;
     .discuss_text {
-        z-index: 2;
+        z-index: 1;
         color: #222222;
         font-weight: 500;
         font-size: 120px;
