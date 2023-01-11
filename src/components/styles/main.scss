@@ -9,6 +9,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 3;
+    background-color: hsla(0,0%,100%,.6);
     &__nav {
         padding: 28px 0px 0px 0px;
         display: flex;
