@@ -1,1 +1,12 @@
-/*# sourceMappingURL=modules.css.map */
+.link_for_cookie {
+  color: #9C61E8;
+  text-decoration: none;
+  -webkit-transition: all 0.1s linear;
+  font-weight: 400;
+}
+.link_for_cookie:hover {
+  color: #1A1B1F;
+  -webkit-transition: all 0.1s linear;
+  font-weight: 500;
+  cursor: pointer;
+}/*# sourceMappingURL=modules.css.map */

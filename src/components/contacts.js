@@ -79,7 +79,7 @@ const Contacts = () => {
     )
   
     return (
-      <div className="container" id="portfolios">
+      <div className="container" id="contacts">
         {width > 768 ? map : mapMini}
       </div>
     )

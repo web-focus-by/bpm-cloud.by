@@ -27,7 +27,7 @@ const ThanksModal = ({backPageModal}) => {
             <div className="form__block">
               <div className="form_block_title">Спасибо за заявку!</div>
               <div className="form_block_wrapper">
-                <p style={style}>Наш менеджер рассмотрит заявку в ближайшее время.</p>
+                <p style={style}>Наш менеджер рассмотрит вашу заявку в ближайшее время.</p>
                 <form id="search-form">
                   <div className="form_block_send">
                     <div className="earth" style={{marginLeft:'35%'}} onClick={ backPageModal }></div>

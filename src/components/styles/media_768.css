@@ -85,6 +85,34 @@
     display: none;
   }
 }
+@media (min-width: 373px) and (max-width: 767px) {
+  .modal_gdpr .gdpr_consent {
+    height: calc(204px + -26 * (100vw - 374px) / 265);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 578px;
+  }
+  .modal_gdpr .gdpr_consent__content {
+    width: 100%;
+  }
+  .modal_gdpr .gdpr_consent__content .content {
+    margin-left: 24px;
+    font-size: calc(14px + 4 * (100vw - 374px) / 265);
+  }
+  .modal_gdpr .gdpr_consent__confirm {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .modal_gdpr .gdpr_consent__confirm button {
+    width: 293px;
+    height: 65px;
+    padding: 24px 64px 24px;
+    gap: 10px;
+    font-size: calc(16px + 2 * (100vw - 374px) / 265);
+  }
+}
 @media (min-width: 374px) and (max-width: 530px) {
   .services {
     display: flex;
@@ -167,6 +195,84 @@
   }
 }
 @media (min-width: 640px) and (max-width: 768px) {
+  .scope__title .show_all {
+    font-size: 16px;
+  }
+  .scope__title .show_all span {
+    margin-left: 12.7px;
+  }
+  .scope__description {
+    width: 100%;
+    margin-bottom: 60px;
+    margin-top: 24.5px;
+  }
+  .scope__description .description {
+    font-size: 16px;
+  }
+  .scope__table {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 2px;
+  }
+  .scope__table .scope_table_item {
+    border-right: 2px solid #B3B3B3;
+    border-bottom: 0px;
+  }
+  .scope__table .scope_table_item span {
+    margin-left: 25%;
+  }
+  .scope__table .scope_table_item p {
+    text-align: center;
+    color: #222222;
+  }
+  .portfolios__title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .portfolios__title .portfolios_show_all {
+    font-size: 16px;
+  }
+  .portfolios__title .portfolios_show_all span {
+    margin-left: 12.7px;
+  }
+  .portfolios__short_disciption {
+    display: none;
+  }
+  .portfolios__description {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    width: 100%;
+  }
+  .portfolios__description .portfolios_description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    -moz-column-gap: 0%;
+         column-gap: 0%;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .portfolios__description .portfolios_description .portfolios_description_title {
+    margin-top: 29px;
+    width: 100%;
+    font-size: 32px;
+    margin-top: 16px;
+  }
+  .portfolios__description .portfolios_description .portfolios_description_title p {
+    display: flex;
+    width: 100%;
+    margin-top: 16px;
+    font-size: 18px;
+  }
+  .portfolios__description .portfolios_description .portfolios_description_img {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
   .team__title {
     display: flex;
     justify-content: space-between;
@@ -191,6 +297,8 @@
   }
   .team__description .team_description {
     font-size: 14px;
+    margin-left: 15%;
+    margin-right: 15%;
   }
   .team__table {
     width: 100%;
@@ -236,8 +344,158 @@
   .team__table .team_table_item :hover {
     cursor: pointer;
   }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .footer__footer_logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .footer__footer_logo .footer_logo {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+  .footer__footer_menu {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .footer__footer_menu .table_menu {
+    width: 33%;
+  }
+  .footer__footer_menu .table_menu .table_menu_title {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+  .footer__footer_menu .table_menu .table_menu_item {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+  .footer__footer_menu .table_menu .table_menu_item:last-child {
+    font-size: 19px;
+  }
+  .footer__footer_second_line .social {
+    width: 100%;
+  }
+  .footer__footer_second_line .social .social_item {
+    font-size: 16px;
+  }
+  .footer__copyright {
+    font-size: 14px;
+  }
 }
 @media (min-width: 374px) and (max-width: 639px) {
+  .scope__title {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .scope__title .show_all {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 10px;
+  }
+  .scope__title .show_all span {
+    margin-left: 11.2px;
+  }
+  .scope__description {
+    width: 100%;
+    margin-bottom: 60px;
+    margin-top: 24.5px;
+  }
+  .scope__description .description {
+    font-size: 16px;
+  }
+  .scope__table {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 2px;
+  }
+  .scope__table .scope_table_item {
+    border-right: 2px solid #B3B3B3;
+    border-bottom: 0px;
+  }
+  .scope__table .scope_table_item span {
+    margin-left: 25%;
+  }
+  .scope__table .scope_table_item p {
+    text-align: center;
+    color: #222222;
+  }
+  .portfolios__title {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .portfolios__title .portfolios_show_all {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 10px;
+  }
+  .portfolios__title .portfolios_show_all span {
+    margin-left: 11.2px;
+  }
+  .portfolios__short_disciption {
+    display: none;
+  }
+  .portfolios__description {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    width: 100%;
+  }
+  .portfolios__description .portfolios_description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    -moz-column-gap: 0%;
+         column-gap: 0%;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .portfolios__description .portfolios_description .portfolios_description_title {
+    margin-top: 29px;
+    width: 100%;
+    font-size: 32px;
+    margin-top: 16px;
+  }
+  .portfolios__description .portfolios_description .portfolios_description_title p {
+    display: flex;
+    width: 100%;
+    margin-top: 16px;
+    font-size: 18px;
+  }
+  .portfolios__description .portfolios_description .portfolios_description_img {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .team__title {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .team__title .team_show_all {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 10px;
+  }
+  .team__title .team_show_all span {
+    margin-left: 11.2px;
+  }
+  .team__description .team_description {
+    font-size: 16px;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
   .team__table {
     width: 100%;
     display: grid;
@@ -284,11 +542,81 @@
   .team__table .team_table_item :hover {
     cursor: pointer;
   }
+  .blog__title {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .blog__title .blog_show_all {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 10px;
+  }
+  .blog__title .blog_show_all span {
+    margin-left: 11.2px;
+  }
   .hero__title_second_part {
     margin-left: calc(8px + 82 * (100vw - 373px) / 395);
   }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .footer__footer_logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .footer__footer_logo .footer_logo {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .footer__footer_menu {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer__footer_menu .table_menu {
+    width: 50%;
+  }
+  .footer__footer_menu .table_menu .table_menu_title {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+  .footer__footer_menu .table_menu .table_menu_item {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+  .footer__footer_second_line {
+    width: 100%;
+  }
+  .footer__footer_second_line .social {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .footer__footer_second_line .social .social_item {
+    margin-bottom: 16px;
+    margin-right: 16px;
+    font-size: 18px;
+  }
+  .footer__copyright {
+    font-size: 14px;
+  }
 }
 @media (max-width: 768px) {
+  .modal_gdpr .gdpr_consent {
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+    margin-top: 578px;
+  }
+  .modal_gdpr .gdpr_consent__content .content {
+    margin-left: 48px;
+  }
   .burger {
     display: inline-block;
   }
@@ -369,53 +697,6 @@
     -webkit-transition: all 0.3s linear;
     cursor: pointer;
   }
-  .portfolios__title {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  .portfolios__title .portfolios_show_all {
-    font-size: 18px;
-  }
-  .portfolios__title .portfolios_show_all span {
-    margin-left: 21px;
-  }
-  .portfolios__short_disciption {
-    display: none;
-  }
-  .portfolios__description {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    width: 100%;
-  }
-  .portfolios__description .portfolios_description {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    -moz-column-gap: 0%;
-         column-gap: 0%;
-    width: 100%;
-    margin-bottom: 40px;
-  }
-  .portfolios__description .portfolios_description .portfolios_description_title {
-    margin-top: 29px;
-    width: 100%;
-    font-size: 32px;
-    margin-top: 16px;
-  }
-  .portfolios__description .portfolios_description .portfolios_description_title p {
-    display: flex;
-    width: 100%;
-    margin-top: 16px;
-    font-size: 18px;
-  }
-  .portfolios__description .portfolios_description .portfolios_description_img {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-  }
   .contacts {
     display: flex;
     justify-content: space-between;
@@ -443,83 +724,12 @@
     margin-top: 0;
     font-size: 16px;
   }
-  .scope__title .show_all {
-    font-size: 16px;
-  }
-  .scope__title .show_all span {
-    margin-left: 12.7px;
-  }
-  .scope__description {
-    width: 100%;
-    margin-bottom: 60px;
-    margin-top: 24.5px;
-  }
-  .scope__description .description {
-    font-size: 16px;
-  }
-  .scope__table {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 2px;
-  }
-  .scope__table .scope_table_item {
-    border-right: 2px solid #B3B3B3;
-    border-bottom: 0px;
-  }
-  .scope__table .scope_table_item span {
-    margin-left: 25%;
-  }
-  .scope__table .scope_table_item p {
-    text-align: center;
-    color: #222222;
-  }
   .discuss .discuss_text {
     font-size: calc(56px + 24 * (100vw - 373px) / 395);
   }
   .discuss .discuss_text .discuss_underline {
     margin-top: 24px;
     height: 8px;
-  }
-  .footer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .footer__footer_logo {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .footer__footer_logo .footer_logo {
-    width: 50%;
-    margin-bottom: 40px;
-  }
-  .footer__footer_menu {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .footer__footer_menu .table_menu {
-    width: 33%;
-  }
-  .footer__footer_menu .table_menu .table_menu_title {
-    font-size: 20px;
-    margin-bottom: 18px;
-  }
-  .footer__footer_menu .table_menu .table_menu_item {
-    font-size: 16px;
-    margin-bottom: 18px;
-  }
-  .footer__footer_second_line .social {
-    width: 100%;
-  }
-  .footer__footer_second_line .social .social_item {
-    font-size: 16px;
-  }
-  .footer__copyright {
-    font-size: 14px;
   }
   .swiper .swiper-slide {
     width: 452px;
