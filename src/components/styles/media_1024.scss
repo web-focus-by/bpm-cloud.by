@@ -518,7 +518,7 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 8%;
+        gap: 1%;
         &__map {
             width: 42%;
             height: 302.22px;
@@ -652,6 +652,14 @@
                     margin-top: 18px;
                 }
             }
+        }
+    }
+    .modal_gdpr {
+        width: 100%;
+        .gdpr_consent {
+            width: calc(768px + (806 - 768) * ((100vw - 768px) / (1024 - 768)));
+            column-gap: calc(40px + (12 - 40) * ((100vw - 768px) / (1024 - 768)));
+            margin-top: calc(578px + (784 - 578) * ((100vw - 768px) / (1024 - 768)));
         }
     }
 }

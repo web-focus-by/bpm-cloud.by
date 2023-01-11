@@ -390,6 +390,9 @@
     font-size: 16px;
     margin-bottom: 18px;
   }
+  .footer__footer_menu .table_menu .table_menu_item:last-child {
+    font-size: 19px;
+  }
   .footer__footer_second_line {
     width: 100%;
   }
@@ -636,5 +639,24 @@
   }
   .form__block .form_block_wrapper form .form_block_send .button_black:hover {
     cursor: pointer;
+  }
+  .modal_gdpr .gdpr_consent {
+    height: 204px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 578px;
+  }
+  .modal_gdpr .gdpr_consent__content .content {
+    margin-left: 24px;
+    font-size: 14px;
+  }
+  .modal_gdpr .gdpr_consent__confirm button {
+    margin-left: 24px;
+    width: calc(263px + 30 * (100vw - 330px) / 43);
+    height: 65px;
+    padding: 24px 64px 24px;
+    gap: 10px;
+    font-size: 16px;
   }
 }/*# sourceMappingURL=media_375.css.map */

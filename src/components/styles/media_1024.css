@@ -466,7 +466,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 8%;
+    gap: 1%;
   }
   .contacts__map {
     width: 42%;
@@ -591,6 +591,15 @@
     font-size: 18px;
     margin-bottom: 12px;
     margin-top: 18px;
+  }
+  .modal_gdpr {
+    width: 100%;
+  }
+  .modal_gdpr .gdpr_consent {
+    width: calc(768px + 38 * (100vw - 768px) / 256);
+    -moz-column-gap: calc(40px + -28 * (100vw - 768px) / 256);
+         column-gap: calc(40px + -28 * (100vw - 768px) / 256);
+    margin-top: calc(578px + 206 * (100vw - 768px) / 256);
   }
 }
 @media (max-width: 940px) {

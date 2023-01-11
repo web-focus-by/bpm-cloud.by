@@ -16,10 +16,12 @@ import Blog from "../components/blog"
 import Discuss from "../components/discuss"
 import Modal from "../components/modal"
 import ThanksModal from "../components/thanksModal"
+import GdprConsent from "../components/gdprConsent"
 
 const IndexPage = ({ location }) => {
   const [isShowThankModal, setIsShowThankModal] = useState(false);
   const [isOpen, setModalActive] = useState(false);
+  const [isShowGdpr, setIsShowGdpr] = useState(true);
   const postsAndTags = useStaticQuery(graphql`
     query GetPostQuery {
       allWpPost(filter: {categories: {nodes: {elemMatch: {slug: {eq: "portfolios"}}}}}) {
@@ -59,15 +61,19 @@ const IndexPage = ({ location }) => {
   const toggleModalActive = () => {
     setModalActive(true);
   }
-  const closeDialog = () =>{
+  const closeDialog = () => {
     setModalActive(false);
     setIsShowThankModal(false);
+  }
+  const setCookie = () => {
+    setIsShowGdpr(false);
   }
 
   return (
     <>
       <Layout>
         <Seo title="Index" />
+        { isShowGdpr ? <GdprConsent setCookie={ setCookie }></GdprConsent> : null }
         { isOpen ? <Modal onClickClose={ closeDialog } showThankForm = { showThankModal }></Modal> : null}
         { isShowThankModal ? <ThanksModal backPageModal = { backPage }></ThanksModal> : null}
         <Hero location={ location } contactUs = { toggleModalActive }></Hero>

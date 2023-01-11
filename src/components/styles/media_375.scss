@@ -410,6 +410,8 @@
                 .table_menu_item {
                     font-size: 16px;
                     margin-bottom: 18px;
+                    &:last-child {
+                        font-size: 19px;}
                 }
             }
         }
@@ -682,6 +684,31 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+    .modal_gdpr {
+        .gdpr_consent {
+            height: 204px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 578px;
+            &__content {
+                .content {
+                    margin-left: 24px;
+                    font-size: 14px;
+                }
+            }
+            &__confirm {
+                button {
+                    margin-left: 24px;
+                    width: calc(263px + (293 - 263) * ((100vw - 330px) / (373 - 330)));
+                    height: 65px;
+                    padding: 24px 64px 24px;
+                    gap: 10px;
+                    font-size: 16px;
                 }
             }
         }
