@@ -17,9 +17,8 @@ const Purpleform = ({ switchContactDialog }) => {
     <div className="container" id="purpleform">
       <div className="purple_form margin_bottom_300">
         <div className="purple_form__title">
-          <div className="purple_form_title">{ title }
+          <div className="purple_form_title">{ title }</div>
         </div>
-      </div>
         <div className="purple_form__description">
           <div className="purple_form_description">{ description }</div>
         </div>

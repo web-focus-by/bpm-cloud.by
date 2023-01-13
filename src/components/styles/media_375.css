@@ -42,7 +42,7 @@
     margin-left: calc(0px + 130 * (100vw - 373px) / 395);
     margin-bottom: 40px;
   }
-  .hero__title_second_part .title_second {
+  .hero__title_second_part .title {
     height: 60px !important;
     font-size: 46px !important;
   }

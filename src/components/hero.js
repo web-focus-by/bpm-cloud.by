@@ -48,12 +48,12 @@ const Hero = ({ location, contactUs }) => {
         </div>
       </div>
       <div className="hero__title">
-        <div className="title_96">
+        <div className="title_96 title">
           { titel }
         </div>
       </div>
       <div className="hero__title_second_part">
-        <div className="title_96">
+        <div className="title_96 title">
           { titel_second } 
         </div>
       </div>

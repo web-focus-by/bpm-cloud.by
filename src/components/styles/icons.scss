@@ -420,13 +420,26 @@
     }
 }
 
-
+.projectspng {
+    position: relative;
+    display: inline-block;
+    background: url(../../images/projects.png);
+    width: 705px;
+    height: 480px;
+    filter: grayscale(100%); 
+    z-index: -1;
+}
 
 .vector {
     display: inline-block;
     background: url(../../images/vector.svg);
     width: 10px;
     height: 10px;
+    -webkit-transition: all .3s linear;
+    &:hover {
+        -webkit-transition: all .3s linear;
+        background: url(../../images/vector_purple.svg);
+    }
 }
 
 .vector-line {
@@ -434,6 +447,11 @@
     background: url(../../images/vector-line.svg);
     width: 16px;
     height: 16px;
+    -webkit-transition: all .3s linear;
+    &:hover {
+        -webkit-transition: all .3s linear;
+        background: url(../../images/vector-line_purple.svg);
+    }
 }
 
 .financeBaking {
@@ -598,12 +616,62 @@
     width: 176px;
     height: 176px;
 }
+@media (min-width: 1441px) and (max-width: 1920px) {
+    .projectspng {
+        position: relative;
+        display: inline-block;
+        background: url(../../images/projects.png);
+        width: calc(529px + (705 - 529) * ((100vw - 1440px) / (1920 - 1440)));
+        height: calc(425px + (480 - 425) * ((100vw - 1440px) / (1920 - 1440)));
+        filter: grayscale(100%); 
+        z-index: -1;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .projectspng {
+        position: relative;
+        display: inline-block;
+        background: url(../../images/projects.png);
+        width: calc(377px + (529 - 377) * ((100vw - 1024px) / (1440 - 1024)));
+        height: calc(302px + (425 - 302) * ((100vw - 1024px) / (1440 - 1024)));
+        filter: grayscale(100%); 
+        z-index: -1;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .projectspng {
+        position: relative;
+        display: inline-block;
+        background: url(../../images/projects.png);
+        width: calc(377px + (377 - 377) * ((100vw - 769px) / (1024 - 769)));
+        height: calc(302px + (302 - 302) * ((100vw - 769px) / (1024 - 769)));
+        filter: grayscale(100%); 
+        z-index: -1;
+    }
+}
+
+@media (min-width: 373px) and (max-width: 768px) {
+    .projectspng {
+        position: relative;
+        display: inline-block;
+        background: url(../../images/projects.png);
+        width: calc(343px + (705 - 343) * ((100vw - 373px) / (768 - 373)));
+        height: calc(320px + (378 - 320) * ((100vw - 373px) / (768 - 373)));
+        filter: grayscale(100%); 
+        z-index: -1;
+    }
+}
 
 .photo_blog {
+    position: relative;
     display: inline-block;
     background: url(../../images/blog-picture.png);
     width: 176px;
     height: 176px;
+    z-index: -1;
+    filter: grayscale(100%); 
 }
 
 .portfolio1 {

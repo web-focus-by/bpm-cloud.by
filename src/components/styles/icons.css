@@ -396,11 +396,26 @@
     height: 94px !important;
   }
 }
+.projectspng {
+  position: relative;
+  display: inline-block;
+  background: url(../../images/projects.png);
+  width: 705px;
+  height: 480px;
+  filter: grayscale(100%);
+  z-index: -1;
+}
+
 .vector {
   display: inline-block;
   background: url(../../images/vector.svg);
   width: 10px;
   height: 10px;
+  -webkit-transition: all 0.3s linear;
+}
+.vector:hover {
+  -webkit-transition: all 0.3s linear;
+  background: url(../../images/vector_purple.svg);
 }
 
 .vector-line {
@@ -408,6 +423,11 @@
   background: url(../../images/vector-line.svg);
   width: 16px;
   height: 16px;
+  -webkit-transition: all 0.3s linear;
+}
+.vector-line:hover {
+  -webkit-transition: all 0.3s linear;
+  background: url(../../images/vector-line_purple.svg);
 }
 
 .financeBaking {
@@ -578,11 +598,58 @@
   height: 176px;
 }
 
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .projectspng {
+    position: relative;
+    display: inline-block;
+    background: url(../../images/projects.png);
+    width: calc(529px + 176 * (100vw - 1440px) / 480);
+    height: calc(425px + 55 * (100vw - 1440px) / 480);
+    filter: grayscale(100%);
+    z-index: -1;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .projectspng {
+    position: relative;
+    display: inline-block;
+    background: url(../../images/projects.png);
+    width: calc(377px + 152 * (100vw - 1024px) / 416);
+    height: calc(302px + 123 * (100vw - 1024px) / 416);
+    filter: grayscale(100%);
+    z-index: -1;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .projectspng {
+    position: relative;
+    display: inline-block;
+    background: url(../../images/projects.png);
+    width: calc(377px + 0 * (100vw - 769px) / 255);
+    height: calc(302px + 0 * (100vw - 769px) / 255);
+    filter: grayscale(100%);
+    z-index: -1;
+  }
+}
+@media (min-width: 373px) and (max-width: 768px) {
+  .projectspng {
+    position: relative;
+    display: inline-block;
+    background: url(../../images/projects.png);
+    width: calc(343px + 362 * (100vw - 373px) / 395);
+    height: calc(320px + 58 * (100vw - 373px) / 395);
+    filter: grayscale(100%);
+    z-index: -1;
+  }
+}
 .photo_blog {
+  position: relative;
   display: inline-block;
   background: url(../../images/blog-picture.png);
   width: 176px;
   height: 176px;
+  z-index: -1;
+  filter: grayscale(100%);
 }
 
 .portfolio1 {
