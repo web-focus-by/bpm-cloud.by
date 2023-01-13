@@ -43,13 +43,13 @@ const Modal = ({onClickClose, showThankForm}) => {
     const submitBlock = (
       <div className="form_block_send">
         <p>Нажимая кнопку, вы соглашаетесь с обработкой персональных данных.</p>
-        <button className="button_black" type="submit">Отправить</button>
+        <button className="button_black" disabled = { !additionalInformation || !emailValue || !nameValue } type="submit">Отправить</button>
       </div>
     )
 
     const submitBlock373 = (
       <div className="form_block_send">
-        <button className="button_black" type="submit">Отправить</button>
+        <button className="button_black" disabled = { !additionalInformation || !emailValue || !nameValue } type="submit">Отправить</button>
         <p>Нажимая кнопку, вы соглашаетесь с обработкой персональных данных.</p>
       </div>
     )

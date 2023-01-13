@@ -38,7 +38,7 @@ const AboutCompany = ({siteTitle}) => {
       key: "clients",
       value: 25,
       class: "clients",
-      description:"Успешных проектов"
+      description:"Постоянных клиентов"
     },
   ]
   const items = data.reduce((res, item)=>{
@@ -58,12 +58,21 @@ const AboutCompany = ({siteTitle}) => {
     return [...res, item];
   }, []);
   const itemsRes = items.map((val, ind)=>{
-    return (
-      <div className="about_company_table_item" id={ ind } key={ val.key }>
-        <span className={val.class}></span>
-        <p className="font_24" style={{marginTop: '13px'}}>{ val.description }</p>
-      </div>
-    )
+    if (ind === 0 || ind === 1) {
+      return (
+        <div className="about_company_table_item" id={ ind } key={ val.key }>
+          <span className="font_144">{ val.value } +</span>
+          <p className="font_24" style={{marginTop: '13px'}}>{ val.description }</p>
+        </div>
+      )
+    } else {
+      return (
+        <div className="about_company_table_item" id={ ind } key={ val.key }>
+          <span className="font_144">{ val.value }</span>
+          <p className="font_24" style={{marginTop: '13px'}}>{ val.description }</p>
+        </div>
+      )
+    }
   })
   return (
     <div className="container" id="aboutCompany">

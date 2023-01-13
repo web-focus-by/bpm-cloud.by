@@ -52,44 +52,6 @@
     .burger {
         display: none;
     }
-
-    .about_company {
-        &__description {
-            margin-bottom: 60px;
-            margin-top: 21.43px;
-            .description{
-                font-size: calc(14px + (18 - 14) * ((100vw - 1440px) / (1920 - 1440)));
-            }
-        }
-        &__table {
-            width: 100%;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-column-gap: 2px;
-            .about_company_table_item {
-                border-right: 2px solid #B3B3B3;
-                &:last-child {
-                    border-right: 0px;
-                }
-                span {
-                    margin-left: 25%;
-                }
-                p {
-                    text-align: center;
-                    color:#222222;
-                }
-            }
-        }
-    }
-
-    .title_96 {
-        font-size: calc(72px + (96 - 72) * ((100vw - 1440px) / (1920 - 1440)));;
-    }
-
-    .font_24 {
-        font-size: calc(18px + (24 - 18) * ((100vw - 1440px) / (1920 - 1440)));
-    }
-
     .portfolios {
         &__title {
             .portfolios_show_all {
@@ -99,53 +61,8 @@
                 }
             }
         }
-    }
+    }    
 
-    .hero {
-        margin-top: 68px;
-        &__title {
-            .title {
-                height: 99px !important;
-                font-size: calc(90px + (120 - 90) * ((100vw - 1440px) / (1920 - 1440)));
-            }
-            .subtitle { 
-                text-indent: 20px;
-                font-size: calc(12px + (16 - 12) * ((100vw - 1440px) / (1920 - 1440)));
-            }
-        }
-        &__title_second_part {
-            display: grid;
-            grid-template-columns: 2fr;
-            margin-left: calc(218px + (306.75 - 218) * ((100vw - 1024px) / (1440 - 1024)));
-            .title_second {
-                font-size: calc(90px + (120 - 90) * ((100vw - 1440px) / (1920 - 1440)));
-            }
-        }
-    }
-
-    
-    .services {
-        &__title {
-            .description {
-                margin-top: 24.5px;
-                font-size: 14px;
-            }
-        }
-        &__context {
-            display: flex;
-            justify-content: flex-end;
-            ul {
-                li{
-                    margin-bottom: 52.5px;
-                    .services_context {
-                        .services_context_link {
-                            font-size: 34.5px;
-                        }
-                    }               
-                }
-            }
-        }
-    }
 
     .purple_form {
         span {
@@ -497,14 +414,104 @@
     }
 }
 
-@media (min-width: 1024) and (max-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
     .container {
         padding-left: calc(64px + (90 - 64) * ((100vw - 1024px) / (1440 - 1024)));
         padding-right: calc(64px + (90 - 64) * ((100vw - 1024px) / (1440 - 1024)));
     }
-
     .containerForm {
         padding-left: calc(64px + (90 - 64) * ((100vw - 1024px) / (1440 - 1024)));
         padding-right: calc(64px + (90 - 64) * ((100vw - 1024px) / (1440 - 1024)));
+    }
+    .title_96 {
+        font-size: calc(51.2px + (72 - 51.2) * ((100vw - 1024px) / (1440 - 1024)));;
+    }
+    .font_24 {
+        font-size: calc(12.8px + (18 - 12.8) * ((100vw - 1024px) / (1440 - 1024)));
+    }
+    .font_144 {
+        font-size: calc(76.8px + (108 - 76.8) * ((100vw - 1024px) / (1440 - 1024)));
+    }
+    .hero {
+        margin-top: 68px;
+        &__title {
+            .title {
+                height: calc(70px + (99 - 70) * ((100vw - 1024px) / (1440 - 1024)));
+                font-size: calc(64px + (90 - 64) * ((100vw - 1024px) / (1440 - 1024)));
+            }
+            .subtitle { 
+                text-indent: 20px;
+                font-size: 16px;
+            }
+        }
+        &__title_second_part {
+            display: grid;
+            grid-template-columns: 2fr;
+            margin-left: calc(218px + (306.75 - 218) * ((100vw - 1024px) / (1440 - 1024)));
+            .title {
+                font-size: calc(64px + (90 - 64) * ((100vw - 1024px) / (1440 - 1024)));
+            }
+        }
+        &__butn {
+            display: flex;
+            .button_purple {
+                padding: calc(17px + (24 - 17) * ((100vw - 1024px) / (1440 - 1024))) calc(34px + (48 - 34) * ((100vw - 1024px) / (1440 - 1024))) calc(17px + (24 - 17) * ((100vw - 1024px) / (1440 - 1024)));
+                font-size: 18px;
+                width: calc(124px + (174 - 124) * ((100vw - 1024px) / (1440 - 1024)));
+                height: calc(44px + (61 - 44) * ((100vw - 1024px) / (1440 - 1024)));
+                margin-left: 75%;
+            }
+        }
+    }
+    .about_company {
+        &__description {
+            margin-bottom: calc(43px + (60 - 43) * ((100vw - 1024px) / (1440 - 1024)));
+            margin-top: calc(14.42px + (21.43 - 14.42) * ((100vw - 1024px) / (1440 - 1024)));
+            .description{
+                width: calc(366.93px + (516 - 366.93) * ((100vw - 1024px) / (1440 - 1024)));
+                margin-left: calc(225.07px + (316.5 - 225.07) * ((100vw - 1024px) / (1440 - 1024)));
+                margin-right: calc(304px + (427.5 - 304) * ((100vw - 1024px) / (1440 - 1024)));
+                font-size: calc(14px + (14 - 14) * ((100vw - 1024px) / (1440 - 1024)));
+                text-indent: calc(35px + (35 - 35) * ((100vw - 1024px) / (1440 - 1024)));
+            }
+        }
+        &__table {
+            .about_company_table_item {
+                border-right: calc(0.53px + (0.75 - 0.53) * ((100vw - 1024px) / (1440 - 1024))) solid #B3B3B3;
+                &:nth-child(2) {
+                    padding-left: calc(48px + (67 - 48) * ((100vw - 1024px) / (1440 - 1024)));
+                }
+                &:nth-child(3) {
+                    padding-left: calc(48px + (67 - 48) * ((100vw - 1024px) / (1440 - 1024)));
+                }
+                &:nth-child(4) {
+                    padding-left: calc(48px + (67 - 48) * ((100vw - 1024px) / (1440 - 1024)));
+                }
+            }
+        }
+    }
+    .services {
+        &__title {
+            .description {
+                margin-top: calc(17.6px + (24.5 - 17.6) * ((100vw - 1024px) / (1440 - 1024)));
+                width: calc(291.2px + (409.5 - 291.2) * ((100vw - 1024px) / (1440 - 1024)));
+                font-size: calc(9.96px + (14 - 9.96) * ((100vw - 1024px) / (1440 - 1024)));
+                text-indent: 35px;
+            }
+        }
+        &__context {
+            ul {
+                li{
+                    margin-bottom: calc(29.87px + (42 - 29.87) * ((100vw - 1024px) / (1440 - 1024)));
+                    .services_context {
+                        border-bottom: calc(4.27px + (4.5 - 4.27) * ((100vw - 1024px) / (1440 - 1024))) solid;
+                        padding-bottom: calc(3.2px + (6 - 3.2) * ((100vw - 1024px) / (1440 - 1024)));
+                        .services_context_link {
+                            font-size: calc(24.53px + (34.5 - 24.53) * ((100vw - 1024px) / (1440 - 1024)));
+                        }
+                    }               
+                }
+            }
+        }
     }
 }

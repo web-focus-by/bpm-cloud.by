@@ -116,7 +116,7 @@ const Team = () => {
   const itemsResMini = data.map((val, ind)=>{
     if (ind < 8) {
       return (
-        <Tooltip title={ val.name } placement="bottom-end" >
+        <Tooltip title={ val.name } placement="bottom-end" style={{color: '#fff', background: '#AE83E4'}} >
           <div className="team_table_item" id={ ind } key={ val.key }>
             <span className={ val.photo }><Link to={ val.link }></Link></span>
           </div>
