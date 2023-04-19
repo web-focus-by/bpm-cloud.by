@@ -30,7 +30,7 @@ const Blog = () => {
     {
       key: '2',
       name: 'Новость',
-      photo: 'photo1',
+      photo: 'photo',
       date: '29.10.2022',
       link: '#',
     },
@@ -41,32 +41,32 @@ const Blog = () => {
       date: '29.10.2022',
       link: '#',
     },
-    {
-      key: '4',
-      name: 'Новость',
-      photo: 'photo1',
-      date: '29.10.2022',
-      link: '#',
-    },
-    {
-      key: '5',
-      name: 'Новость',
-      photo: 'photo1',
-      date: '29.10.2022',
-      link: '#',
-    },
-    {
-      key: '6',
-      name: 'Новость',
-      photo: 'photo1',
-      date: '29.10.2022',
-      link: '#',
-    },
+    // {
+    //   key: '4',
+    //   name: 'New 4',
+    //   photo: 'photo1',
+    //   date: '29.10.2022',
+    //   link: '#',
+    // },
+    // {
+    //   key: '5',
+    //   name: 'New 5',
+    //   photo: 'photo1',
+    //   date: '29.10.2022',
+    //   link: '#',
+    // },
+    // {
+    //   key: '6',
+    //   name: 'New 6',
+    //   photo: 'photo1',
+    //   date: '29.10.2022',
+    //   link: '#',
+    // },
   ];
 
   const result = data.map((item, i) => {
     return (
-      <SwiperSlide key={ i }>
+      // <SwiperSlide key={ i }>
         <div id={ item.key } className="blog_products_block" >
           <Link style={{textDecoration: 'none'}} to={ item.link }>
             <div className="blog_products_block_pic photo_blog"></div>
@@ -76,7 +76,7 @@ const Blog = () => {
             </div>
           </Link>
         </div>
-      </SwiperSlide>
+      // </SwiperSlide>
     )
   });
 
@@ -90,7 +90,7 @@ const Blog = () => {
           </div>
         </div>
         <div className="blog__products">
-          <Swiper
+          {/* <Swiper
             spaceBetween={ 19 }
             slidesPerView={"auto"}
             onSlideChange={() => console.log("slide change")}
@@ -119,7 +119,8 @@ const Blog = () => {
             }}
           >
             { result }
-          </Swiper>
+          </Swiper> */}
+          {result}
         </div>
       </div>
     </div>

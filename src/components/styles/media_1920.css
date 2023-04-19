@@ -109,7 +109,7 @@
     margin-bottom: calc(42px + 14 * (100vw - 1440px) / 480);
   }
   .services__context ul li .services_context {
-    border-bottom: calc(4.5px + 1.5 * (100vw - 1440px) / 480) solid;
+    border-bottom: calc(4.5px + 1.5 * (100vw - 1440px) / 480) solid #0773DF;
     padding-bottom: calc(6px + 2 * (100vw - 1440px) / 480);
   }
   .services__context ul li .services_context .services_context_link {

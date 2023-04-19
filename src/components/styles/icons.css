@@ -403,7 +403,13 @@
   width: 705px;
   height: 480px;
   filter: grayscale(100%);
+  transition: 0.5s;
   z-index: -1;
+}
+
+.contacts__map:hover .projectspng {
+  filter: grayscale(0%);
+  transition: 0.5s;
 }
 
 .vector {
@@ -486,61 +492,53 @@
   height: 100px;
 }
 
-.react {
+.scope_table_item .react, .scope_table_item .php, .scope_table_item .c, .scope_table_item .java, .scope_table_item .javascript, .scope_table_item .vue, .scope_table_item .kotlin{
   display: inline-block;
+  width: 100px;
+  height: 100px;
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+
+.scope_table_item:hover .react, .scope_table_item:hover .php, .scope_table_item:hover .c, .scope_table_item:hover .java, .scope_table_item:hover .javascript, .scope_table_item:hover .vue, .scope_table_item:hover .kotlin{
+  filter: grayscale(0%);
+  transition: 0.5s;
+}
+
+.react {
   background: url(../../images/react.svg);
-  width: 84px;
-  height: 73px;
 }
 
 .php {
-  display: inline-block;
   background: url(../../images/php.svg);
-  width: 100px;
-  height: 75px;
 }
 
 .c {
-  display: inline-block;
   background: url(../../images/c.svg);
-  width: 100px;
-  height: 75px;
 }
 
 .java {
-  display: inline-block;
   background: url(../../images/java.svg);
-  width: 100px;
-  height: 75px;
 }
 
 .javascript {
-  display: inline-block;
   background: url(../../images/javascript.svg);
-  width: 100px;
-  height: 73px;
 }
 
 .vue {
-  display: inline-block;
   background: url(../../images/vue.svg);
-  width: 100px;
-  height: 71px;
 }
 
 .kotlin {
-  display: inline-block;
   background: url(../../images/kotlin.svg);
-  width: 100px;
-  height: 73px;
 }
 
-.swift {
+/* .swift {
   display: inline-block;
   background: url(../../images/swift.svg);
   width: 100px;
   height: 73px;
-}
+} */
 
 .earth {
   display: inline-block;

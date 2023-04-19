@@ -20,13 +20,13 @@ const Footer =()=>{
           <div className="footer_logo"><span className="clutch"></span></div>
         </div>
         <div className="footer__footer_menu">
-          <div className="table_menu">
+          {/* <div className="table_menu">
             <div className="table_menu_title">Услуги</div>
             <div className="table_menu_item">Проекты</div>
             <div className="table_menu_item">Блог</div>
             <div className="table_menu_item">Карьера</div>
             <div className="table_menu_item">О компании</div>
-          </div>
+          </div> */}
           <div className="table_menu">
             <div className="table_menu_title">Компания</div>
             <div className="table_menu_item">Проекты</div>

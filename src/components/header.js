@@ -37,20 +37,20 @@ const Header = ({ turnOnMenu, mainItems, clickOut, justTurnOnMenu, justTurnOffMe
     if (index === 0) {
       return (
         <li id = { item.id } ref={ el => menuItemsRef.current[index] = el } key={ index } onClick={()=>{ setIsTurnOn(!isTurnOn); }}>
-          <Link to={ homeUrl + item.path }>{ item.label }<span className="vector_down"></span></Link>
+          <Link to={ homeUrl + item.path }>{ item.label }</Link>
         </li>
       )
     } else {
       if (index === 2) {
         return (
           <li id = { item.id } ref={ el => menuItemsRef.current[index] = el } key={ index } onClick={ activeMenu } >
-            <a>{ item.label }<span className="vector_down"></span></a>
+            <Link to={ homeUrl + item.path }>{ item.label }</Link>
           </li>
         )
       } else {
         return (
           <li id = { item.id } ref={ el => menuItemsRef.current[index] = el } key={ index } onClick={ activeMenu } >
-            <a>{ item.label }</a>
+            <Link to={ homeUrl + item.path }>{ item.label }</Link>
           </li>
         )
       }

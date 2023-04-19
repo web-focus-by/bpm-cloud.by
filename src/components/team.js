@@ -35,26 +35,26 @@ const Team = () => {
     },
     {
       id: 3,
-      name: "Катерина",
-      photo: "photo3",
+      name: "colleague",
+      photo: "photo7",
       link: "#"
     },
     {
       id: 4,
-      name: "Саша",
-      photo: "photo4",
+      name: "colleague",
+      photo: "",
       link: "#"
     },
     {
       id: 5,
-      name: "Ян",
-      photo: "photo5",
+      name: "Екатерина",
+      photo: "photo3",
       link: "#"
     },
     {
       id: 6,
-      name: "Ксения",
-      photo: "photo6",
+      name: "colleague",
+      photo: "",
       link: "#"
     },
     {
@@ -65,14 +65,14 @@ const Team = () => {
     },
     {
       id: 8,
-      name: "colleague",
-      photo: "photo7",
+      name: "Александр",
+      photo: "photo4",
       link: "#"
     },
     {
       id: 9,
-      name: "colleague",
-      photo: "photo7",
+      name: "Ян",
+      photo: "photo5",
       link: "#"
     },
     {
@@ -84,7 +84,7 @@ const Team = () => {
     {
       id: 11,
       name: "colleague",
-      photo: "photo7",
+      photo: "",
       link: "#"
     },
     {
@@ -107,8 +107,8 @@ const Team = () => {
     },
     {
       id: 15,
-      name: "colleague",
-      photo: "photo7",
+      name: "Ксения",
+      photo: "photo6",
       link: "#"
     },
   ];
@@ -126,14 +126,28 @@ const Team = () => {
   })
 
   const itemsRes = data.map((val, ind)=>{
-    return (
-      <Tooltip title={ val.name } placement="bottom-end" >
-        <div className="team_table_item" id={ ind } key={ val.key }>
-          <span className={ val.photo }><Link to={ val.link }></Link></span>
+    if(ind!==11){
+      return (
+        <Tooltip title={ val.name } placement="bottom-end" >
+          <div className="team_table_item" id={ ind } key={ val.key }>
+            <span className={ val.photo }><Link to={ val.link }></Link></span>
+          </div>
+        </Tooltip>
+      )
+    }else{
+      return (
+        <div className="team_table_item" id="11" key="11">
+            <Link to="#" style={{textDecoration: 'none'}}>
+              <div className="custom">
+                <div className="custom-text">50 +</div>
+              </div>
+            </Link>
         </div>
-      </Tooltip>
-    )
+      )
+    }
+
   })
+
   return (
     <div className="container" id="team">
       <div className="team margin_bottom_300">
@@ -150,13 +164,13 @@ const Team = () => {
         </div>
         <div className="team__table">
           { width > 640 ? itemsRes : itemsResMini }
-          <div className="team_table_item" id="15" key="16">
+          {/* <div className="team_table_item" id="15" key="16">
             <Link to="#" style={{textDecoration: 'none'}}>
               <div className="custom">
                 <div className="custom-text">50 +</div>
               </div>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

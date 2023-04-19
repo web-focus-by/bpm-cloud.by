@@ -39,7 +39,7 @@ body {
   font-size: 18px;
   line-height: 100%;
 }
-.header__nav .header_nav_list ul li:hover {
+.header__nav .header_nav_list ul li a:hover {
   -webkit-text-decoration: underline 2px #0773DF;
           text-decoration: underline 2px #0773DF;
   transition: 100ms;
@@ -187,7 +187,7 @@ body {
 }
 
 .font_144 {
-  font-weight: 600;
+  font-weight: 500;
   line-height: 100%;
   text-transform: uppercase;
   color: #0773DF;
@@ -337,7 +337,7 @@ body {
   margin-bottom: 56px;
 }
 .services__context ul li .services_context {
-  border-bottom: 6px solid #222222;
+  border-bottom: 6px solid #0773DF;
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
@@ -502,12 +502,21 @@ body {
 .scope__table .scope_table_item:last-child {
   border-right: 0px;
   padding-left: 90px;
+  margin: auto 0;
+}
+
+.scope__table .scope_table_item:last-child .font_24{
+  color: #222222;
+  font-size: 32px;
+  line-height: 35px;
+  font-weight: 500;
 }
 .scope__table .scope_table_item span {
   margin-top: 55px;
 }
 .scope__table .scope_table_item p {
   color: #222222;
+  font-weight: 500;
 }
 
 .portfolios__title {
@@ -612,7 +621,7 @@ body {
 .contacts__context .context_description {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 18px;
   flex-wrap: wrap;
 }
 .contacts__context .context_description .contacts_description_title {
@@ -633,6 +642,10 @@ body {
   font-size: 18px;
   line-height: 150%;
   color: #4B4B4B;
+}
+
+.contacts__context .context_description .title_96{
+  margin-bottom: 32px;
 }
 
 .team__title {
