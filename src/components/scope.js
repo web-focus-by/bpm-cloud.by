@@ -52,20 +52,19 @@ const Scope = () => {
       description: "Transnational Corporations"
     },
     {
-      key: "retail",
-      class: "retail",
-      description:"Retail"
-    },
-    {
       key: "government",
       class: "gov",
       description:"Government"
+    },
+    {
+      key: "retail",
+      class: "",
+      description:"+7 сфер"
     },
   ]
   const items = data.reduce((res, item)=>{
     return [...res, item];
   }, []);
-
 
   const itemsResMicro = items.map((val, ind)=>{
     if ( ind < 2) {

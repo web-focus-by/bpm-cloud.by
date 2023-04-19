@@ -28,8 +28,8 @@
     margin-left: 75%;
   }
   .header__nav .logo {
-    width: calc(100px + 42 * (100vw - 1440px) / 480);
-    height: calc(32px + 14 * (100vw - 1440px) / 480);
+    width: calc(100px + 85 * (100vw - 1440px) / 480);
+    height: calc(40px + 20 * (100vw - 1440px) / 480);
     background-size: cover;
   }
   .header__nav .header_nav_list ul li a {

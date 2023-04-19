@@ -16,7 +16,7 @@ const Rectangle = () => {
   const [widthScreen] = useWindowSize();
   let widthSize, padding;
   const ROWS = 100;
-  const COLS = 300;
+  const COLS = 280;
   var NUM_PARTICLES = ( ROWS * COLS ),
   THICKNESS = Math.pow( 80, 2 ),
   SPACING = 6,

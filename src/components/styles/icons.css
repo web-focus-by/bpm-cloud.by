@@ -1,8 +1,8 @@
 .logo {
   display: inline-block;
   background: url(../../images/logo.svg);
-  width: 142px;
-  height: 46px;
+  width: 185px;
+  height: 60px;
 }
 
 .vector_down {
@@ -432,23 +432,23 @@
 
 .financeBaking {
   display: inline-block;
-  background: url(../../images/financeBaking.svg);
-  width: 84px;
-  height: 58px;
+  background: url(../../images//Finance&Baking.svg);
+  width: 100px;
+  height: 100px;
 }
 
 .education {
   display: inline-block;
   background: url(../../images/education.svg);
-  width: 74px;
-  height: 74px;
+  width: 100px;
+  height: 100px;
 }
 
 .health {
   display: inline-block;
   background: url(../../images/health.svg);
-  width: 80px;
-  height: 72px;
+  width: 100px;
+  height: 100px;
 }
 
 .restaurants {

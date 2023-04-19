@@ -58,8 +58,8 @@ const Technologies = () => {
     },
     {
       key: "swift",
-      class: "swift",
-      description:"Swift"
+      class: "",
+      description:"+12 технологий"
     },
   ]
   const items = data.reduce((res, item)=>{
