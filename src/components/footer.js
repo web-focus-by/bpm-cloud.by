@@ -43,11 +43,11 @@ const Footer =()=>{
         </div>
         <div className="footer__footer_second_line">
           <div className="social">
-            <Link className="social_item" to="#">LinkedIn</Link>
-            <Link className="social_item" to="#">Instagram</Link>
+            <Link className="social_item" to="https://www.linkedin.com/company/focus-it-focus/mycompany/">LinkedIn</Link>
+            <Link className="social_item" to="https://www.instagram.com/itfocus_/">Instagram</Link>
             <Link className="social_item" to="#">Twitter</Link>
-            <Link className="social_item" to="#">Behance</Link>
-            <Link className="social_item" to="#">Facebook</Link>
+            <Link className="social_item" to="https://www.behance.net/webfocusworld">Behance</Link>
+            <Link className="social_item" to="https://www.facebook.com/focus.it1">Facebook</Link>
             <Link className="social_item" to="#">Telegram</Link>
             <Link className="social_item" to="#">Dribble</Link>
           </div>
