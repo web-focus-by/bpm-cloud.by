@@ -61,7 +61,7 @@ const AboutCompany = ({siteTitle}) => {
     if (ind === 0 || ind === 1) {
       return (
         <div className="about_company_table_item" id={ ind } key={ val.key }>
-          <span className="font_144">{ val.value } +</span>
+          <span className="font_144">{ val.value }+</span>
           <p className="font_24" style={{marginTop: '13px'}}>{ val.description }</p>
         </div>
       )

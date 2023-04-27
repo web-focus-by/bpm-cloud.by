@@ -68,8 +68,10 @@ const Technologies = () => {
   const itemsRes = items.map((val, ind)=>{
     return (
       <div className="scope_table_item" id={ ind } key={ val.key }>
-        <span className={ val.class } style={{marginTop: '46px'}}></span>
-        <p className="font_24" style={{marginTop: '13px'}}>{ val.description }</p>
+        <div className="scope_table_item_container">
+          <span className={ val.class }></span>
+          <p className="font_24" style={{marginTop: '13px'}}>{ val.description }</p>
+        </div>
       </div>
     )
   })
@@ -78,8 +80,10 @@ const Technologies = () => {
     if (ind < 4) {
       return (
         <div className="scope_table_item" id={ ind } key={ val.key }>
-          <span className={ val.class } style={{marginTop: '46px'}}></span>
-          <p className="font_24" style={{marginTop: '13px'}}>{ val.description }</p>
+          <div className="scope_table_item_container">
+            <span className={ val.class }></span>
+            <p className="font_24" style={{marginTop: '13px'}}>{ val.description }</p>
+          </div>
         </div>
       )
     }
@@ -89,8 +93,10 @@ const Technologies = () => {
     if (ind < 2) {
       return (
         <div className="scope_table_item" id={ ind } key={ val.key }>
-          <span className={ val.class } style={{marginTop: '46px'}}></span>
-          <p className="font_24" style={{marginTop: '13px'}}>{ val.description }</p>
+          <div className="scope_table_item_container">
+            <span className={ val.class }></span>
+            <p className="font_24" style={{marginTop: '13px'}}>{ val.description }</p>
+          </div>
         </div>
       )
     }
@@ -101,9 +107,10 @@ const Technologies = () => {
       <div className="scope margin_bottom_300">
         <div className="scope__title">
           <div className="title_96">{ title }</div>
-          <div className="show_all">{ showAll }<span className="vector-line"></span>
-          <div className="vector" style={{marginBottom: '8px', marginLeft: '-8px'}}></div>
-        </div>
+          {/* <div className="show_all">{ showAll }
+            <span className="vector-line"></span>
+            <div className="vector" style={{marginBottom: '8px', marginLeft: '-8px'}}></div>
+          </div> */}
         </div>
         <div className="scope__description">
           <div className="description">

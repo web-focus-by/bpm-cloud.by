@@ -18,7 +18,9 @@ const Discuss = ({showDialog}) => {
       <div className="discuss margin_bottom_300">
         <div className="discuss_text" onClick={ showDialog }>
           { title }
-          <div className="discuss_underline"></div>
+          <div className="discuss_underline">
+            <div className="discuss_underline2"></div>
+          </div>
         </div>
       </div>
     </div>

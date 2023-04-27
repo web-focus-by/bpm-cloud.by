@@ -441,6 +441,7 @@
   background: url(../../images//Finance&Baking.svg);
   width: 100px;
   height: 100px;
+  margin: 0 auto;
 }
 
 .education {
@@ -448,6 +449,7 @@
   background: url(../../images/education.svg);
   width: 100px;
   height: 100px;
+  margin: 0 auto;
 }
 
 .health {
@@ -455,6 +457,7 @@
   background: url(../../images/health.svg);
   width: 100px;
   height: 100px;
+  margin: 0 auto;
 }
 
 .restaurants {
@@ -462,6 +465,7 @@
   background: url(../../images/restaurants.svg);
   width: 100px;
   height: 100px;
+  margin: 0 auto;
 }
 
 .entertrainment {
@@ -469,6 +473,7 @@
   background: url(../../images/entertrainment.svg);
   width: 100px;
   height: 100px;
+  margin: 0 auto;
 }
 
 .tnc {
@@ -476,28 +481,67 @@
   background: url(../../images/tnc.svg);
   width: 100px;
   height: 100px;
+  margin: 0 auto;
 }
 
-.retail {
+/* .retail {
   display: inline-block;
   background: url(../../images/retail.svg);
   width: 100px;
   height: 100px;
-}
+  margin: 0 auto;
+} */
 
 .gov {
   display: inline-block;
   background: url(../../images/gov.svg);
   width: 100px;
   height: 100px;
+  margin: 0 auto;
 }
 
 .scope_table_item .react, .scope_table_item .php, .scope_table_item .c, .scope_table_item .java, .scope_table_item .javascript, .scope_table_item .vue, .scope_table_item .kotlin{
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  /* width: 100px;
+  height: 100px; */
   filter: grayscale(100%);
   transition: 0.5s;
+  margin: 0 auto;
+}
+
+.scope_table_item .react{
+  width: 84px;
+  height: 73px;
+}
+
+.scope_table_item .php{
+  width: 77px;
+  height: 93px;
+}
+
+.scope_table_item .c{
+  width: 67px;
+  height: 75px;
+}
+
+.scope_table_item .java{
+  width: 60px;
+  height: 75px;
+}
+
+.scope_table_item .javascript{
+  width: 100px;
+  height: 73px;
+}
+
+.scope_table_item .vue{
+  width: 90px;
+  height: 71px;
+}
+
+.scope_table_item .kotlin{
+  width: 73px;
+  height: 73px;
 }
 
 .scope_table_item:hover .react, .scope_table_item:hover .php, .scope_table_item:hover .c, .scope_table_item:hover .java, .scope_table_item:hover .javascript, .scope_table_item:hover .vue, .scope_table_item:hover .kotlin{

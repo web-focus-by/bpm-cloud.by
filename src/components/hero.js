@@ -17,7 +17,7 @@ const Hero = ({ location, contactUs }) => {
   const [width, height] = useWindowSize();
   const titel = "Воплощаем";
   const titel_second = "ваши IT-идеи";
-  const subtitle = "Digital-агентство «BPM Cloud» – это комплексный подход к интернет-маркетингу. Под знаменем компании собрались специалисты."
+  const subtitle = "                BPM Cloud — аутсорсинг и аутстаффинг талантливых IT-специалистов высокого уровня для усиления вашего отдела или масштабирования проекта. Быстро предоставим необходимого специалиста или целую команду."
   const bigHero = (
     <div className="hero margin_bottom_300">
       <div className="hero__title">

@@ -123,7 +123,9 @@ const Modal = ({onClickClose, showThankForm}) => {
             </div>
           </div>
         </div>
-        <div className="form_block_modal_button" onClick={ onClickClose }></div>
+        <div className="form_block_modal_button_cross">
+          <div className="form_block_modal_button" onClick={ onClickClose }></div>
+        </div>
       </div>
       </React.Fragment>
   )

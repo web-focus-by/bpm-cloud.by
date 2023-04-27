@@ -80,9 +80,9 @@ const Portfolios = () => {
       <div className="portfolios margin_bottom_300">
         <div className="portfolios__title">
           <div className="title_96">{ title }</div>
-          <div className="portfolios_show_all">{ showAll }<span className="vector-line"></span>
+          {/* <div className="portfolios_show_all">{ showAll }<span className="vector-line"></span>
             <div className="vector" style={{marginBottom: '8px', marginLeft: '-8px'}}></div>
-          </div>
+          </div> */}
         </div>
         <div className="portfolios__short_disciption">
           <div className="short_disciption">{ shortDiscription }</div>
