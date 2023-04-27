@@ -384,7 +384,7 @@ body {
 .purple_form__description {
   margin-left: 422px;
   padding-bottom: 46px;
-  width: 50%;
+  width: 45%;
 }
 .purple_form__description .purple_form_description {
   font-weight: 400;
@@ -1112,24 +1112,25 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-top: 68px;
   font-size: 18px;
 }
 .footer__footer_logo {
-  width: 65%;
+  width: 68%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  gap: 26px;
 }
 .footer__footer_logo .footer_logo {
-  width: 100%;
-  margin-bottom: 46px;
+  width: max-content;
+  height: max-content;
 }
 .footer__footer_menu {
-  width: 50%;
+  width: 32%;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-column-gap: 180px;
+  grid-column-gap: 170px;
 }
 .footer__footer_menu .table_menu {
   width: 100%;
@@ -1158,7 +1159,7 @@ body {
 }
 .footer__footer_second_line {
   width: 100%;
-  margin-top: 145px;
+  margin-top: 120px;
 }
 .footer__footer_second_line .social {
   width: 80%;

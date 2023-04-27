@@ -11,12 +11,13 @@ import "../../components/styles/media_1440.css"
 import "../../components/styles/media_1024.css"
 import "../../components/styles/media_768.css"
 import "../../components/styles/media_375.css"
+import { height } from "@mui/system";
 
 const Rectangle = () => {
   const [widthScreen] = useWindowSize();
   let widthSize, padding;
-  const ROWS = 100;
-  const COLS = 280;
+  let ROWS = 100;
+  let COLS = 280;
   var NUM_PARTICLES = ( ROWS * COLS ),
   THICKNESS = Math.pow( 80, 2 ),
   SPACING = 6,
@@ -36,26 +37,28 @@ const Rectangle = () => {
     padding = window ? window.getComputedStyle(document.getElementById("hero"), null).getPropertyValue('padding-left').slice(0,-2) : null;
     widthSize = document && document.getElementById("hero") ?
     document.getElementById("hero").clientWidth - 2 * padding : null;
-    container = document.getElementById('black-container');   
+    container = document.getElementById('black-container');
+    let heightSize = document.getElementById("black-container").clientHeight;
     canvas = document.createElement('canvas');
     ctx = canvas.getContext( '2d' );
     man = false;
     tog = true;
     list = [];
     w = canvas.width = widthSize ? widthSize : COLS * SPACING + MARGIN * 2;
-    if (widthScreen && widthScreen >= 1920) {
-      h = canvas.height = 480;
-    } else if (widthScreen && widthScreen >= 1440 && widthScreen < 1920) {
-      h = canvas.height = 360;
-    } else if (widthScreen && widthScreen >= 1024 && widthScreen < 1440) {
-      h = canvas.height = 256;
-    } else if (widthScreen && widthScreen >= 768 && widthScreen < 1024) {
-      h = canvas.height = 420;
-    } else if (widthScreen && widthScreen >= 373 && widthScreen < 768) {
-      h = canvas.height = 240;
-    } else if (widthScreen && widthScreen < 373) {
-      h = canvas.height = 220;
-    }
+    h = canvas.height = heightSize;
+    // if (widthScreen && widthScreen >= 1920) {
+    //   h = canvas.height = 480;
+    // } else if (widthScreen && widthScreen >= 1440 && widthScreen < 1920) {
+    //   h = canvas.height = 360;
+    // } else if (widthScreen && widthScreen >= 1024 && widthScreen < 1440) {
+    //   h = canvas.height = 256;
+    // } else if (widthScreen && widthScreen >= 768 && widthScreen < 1024) {
+    //   h = canvas.height = 420;
+    // } else if (widthScreen && widthScreen >= 373 && widthScreen < 768) {
+    //   h = canvas.height = 240;
+    // } else if (widthScreen && widthScreen < 373) {
+    //   h = canvas.height = 220;
+    // }
     
     //container.style.marginLeft = Math.round( w * -0.5 ) + 'px';
     //container.style.marginTop = Math.round( h * -0.5 ) + 'px';
@@ -71,6 +74,11 @@ const Rectangle = () => {
       my = e.clientY - bounds.top;
       man = true;
     });
+    // console.log(COLS);
+    // ROWS = 67;
+    // COLS = 210;
+    // NUM_PARTICLES = ( ROWS * COLS );
+    console.log(NUM_PARTICLES);
     container.appendChild(canvas);
   }
 

@@ -6,7 +6,7 @@
     margin-top: 61px;
   }
   .header__nav .logo {
-    width: 100px;
+    width: 138px;
     height: 32px;
     background-size: cover;
   }
@@ -48,13 +48,13 @@
     padding-bottom: 24.5px;
   }
   .purple_form__description {
-    margin-left: 316.5px;
+    margin-left: 316px;
     padding-bottom: 33px;
-    width: 50%;
+    width: 45%;
   }
   .purple_form__description .purple_form_description {
     font-size: 14px;
-    text-indent: 20px;
+    text-indent: 40px;
   }
   .purple_form__button {
     margin-left: calc(452.27px + 183.73 * (100vw - 1024px) / 416);
@@ -66,6 +66,7 @@
     height: 62px;
     padding: 24px 48px 24px;
     gap: 10px;
+    font-size: 14px;
     -webkit-transition: all 0.3s linear;
   }
   .purple_form__button .white-button:hover {
