@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: "Manrope";
     src: url("../../../fonts/Manrope-Medium.eot");
     src: local("Manrope Medium"), local("Manrope-Medium"),
@@ -62,4 +62,6 @@
       url('../../../fonts/Manrope-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-  }
+  } */
+
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
