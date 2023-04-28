@@ -759,7 +759,7 @@ body {
   -webkit-transition: all 0.3s linear;
 }
 .team__table .team_table_item a .custom .custom-text {
-  margin-top: 35%;
+  margin-top: 37%;
 }
 .team__table .team_table_item a .custom :hover {
   border-radius: 50%;
@@ -1100,6 +1100,7 @@ body {
   line-height: 105%;
   text-transform: uppercase;
   color: #fff;
+  border: 0px;
 }
 .form__block .form_block_wrapper form .form_block_send .button_black:disabled {
   cursor: none;

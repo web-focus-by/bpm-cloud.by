@@ -227,11 +227,11 @@
     font-size: calc(14px + 4 * (100vw - 1440px) / 480);
   }
   .team__description {
-    margin-bottom: calc(43px + 37 * (100vw - 1440px) / 480);
-    margin-top: calc(14.42px + 17.58 * (100vw - 1440px) / 480);
+    margin-bottom: calc(55px + 25 * (100vw - 1440px) / 480);
+    margin-top: calc(23px + 9 * (100vw - 1440px) / 480);
   }
   .team__description .team_description {
-    width: calc(650px + 172 * (100vw - 1440px) / 480);
+    width: calc(532px + 284 * (100vw - 1440px) / 480);
     margin-left: calc(316.5px + 125.5 * (100vw - 1440px) / 480);
     margin-right: calc(427.5px + 142.5 * (100vw - 1440px) / 480);
     font-size: calc(14px + 4 * (100vw - 1440px) / 480);
@@ -241,32 +241,32 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-column-gap: 2px;
+    grid-column-gap: calc(22px - 2 * (100vw - 1440px) / 480);
   }
   .team__table .team_table_item {
-    margin-bottom: 40px;
+    margin-bottom: calc(24px + 16 * (100vw - 1440px) / 480)
   }
   .team__table .team_table_item span {
     align-content: center;
   }
   .team__table .team_table_item a {
     font-weight: 500;
-    font-size: 46px;
+    font-size: calc(34px + 12 * (100vw - 1440px) / 480);
     line-height: 100%;
     color: #222222;
   }
   .team__table .team_table_item a .custom {
     border-radius: 50%;
     border: 1px solid;
-    width: 176px;
-    height: 176px;
+    width: calc(132px + 44 * (100vw - 1440px) / 480);
+    height: calc(132px + 44 * (100vw - 1440px) / 480);
     -webkit-clip-path: circle(100%);
             clip-path: circle(100%);
     text-align: center;
     -webkit-transition: all 0.3s linear;
   }
   .team__table .team_table_item a .custom .custom-text {
-    margin-top: 35%;
+    margin-top: 37%;
   }
   .team__table .team_table_item a .custom :hover {
     border-radius: 50%;

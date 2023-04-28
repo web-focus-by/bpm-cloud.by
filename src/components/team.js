@@ -139,7 +139,7 @@ const Team = () => {
         <div className="team_table_item" id="11" key="11">
             <Link to="#" style={{textDecoration: 'none'}}>
               <div className="custom">
-                <div className="custom-text">50 +</div>
+                <div className="custom-text">50+</div>
               </div>
             </Link>
         </div>

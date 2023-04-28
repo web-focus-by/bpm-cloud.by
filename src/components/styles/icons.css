@@ -40,6 +40,310 @@
   height: 109px;
 }
 
+.projectspng {
+  position: relative;
+  display: inline-block;
+  background: url(../../images/projects.png);
+  width: 705px;
+  height: 480px;
+  filter: grayscale(100%);
+  transition: 0.5s;
+  z-index: -1;
+}
+
+.contacts__map:hover .projectspng {
+  filter: grayscale(0%);
+  transition: 0.5s;
+}
+
+.vector {
+  display: inline-block;
+  background: url(../../images/vector.svg);
+  width: 10px;
+  height: 10px;
+  -webkit-transition: all 0.3s linear;
+}
+.vector-line {
+  display: inline-block;
+  background: url(../../images/vector-line.svg);
+  width: 16px;
+  height: 16px;
+  -webkit-transition: all 0.3s linear;
+}
+
+.financeBaking {
+  display: inline-block;
+  background: url(../../images//Finance&Baking.svg);
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.education {
+  display: inline-block;
+  background: url(../../images/education.svg);
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.health {
+  display: inline-block;
+  background: url(../../images/health.svg);
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.restaurants {
+  display: inline-block;
+  background: url(../../images/restaurants.svg);
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.entertrainment {
+  display: inline-block;
+  background: url(../../images/entertrainment.svg);
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.tnc {
+  display: inline-block;
+  background: url(../../images/tnc.svg);
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+/* .retail {
+  display: inline-block;
+  background: url(../../images/retail.svg);
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+} */
+
+.gov {
+  display: inline-block;
+  background: url(../../images/gov.svg);
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.scope_table_item .react, .scope_table_item .php, .scope_table_item .c, .scope_table_item .java, .scope_table_item .javascript, .scope_table_item .vue, .scope_table_item .kotlin{
+  display: inline-block;
+  /* width: 100px;
+  height: 100px; */
+  filter: grayscale(100%);
+  transition: 0.5s;
+  margin: 0 auto;
+}
+
+.scope_table_item .react{
+  width: 84px;
+  height: 73px;
+}
+
+.scope_table_item .php{
+  width: 77px;
+  height: 93px;
+}
+
+.scope_table_item .c{
+  width: 67px;
+  height: 75px;
+}
+
+.scope_table_item .java{
+  width: 60px;
+  height: 75px;
+}
+
+.scope_table_item .javascript{
+  width: 100px;
+  height: 73px;
+}
+
+.scope_table_item .vue{
+  width: 90px;
+  height: 71px;
+}
+
+.scope_table_item .kotlin{
+  width: 73px;
+  height: 73px;
+}
+
+.scope_table_item:hover .react, .scope_table_item:hover .php, .scope_table_item:hover .c, .scope_table_item:hover .java, .scope_table_item:hover .javascript, .scope_table_item:hover .vue, .scope_table_item:hover .kotlin{
+  filter: grayscale(0%);
+  transition: 0.5s;
+}
+
+.react {
+  background: url(../../images/react.svg);
+}
+
+.php {
+  background: url(../../images/php.svg);
+}
+
+.c {
+  background: url(../../images/c.svg);
+}
+
+.java {
+  background: url(../../images/java.svg);
+}
+
+.javascript {
+  background: url(../../images/javascript.svg);
+}
+
+.vue {
+  background: url(../../images/vue.svg);
+}
+
+.kotlin {
+  background: url(../../images/kotlin.svg);
+}
+
+/* .swift {
+  display: inline-block;
+  background: url(../../images/swift.svg);
+  width: 100px;
+  height: 73px;
+} */
+
+.earth {
+  display: inline-block;
+  background: url(../../images/earth.svg);
+  width: 176px;
+  height: 176px;
+}
+
+.photo1, .photo2, .photo3, .photo4, .photo5, .photo6, .photo7{
+  display: inline-block;
+  width: 176px;
+  height: 176px;
+  background-size: contain!important;
+}
+
+.photo1 {
+  background: url(../../images/photo1.png);
+}
+
+.photo2 {
+  background: url(../../images/photo2.png);
+}
+
+.photo3 {
+  background: url(../../images/photo3.png);
+}
+
+.photo4 {
+  background: url(../../images/photo4.png);
+}
+
+.photo5 {
+  background: url(../../images/photo5.png);
+}
+
+.photo6 {
+  background: url(../../images/photo6.png);
+}
+
+.photo7 {
+  background: url(../../images/photo7.png);
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .projectspng {
+    position: relative;
+    display: inline-block;
+    background: url(../../images/projects.png);
+    width: calc(529px + 176 * (100vw - 1440px) / 480);
+    height: calc(425px + 55 * (100vw - 1440px) / 480);
+    filter: grayscale(100%);
+    z-index: -1;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .projectspng {
+    position: relative;
+    display: inline-block;
+    background: url(../../images/projects.png);
+    width: calc(377px + 152 * (100vw - 1024px) / 416);
+    height: calc(302px + 123 * (100vw - 1024px) / 416);
+    filter: grayscale(100%);
+    z-index: -1;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .projectspng {
+    position: relative;
+    display: inline-block;
+    background: url(../../images/projects.png);
+    width: calc(377px + 0 * (100vw - 769px) / 255);
+    height: calc(302px + 0 * (100vw - 769px) / 255);
+    filter: grayscale(100%);
+    z-index: -1;
+  }
+}
+@media (min-width: 373px) and (max-width: 768px) {
+  .projectspng {
+    position: relative;
+    display: inline-block;
+    background: url(../../images/projects.png);
+    width: calc(343px + 362 * (100vw - 373px) / 395);
+    height: calc(320px + 58 * (100vw - 373px) / 395);
+    filter: grayscale(100%);
+    z-index: -1;
+  }
+}
+.photo_blog {
+  position: relative;
+  display: inline-block;
+  background: url(../../images/blog-picture.png);
+  background-size: contain;
+  width: 176px;
+  height: 176px;
+  z-index: -1;
+  filter: grayscale(100%);
+}
+
+.portfolio1 {
+  display: inline-block;
+  background: url(../../images/portfolio1.svg);
+  width: 830px;
+  height: 480px;
+}
+
+.portfolio2 {
+  display: inline-block;
+  background: url(../../images/portfolio2.svg);
+  width: 830px;
+  height: 480px;
+}
+
+.clutch {
+  display: inline-block;
+  background: url(../../images/clutch.svg);
+  width: 271px;
+  height: 56px;
+}
+
+.bigearth {
+  display: inline-block;
+  background: url(../../images/bigearth1920.svg);
+  width: 410px;
+  height: 326px;
+}/*# sourceMappingURL=icons.css.map */
+
 @media (min-width: 140px) and (max-width: 639px) {
   .bigearth {
     display: inline-block;
@@ -301,47 +605,31 @@
     width: 308px !important;
     height: 246px !important;
   }
-  .photo1 {
+  .photo1, .photo2, .photo3, .photo4, .photo5, .photo6, .photo7 {
     display: inline-block;
+    width: calc(132px + 44 * (100vw - 1440px) / 480);
+    height: calc(132px + 44 * (100vw - 1440px) / 480);
+  }
+  .photo1{
     background: url(../../images/photo1.png);
-    width: 132px !important;
-    height: 132px !important;
   }
   .photo2 {
-    display: inline-block;
     background: url(../../images/photo2.png);
-    width: 132px !important;
-    height: 132px !important;
   }
   .photo3 {
-    display: inline-block;
     background: url(../../images/photo3.png);
-    width: 132px !important;
-    height: 132px !important;
   }
   .photo4 {
-    display: inline-block;
     background: url(../../images/photo4.png);
-    width: 132px !important;
-    height: 132px !important;
   }
   .photo5 {
-    display: inline-block;
     background: url(../../images/photo5.png);
-    width: 132px !important;
-    height: 132px !important;
   }
   .photo6 {
-    display: inline-block;
     background: url(../../images/photo6.png);
-    width: 132px !important;
-    height: 132px !important;
   }
   .photo7 {
-    display: inline-block;
     background: url(../../images/photo7.png);
-    width: 132px !important;
-    height: 132px !important;
   }
 }
 @media (min-width: 830px) and (max-width: 1439px) {
@@ -396,320 +684,3 @@
     height: 94px !important;
   }
 }
-.projectspng {
-  position: relative;
-  display: inline-block;
-  background: url(../../images/projects.png);
-  width: 705px;
-  height: 480px;
-  filter: grayscale(100%);
-  transition: 0.5s;
-  z-index: -1;
-}
-
-.contacts__map:hover .projectspng {
-  filter: grayscale(0%);
-  transition: 0.5s;
-}
-
-.vector {
-  display: inline-block;
-  background: url(../../images/vector.svg);
-  width: 10px;
-  height: 10px;
-  -webkit-transition: all 0.3s linear;
-}
-.vector-line {
-  display: inline-block;
-  background: url(../../images/vector-line.svg);
-  width: 16px;
-  height: 16px;
-  -webkit-transition: all 0.3s linear;
-}
-
-.financeBaking {
-  display: inline-block;
-  background: url(../../images//Finance&Baking.svg);
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-}
-
-.education {
-  display: inline-block;
-  background: url(../../images/education.svg);
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-}
-
-.health {
-  display: inline-block;
-  background: url(../../images/health.svg);
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-}
-
-.restaurants {
-  display: inline-block;
-  background: url(../../images/restaurants.svg);
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-}
-
-.entertrainment {
-  display: inline-block;
-  background: url(../../images/entertrainment.svg);
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-}
-
-.tnc {
-  display: inline-block;
-  background: url(../../images/tnc.svg);
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-}
-
-/* .retail {
-  display: inline-block;
-  background: url(../../images/retail.svg);
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-} */
-
-.gov {
-  display: inline-block;
-  background: url(../../images/gov.svg);
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
-}
-
-.scope_table_item .react, .scope_table_item .php, .scope_table_item .c, .scope_table_item .java, .scope_table_item .javascript, .scope_table_item .vue, .scope_table_item .kotlin{
-  display: inline-block;
-  /* width: 100px;
-  height: 100px; */
-  filter: grayscale(100%);
-  transition: 0.5s;
-  margin: 0 auto;
-}
-
-.scope_table_item .react{
-  width: 84px;
-  height: 73px;
-}
-
-.scope_table_item .php{
-  width: 77px;
-  height: 93px;
-}
-
-.scope_table_item .c{
-  width: 67px;
-  height: 75px;
-}
-
-.scope_table_item .java{
-  width: 60px;
-  height: 75px;
-}
-
-.scope_table_item .javascript{
-  width: 100px;
-  height: 73px;
-}
-
-.scope_table_item .vue{
-  width: 90px;
-  height: 71px;
-}
-
-.scope_table_item .kotlin{
-  width: 73px;
-  height: 73px;
-}
-
-.scope_table_item:hover .react, .scope_table_item:hover .php, .scope_table_item:hover .c, .scope_table_item:hover .java, .scope_table_item:hover .javascript, .scope_table_item:hover .vue, .scope_table_item:hover .kotlin{
-  filter: grayscale(0%);
-  transition: 0.5s;
-}
-
-.react {
-  background: url(../../images/react.svg);
-}
-
-.php {
-  background: url(../../images/php.svg);
-}
-
-.c {
-  background: url(../../images/c.svg);
-}
-
-.java {
-  background: url(../../images/java.svg);
-}
-
-.javascript {
-  background: url(../../images/javascript.svg);
-}
-
-.vue {
-  background: url(../../images/vue.svg);
-}
-
-.kotlin {
-  background: url(../../images/kotlin.svg);
-}
-
-/* .swift {
-  display: inline-block;
-  background: url(../../images/swift.svg);
-  width: 100px;
-  height: 73px;
-} */
-
-.earth {
-  display: inline-block;
-  background: url(../../images/earth.svg);
-  width: 176px;
-  height: 176px;
-}
-
-.photo1 {
-  display: inline-block;
-  background: url(../../images/photo1.png);
-  width: 176px;
-  height: 176px;
-}
-
-.photo2 {
-  display: inline-block;
-  background: url(../../images/photo2.png);
-  width: 176px;
-  height: 176px;
-}
-
-.photo3 {
-  display: inline-block;
-  background: url(../../images/photo3.png);
-  width: 176px;
-  height: 176px;
-}
-
-.photo4 {
-  display: inline-block;
-  background: url(../../images/photo4.png);
-  width: 176px;
-  height: 176px;
-}
-
-.photo5 {
-  display: inline-block;
-  background: url(../../images/photo5.png);
-  width: 176px;
-  height: 176px;
-}
-
-.photo6 {
-  display: inline-block;
-  background: url(../../images/photo6.png);
-  width: 176px;
-  height: 176px;
-}
-
-.photo7 {
-  display: inline-block;
-  background: url(../../images/photo7.png);
-  width: 176px;
-  height: 176px;
-}
-
-@media (min-width: 1441px) and (max-width: 1920px) {
-  .projectspng {
-    position: relative;
-    display: inline-block;
-    background: url(../../images/projects.png);
-    width: calc(529px + 176 * (100vw - 1440px) / 480);
-    height: calc(425px + 55 * (100vw - 1440px) / 480);
-    filter: grayscale(100%);
-    z-index: -1;
-  }
-}
-@media (min-width: 1025px) and (max-width: 1440px) {
-  .projectspng {
-    position: relative;
-    display: inline-block;
-    background: url(../../images/projects.png);
-    width: calc(377px + 152 * (100vw - 1024px) / 416);
-    height: calc(302px + 123 * (100vw - 1024px) / 416);
-    filter: grayscale(100%);
-    z-index: -1;
-  }
-}
-@media (min-width: 769px) and (max-width: 1024px) {
-  .projectspng {
-    position: relative;
-    display: inline-block;
-    background: url(../../images/projects.png);
-    width: calc(377px + 0 * (100vw - 769px) / 255);
-    height: calc(302px + 0 * (100vw - 769px) / 255);
-    filter: grayscale(100%);
-    z-index: -1;
-  }
-}
-@media (min-width: 373px) and (max-width: 768px) {
-  .projectspng {
-    position: relative;
-    display: inline-block;
-    background: url(../../images/projects.png);
-    width: calc(343px + 362 * (100vw - 373px) / 395);
-    height: calc(320px + 58 * (100vw - 373px) / 395);
-    filter: grayscale(100%);
-    z-index: -1;
-  }
-}
-.photo_blog {
-  position: relative;
-  display: inline-block;
-  background: url(../../images/blog-picture.png);
-  background-size: contain;
-  width: 176px;
-  height: 176px;
-  z-index: -1;
-  filter: grayscale(100%);
-}
-
-.portfolio1 {
-  display: inline-block;
-  background: url(../../images/portfolio1.svg);
-  width: 830px;
-  height: 480px;
-}
-
-.portfolio2 {
-  display: inline-block;
-  background: url(../../images/portfolio2.svg);
-  width: 830px;
-  height: 480px;
-}
-
-.clutch {
-  display: inline-block;
-  background: url(../../images/clutch.svg);
-  width: 271px;
-  height: 56px;
-}
-
-.bigearth {
-  display: inline-block;
-  background: url(../../images/bigearth1920.svg);
-  width: 410px;
-  height: 326px;
-}/*# sourceMappingURL=icons.css.map */

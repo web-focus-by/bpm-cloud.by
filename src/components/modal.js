@@ -60,7 +60,7 @@ const Modal = ({onClickClose, showThankForm}) => {
         <div className="modal__content">
           <div className="form">
             <div className="form__block">
-              <div className="form_block_title">Отправить заявку</div>
+              <div className="form_block_title">Оставьте заявку</div>
               <div className="form_block_wrapper">
                 <form id="search-form"
                   onSubmit={ e => {
