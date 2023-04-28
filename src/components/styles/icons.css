@@ -419,21 +419,12 @@
   height: 10px;
   -webkit-transition: all 0.3s linear;
 }
-.vector:hover {
-  -webkit-transition: all 0.3s linear;
-  background: url(../../images/vector_purple.svg);
-}
-
 .vector-line {
   display: inline-block;
   background: url(../../images/vector-line.svg);
   width: 16px;
   height: 16px;
   -webkit-transition: all 0.3s linear;
-}
-.vector-line:hover {
-  -webkit-transition: all 0.3s linear;
-  background: url(../../images/vector-line_purple.svg);
 }
 
 .financeBaking {
@@ -688,6 +679,7 @@
   position: relative;
   display: inline-block;
   background: url(../../images/blog-picture.png);
+  background-size: contain;
   width: 176px;
   height: 176px;
   z-index: -1;

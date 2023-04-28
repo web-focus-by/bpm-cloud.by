@@ -223,6 +223,9 @@
   .scope__table .scope_table_item:nth-child(6) .scope_table_item_container p{
     width: min-content;
   }
+  .team__title .team_show_all {
+    font-size: calc(14px + 4 * (100vw - 1440px) / 480);
+  }
   .team__description {
     margin-bottom: calc(43px + 37 * (100vw - 1440px) / 480);
     margin-top: calc(14.42px + 17.58 * (100vw - 1440px) / 480);
@@ -286,24 +289,24 @@
     margin-left: calc(12px + 3 * (100vw - 1440px) / 480);
   }
   .blog__products {
-    margin-top: calc(11.42px + 17.58 * (100vw - 1440px) / 480);
+    margin-top: calc(24px + 5 * (100vw - 1440px) / 480);
     display: flex;
     justify-content: space-between;
-    -moz-column-gap: 19px;
-         column-gap: 19px;
+    -moz-column-gap: calc(14px + 5 * (100vw - 1440px) / 480);
+    column-gap: calc(14px + 5 * (100vw - 1440px) / 480);
   }
   .blog__products .blog_products_block {
     width: 100%;
   }
   .blog__products .blog_products_block .blog_products_block_pic {
-    width: 547px;
-    height: 480px;
+    width: calc(410px + 137 * (100vw - 1440px) / 480);
+    height: calc(360px + 120 * (100vw - 1440px) / 480);
   }
   .blog__products .blog_products_block .blog_products_block_pic img {
     -o-object-fit: cover;
        object-fit: cover;
-    width: 547px;
-    height: 480px;
+    width: calc(410px + 137 * (100vw - 1440px) / 480);
+    height: calc(360px + 120 * (100vw - 1440px) / 480);
   }
   .blog__products .blog_products_block .blog_products_block_list .hash_list_block:first-child {
     margin-right: 10px;
@@ -311,16 +314,16 @@
   .blog__products .blog_products_block .blog_products_block_list .blog_products_block_list_date {
     color: #4B4B4B;
     font-weight: 400;
-    font-size: 16px;
+    font-size: calc(12px + 4 * (100vw - 1440px) / 480);
     line-height: 105%;
   }
   .blog__products .blog_products_block .blog_products_block_title {
-    font-size: 24px;
+    font-size: calc(18px + 6 * (100vw - 1440px) / 480);
     font-weight: 500;
     line-height: 100%;
     color: #222222;
-    margin-bottom: 16px;
-    margin-top: 24px;
+    margin-bottom: calc(12px + 4 * (100vw - 1440px) / 480);
+    margin-top: calc(18px + 6 * (100vw - 1440px) / 480);
   }
   .footer {
     display: flex;

@@ -74,11 +74,6 @@ const Rectangle = () => {
       my = e.clientY - bounds.top;
       man = true;
     });
-    // console.log(COLS);
-    // ROWS = 67;
-    // COLS = 210;
-    // NUM_PARTICLES = ( ROWS * COLS );
-    console.log(NUM_PARTICLES);
     container.appendChild(canvas);
   }
 

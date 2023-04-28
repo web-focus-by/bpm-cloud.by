@@ -220,6 +220,7 @@
     font-size: 13.5px;
   }
   .blog__products {
+    margin-top: 24px;
     display: flex;
     justify-content: space-between;
     -moz-column-gap: 14.25px;
