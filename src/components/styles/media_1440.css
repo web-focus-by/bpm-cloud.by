@@ -156,9 +156,9 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: 2px;
   }
-  .team__table .team_table_item {
+  /* .team__table .team_table_item {
     margin-bottom: 40px;
-  }
+  } */
   .team__table .team_table_item span {
     align-content: center;
   }
@@ -412,18 +412,6 @@
     margin-right: calc(304px + 123.5 * (100vw - 1024px) / 416);
     font-size: calc(14px + 0 * (100vw - 1024px) / 416);
     text-indent: calc(35px + 0 * (100vw - 1024px) / 416);
-  }
-  .about_company__table .about_company_table_item {
-    border-right: calc(0.53px + 0.22 * (100vw - 1024px) / 416) solid #B3B3B3;
-  }
-  .about_company__table .about_company_table_item:nth-child(2) {
-    padding-left: calc(48px + 19 * (100vw - 1024px) / 416);
-  }
-  .about_company__table .about_company_table_item:nth-child(3) {
-    padding-left: calc(48px + 19 * (100vw - 1024px) / 416);
-  }
-  .about_company__table .about_company_table_item:nth-child(4) {
-    padding-left: calc(48px + 19 * (100vw - 1024px) / 416);
   }
   .services__title .description {
     margin-top: calc(17.6px + 6.9 * (100vw - 1024px) / 416);

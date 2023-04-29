@@ -57,7 +57,7 @@ const Technologies = () => {
       description:"Kotlin"
     },
     {
-      key: "swift",
+      key: "technologies",
       class: "",
       description:"+12 технологий"
     },
@@ -66,14 +66,25 @@ const Technologies = () => {
     return [...res, item];
   }, []);
   const itemsRes = items.map((val, ind)=>{
-    return (
-      <div className="scope_table_item" id={ ind } key={ val.key }>
-        <div className="scope_table_item_container">
-          <span className={ val.class }></span>
-          <p className="font_24" style={{marginTop: '13px'}}>{ val.description }</p>
+    if(val.key == 'technologies'){
+      return (
+        <div className="scope_table_item" id={ ind } key={ val.key }>
+          <div className="scope_table_item_container">
+            <span className={ val.class }></span>
+            <p className="font_24" style={{marginTop: '30px', width: 'min-content'}}>{ val.description }</p>
+          </div>
         </div>
-      </div>
-    )
+      )
+    }else{
+      return (
+        <div className="scope_table_item" id={ ind } key={ val.key }>
+          <div className="scope_table_item_container">
+            <span className={ val.class }></span>
+            <p className="font_24" style={{marginTop: '30px'}}>{ val.description }</p>
+          </div>
+        </div>
+      )
+    }
   })
 
   const itemsResMini = items.map((val, ind)=>{
@@ -82,7 +93,7 @@ const Technologies = () => {
         <div className="scope_table_item" id={ ind } key={ val.key }>
           <div className="scope_table_item_container">
             <span className={ val.class }></span>
-            <p className="font_24" style={{marginTop: '13px'}}>{ val.description }</p>
+            <p className="font_24" style={{marginTop: '30px'}}>{ val.description }</p>
           </div>
         </div>
       )
@@ -95,7 +106,7 @@ const Technologies = () => {
         <div className="scope_table_item" id={ ind } key={ val.key }>
           <div className="scope_table_item_container">
             <span className={ val.class }></span>
-            <p className="font_24" style={{marginTop: '13px'}}>{ val.description }</p>
+            <p className="font_24" style={{marginTop: '30px'}}>{ val.description }</p>
           </div>
         </div>
       )

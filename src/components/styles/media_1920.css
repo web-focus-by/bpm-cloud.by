@@ -81,8 +81,8 @@
     font-size: calc(90px + 26 * (100vw - 1440px) / 480);
   }
   .about_company__description {
-    margin-bottom: calc(43px + 37 * (100vw - 1440px) / 480);
-    margin-top: calc(14.42px + 17.58 * (100vw - 1440px) / 480);
+    margin-bottom: calc(90px + 30 * (100vw - 1440px) / 480);
+    margin-top: calc(20px + 12 * (100vw - 1440px) / 480);
   }
   .about_company__description .description {
     width: calc(516px + 172 * (100vw - 1440px) / 480);
@@ -90,18 +90,6 @@
     margin-right: calc(427.5px + 142.5 * (100vw - 1440px) / 480);
     font-size: calc(14px + 4 * (100vw - 1440px) / 480);
     text-indent: calc(35px + 20 * (100vw - 1440px) / 480);
-  }
-  .about_company__table .about_company_table_item {
-    border-right: calc(0.75px + 1.25 * (100vw - 1440px) / 480) solid #B3B3B3;
-  }
-  .about_company__table .about_company_table_item:nth-child(2) {
-    padding-left: calc(67px + 25 * (100vw - 1440px) / 480);
-  }
-  .about_company__table .about_company_table_item:nth-child(3) {
-    padding-left: calc(67px + 20 * (100vw - 1440px) / 480);
-  }
-  .about_company__table .about_company_table_item:nth-child(4) {
-    padding-left: calc(67px + 25 * (100vw - 1440px) / 480);
   }
   .services__title .description {
     margin-top: calc(24.5px + 7.5 * (100vw - 1440px) / 480);
@@ -172,7 +160,7 @@
   }
   .scope__description {
     margin-bottom: calc(43px + 37 * (100vw - 1440px) / 480);
-    margin-top: calc(14.42px + 17.58 * (100vw - 1440px) / 480);
+    margin-top: calc(24px + 14 * (100vw - 1440px) / 480);
   }
   .scope__description .description {
     width: calc(650px + 182 * (100vw - 1440px) / 480);
@@ -232,7 +220,6 @@
   }
   .team__description .team_description {
     width: calc(532px + 284 * (100vw - 1440px) / 480);
-    margin-left: calc(316.5px + 125.5 * (100vw - 1440px) / 480);
     margin-right: calc(427.5px + 142.5 * (100vw - 1440px) / 480);
     font-size: calc(14px + 4 * (100vw - 1440px) / 480);
     text-indent: calc(35px + 20 * (100vw - 1440px) / 480);
@@ -242,10 +229,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: calc(22px - 2 * (100vw - 1440px) / 480);
+    grid-row-gap: calc(24px + 16 * (100vw - 1440px) / 480);
   }
-  .team__table .team_table_item {
+  /* .team__table .team_table_item {
     margin-bottom: calc(24px + 16 * (100vw - 1440px) / 480)
-  }
+  } */
   .team__table .team_table_item span {
     align-content: center;
   }
@@ -323,7 +311,7 @@
     line-height: 100%;
     color: #222222;
     margin-bottom: calc(12px + 4 * (100vw - 1440px) / 480);
-    margin-top: calc(18px + 6 * (100vw - 1440px) / 480);
+    margin-top: calc(12px + 4 * (100vw - 1440px) / 480);
   }
   .footer {
     display: flex;

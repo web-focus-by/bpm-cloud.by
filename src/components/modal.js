@@ -87,7 +87,7 @@ const Modal = ({onClickClose, showThankForm}) => {
                         setNameValue(e.target.value)
                       }}
                       required />
-                    <label>Имя<span>*</span></label>
+                    <label>Имя</label><span className="little_star"></span>
                   </div>
                   <div className="form_line-wrapper">
                     <input
@@ -101,7 +101,7 @@ const Modal = ({onClickClose, showThankForm}) => {
                         setEmailValue(e.target.value)
                       }}
                       required />
-                    <label>E-mail<span>*</span></label>
+                    <label>E-mail</label><span className="little_star"></span>
                   </div>
                   <div className="form_line-wrapper">
                     <input
@@ -115,7 +115,7 @@ const Modal = ({onClickClose, showThankForm}) => {
                         setAdditionalInformation(e.target.value)
                       }}
                       required />
-                    <label>Дополнительная информация<span>*</span></label>
+                    <label>Дополнительная информация</label><span className="little_star"></span>
                   </div>
                   { width > 373 ? submitBlock : submitBlock373 }
                 </form>

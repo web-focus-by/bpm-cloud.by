@@ -292,7 +292,7 @@
   .team__table .team_table_item {
     width: 96px;
     height: 96px;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
   }
   .team__table .team_table_item span {
     align-content: center;

@@ -5,6 +5,16 @@
   height: 60px;
 }
 
+.little_star{
+  display: inline-block;
+  background: url(../../images/little_star.svg);
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  top: 10px;
+  right: 0px;
+}
+
 .vector_down {
   display: inline-block;
   background: url(../../images/vector_down.svg);
@@ -150,8 +160,8 @@
 }
 
 .scope_table_item .php{
-  width: 77px;
-  height: 93px;
+  width: 88px;
+  height: 75px;
 }
 
 .scope_table_item .c{

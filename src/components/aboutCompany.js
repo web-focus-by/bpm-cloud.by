@@ -23,16 +23,34 @@ const AboutCompany = ({siteTitle}) => {
       description:"Успешных проектов"
     },
     {
+      key: "border",
+      value: '',
+      class: "border",
+      description:""
+    },
+    {
       key: "an_experience",
       value: 15,
       class: "experience",
       description: " на рынке"
     },
     {
+      key: "border",
+      value: '',
+      class: "border",
+      description:""
+    },
+    {
       key: "specialists",
       value: 60,
       class: "specialists",
       description:"Специалист"
+    },
+    {
+      key: "border",
+      value: '',
+      class: "border",
+      description:""
     },
     {
       key: "clients",
@@ -58,7 +76,7 @@ const AboutCompany = ({siteTitle}) => {
     return [...res, item];
   }, []);
   const itemsRes = items.map((val, ind)=>{
-    if (ind === 0 || ind === 1) {
+    if (ind === 0 || ind === 2) {
       return (
         <div className="about_company_table_item" id={ ind } key={ val.key }>
           <span className="font_144">{ val.value }+</span>

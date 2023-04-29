@@ -72,7 +72,7 @@ const Scope = () => {
         <div className="scope_table_item" id={ ind } key={ val.key }>
           <div className="scope_table_item_container">
             <span className={ val.class }></span>
-            <p className="font_24" style={{marginTop: '13px'}}>{ val.description }</p>
+            <p className="font_24" style={{marginTop: '30px'}}>{ val.description }</p>
           </div>
         </div>
       )
@@ -85,7 +85,7 @@ const Scope = () => {
         <div className="scope_table_item" id={ ind } key={ val.key }>
           <div className="scope_table_item_container">
             <span className={ val.class }></span>
-            <p className="font_24" style={{marginTop: '13px'}}>{ val.description }</p>
+            <p className="font_24" style={{marginTop: '30px'}}>{ val.description }</p>
           </div>
         </div>
       )
@@ -97,7 +97,7 @@ const Scope = () => {
       <div className="scope_table_item" id={ ind } key={ val.key }>
         <div className="scope_table_item_container">
           <span className={ val.class }></span>
-          <p className="font_24" style={{marginTop: '13px'}}>{ val.description }</p>
+          <p className="font_24" style={{marginTop: '30px'}}>{ val.description }</p>
         </div>
       </div>
     )

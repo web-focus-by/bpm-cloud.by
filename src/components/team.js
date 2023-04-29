@@ -17,9 +17,7 @@ const Team = () => {
   const [width, height] = useWindowSize();
   const title = "Команда";
   const showAll = "Посмотреть все";
-  const desc ="Мы – коллектив единомышленников. Для каждого из нас важно выполнить задачу в"+
-  " оговоренные с клиентом сроки. IT-компания «BPM Cloud» - это профессионалы своего дела, заточенные"+
-  " на максимально приятный для клиента результат.";
+  const desc ="         Мы – коллектив единомышленников. Для каждого из нас важно выполнить задачу в оговоренные с клиентом сроки. IT-компания «Focus IT» – это профессионалы своего дела, заточенные на максимально приятный для клиента результат.";
   const data = [
     {
       id: 1,
@@ -35,13 +33,13 @@ const Team = () => {
     },
     {
       id: 3,
-      name: "colleague",
+      name: "",
       photo: "photo7",
       link: "#"
     },
     {
       id: 4,
-      name: "colleague",
+      name: "",
       photo: "",
       link: "#"
     },
@@ -53,13 +51,13 @@ const Team = () => {
     },
     {
       id: 6,
-      name: "colleague",
+      name: "",
       photo: "",
       link: "#"
     },
     {
       id: 7,
-      name: "colleague",
+      name: "",
       photo: "photo7",
       link: "#"
     },
@@ -77,31 +75,31 @@ const Team = () => {
     },
     {
       id: 10,
-      name: "colleague",
+      name: "",
       photo: "photo7",
       link: "#"
     },
     {
       id: 11,
-      name: "colleague",
+      name: "",
       photo: "",
       link: "#"
     },
     {
       id: 12,
-      name: "colleague",
+      name: "",
       photo: "photo7",
       link: "#"
     },
     {
       id: 13,
-      name: "colleague",
+      name: "",
       photo: "photo7",
       link: "#"
     },
     {
       id: 14,
-      name: "colleague",
+      name: "",
       photo: "photo7",
       link: "#"
     },
@@ -116,7 +114,7 @@ const Team = () => {
   const itemsResMini = data.map((val, ind)=>{
     if (ind < 8) {
       return (
-        <Tooltip title={ val.name } placement="bottom-end" style={{color: '#fff', background: '#0773DF'}} >
+        <Tooltip title={ val.name } placement="bottom-end" style={{color: '#333', background: '#0773DF'}} >
           <div className="team_table_item" id={ ind } key={ val.key }>
             <span className={ val.photo }><Link to={ val.link }></Link></span>
           </div>

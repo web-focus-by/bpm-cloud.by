@@ -214,9 +214,9 @@
   .team__description .team_description {
     font-size: 10px;
   }
-  .team__table .team_table_item {
+  /* .team__table .team_table_item {
     margin-bottom: 40px;
-  }
+  } */
   .team__table .team_table_item span {
     align-content: center;
   }
@@ -282,15 +282,6 @@
     margin-right: calc(0px + 304 * (100vw - 768px) / 256);
     font-size: calc(16px + -2 * (100vw - 768px) / 256);
     text-indent: calc(45px + -10 * (100vw - 768px) / 256);
-  }
-  .about_company__table .about_company_table_item {
-    border-right: 0.75px solid #B3B3B3;
-  }
-  .about_company__table .about_company_table_item:nth-child(2) {
-    padding-left: calc(67px + -19 * (100vw - 768px) / 256);
-  }
-  .about_company__table .about_company_table_item:nth-child(3) {
-    padding-left: calc(67px + -19 * (100vw - 768px) / 256);
   }
   .about_company__table .about_company_table_item:nth-child(4) {
     display: none;

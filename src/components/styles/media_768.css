@@ -310,9 +310,9 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 2px;
   }
-  .team__table .team_table_item {
+  /* .team__table .team_table_item {
     margin-bottom: 40px;
-  }
+  } */
   .team__table .team_table_item span {
     align-content: center;
   }
