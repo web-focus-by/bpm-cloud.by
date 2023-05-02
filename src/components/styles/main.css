@@ -1230,7 +1230,7 @@ body {
   -moz-column-gap: 12px;
        column-gap: 12px;
   background-color: #E6F5FF;
-  margin-top: 784px;
+  margin-top: 65vh;
 }
 .modal_gdpr .gdpr_consent__content {
   width: 66%;
