@@ -53,7 +53,7 @@ const Footer =()=>{
           </div>
         </div>
         <div className="footer__copyright">
-          <div className="copyright_start">© 2010-2021 bpm-cloud.by</div>
+          <div className="copyright_start">© 2010-2023 focusit.by</div>
           <div className="copyright_end">Политика конфиденциальности</div>
         </div>
       </div>

@@ -64,10 +64,10 @@
     font-size: calc(108px + 36 * (100vw - 1440px) / 480);
   }
   .hero {
-    margin-top: 68px;
+    margin-top: 60px;
   }
   .hero__title .title {
-    font-size: calc(90px + 22 * (100vw - 1440px) / 480);
+    font-size: calc(90px + 30 * (100vw - 1440px) / 480);
   }
   .hero__title .subtitle {
     text-indent: 50px;
@@ -78,7 +78,7 @@
     grid-template-columns: 2fr;
   }
   .hero__title_second_part .title {
-    font-size: calc(90px + 26 * (100vw - 1440px) / 480);
+    font-size: calc(90px + 30 * (100vw - 1440px) / 480);
   }
   .about_company__description {
     margin-bottom: calc(90px + 30 * (100vw - 1440px) / 480);

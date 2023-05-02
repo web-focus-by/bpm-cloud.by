@@ -44,8 +44,10 @@ const Rectangle = () => {
     man = false;
     tog = true;
     list = [];
-    w = canvas.width = widthSize ? widthSize : COLS * SPACING + MARGIN * 2;
-    h = canvas.height = heightSize;
+    // w = canvas.width = widthSize ? widthSize : COLS * SPACING + MARGIN * 2;
+    // h = canvas.height = heightSize;
+    w = canvas.width = 1680;
+    h = canvas.height = 480;
     // if (widthScreen && widthScreen >= 1920) {
     //   h = canvas.height = 480;
     // } else if (widthScreen && widthScreen >= 1440 && widthScreen < 1920) {

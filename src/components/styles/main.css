@@ -120,6 +120,7 @@ body {
   background: #111;
   height: 480px;
   margin-top: 75px;
+  overflow: hidden;
 }
 
 .containerForm {
@@ -196,7 +197,7 @@ body {
 }
 
 .hero {
-  margin-top: 68px;
+  margin-top: 60px;
 }
 .hero__title {
   display: grid;
@@ -205,7 +206,7 @@ body {
   grid-row-gap: 0.5%;
 }
 .hero__title .title {
-  font-size: 112px;
+  font-size: 120px;
 }
 .hero__title .subtitle {
   display: flex;
@@ -224,7 +225,7 @@ body {
   margin-left: 409px;
 }
 .hero__title_second_part .title {
-  font-size: 116px;
+  font-size: 120px;
 }
 .hero__butn {
   display: flex;
